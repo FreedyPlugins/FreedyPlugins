@@ -36,6 +36,13 @@
 
 ***
 
+## <font color='SteelBlue'>커뮤니티 및 관련 사이트</font>
+
+#### <font color='gray'>디스코드: </font> [바로가기](https://discord.gg/xej5Ut3)
+#### <font color='gray'>깃허브: </font> [바로가기](https://github.com/FreedyPlugins)
+#### <font color='gray'>오픈채팅: </font> 아직 없음  
+
+
 ## <font color='SteelBlue'>브루스 연락처:</font>  
 
 #### <font color='gray'>전화번호: 010-2484-9240</font>  
