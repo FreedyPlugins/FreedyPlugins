@@ -29,20 +29,6 @@
 
 ***
 
-
-#### > <font color='#FFCC00'> 마케팅 - 브루스가 이 플러그인을 개발했습니다. 자 어서. 홍보를 합시다.</font>  
-
-#### > <font color='#FFCC00'> 여가 시간 - 브루스는 플러그인 개발이 여가래요. 정말 그럴까요?</font>  
-
-#### > <font color='#FFCC00'> 미래의 계획 - 저는 이 플러그인을 계속 개발할 생각입니다.</font>  
-
-#### > <font color='#FFCC00'> 돈 벌기 - 브루스는 학생이라서 돈은 상관이 없대요 와우!</font>  
-
-#### > <font color='#FFCC00'> 프리디의 의미 - 브루스의 잘생기고 아름다운 강아지에요.</font>  
-
-
-***
-
 ## <font color='#99CCFF'>커뮤니티 및 관련 사이트</font>
 
 #### <font color='gray'>디스코드: </font> [바로가기](https://discord.gg/xej5Ut3)
