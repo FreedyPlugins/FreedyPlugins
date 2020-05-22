@@ -83,6 +83,8 @@
 
 `fut <player> topTpInWorldBoarder`
 
+***
+
 #### 데이타 함수
 
 `{allPlayer}` 
@@ -152,7 +154,12 @@ apple, bread, cheese 충에 하나를 골라 대체합니다.
 `{playerList(default)}`
 미니게임에 참여중인 플레이어 이름 리스트를 대체합니다.
 
+`{date(yyyy년 MM월 dd일)}`
+현재 시각을 구해서 대체합니다.
 
+`{length(abcd)}`
+텍스트의 길이를 구해서 대체합니다.
 
+`{replace(안녕친구들, 안녕, 잘가)}`
 
 > 이 곳은 아직 완성되지 않았어요! 다음에 다시 찾아주세요.
