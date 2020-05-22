@@ -1,14 +1,14 @@
 <!-- .slide: data-background="./image1.png" -->
 ![image](FreedyPlugins.png)
 
-# <font color='SandyBrown'>창조적이고 유용한 마인크래프트 플러그인, 프리디 플러그인</font>
+# <font color='SandyBrown'>간편하고 유용한 마인크래프트 플러그인, 프리디 플러그인</font>
 
 ***
 
-#### <font color='LightSeaGreen'>공식 웹사이트입니다. 여기서 프리디 플러그인을 구경할 수 있습니다.</font>
+#### <font color='LightSeaGreen'>여기서 프리디 플러그인을 구경할 수 있습니다.</font>
 #### <font color='LightSeaGreen'>개발자 브루스의 무료 마인크래프트 플러그인</font>
-#### <font color='LightSeaGreen'>Freedy Plugins 의 플러그인을 사용하여 버킷에서 서버를 유지 관리하고 구성할 수 있습니다.</font>
-#### <font color='LightSeaGreen'>Freedy Plugins 의 비전문가 개발자 브루스는 플러그인들을 만들어 왔습니다. </font>
+#### <font color='LightSeaGreen'>플러그인을 사용하여 버킷에서 서버를 유지 관리하고 구성할 수 있습니다.</font>
+#### <font color='LightSeaGreen'>비전문가 개발자 브루스는 플러그인들을 만들어 왔습니다. </font>
 
 ## <font color='SandyBrown'>프리디 플러그인 입니다</font>
 
