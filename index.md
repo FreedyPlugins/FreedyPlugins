@@ -4,45 +4,45 @@
 
 ***
 
-#### 공식 웹사이트입니다. 여기서 플러그인을 다운로드할 수 있습니다.
-#### 개발자 브루스의 무료 마인크래프트 플러그인
-#### Freedy Plugins 의 플러그인을 사용하여 버킷에서 서버를 유지 관리하고 구성할 수 있습니다.
-#### Freedy Plugins 의 비전문가 개발자 브루스는 플러그인들을 만들어 왔습니다. 
+#### <font color='blue'>공식 웹사이트입니다. 여기서 플러그인을 다운로드할 수 있습니다.</font>
+#### <font color='blue'>개발자 브루스의 무료 마인크래프트 플러그인</font>
+#### <font color='blue'>Freedy Plugins 의 플러그인을 사용하여 버킷에서 서버를 유지 관리하고 구성할 수 있습니다.</font>
+#### <font color='blue'>Freedy Plugins 의 비전문가 개발자 브루스는 플러그인들을 만들어 왔습니다. </font>
 
-#### 마케팅
-브루스가 이 플러그인을 개발했습니다. 자 어서. 홍보를 합시다.
+#### <font color='yellow'>마케팅</font>
+<font color='yellow'>브루스가 이 플러그인을 개발했습니다. 자 어서. 홍보를 합시다.</font>
 
-#### 여가 시간
-브루스는 플러그인 개발이 여가래요. 정말 그럴까요?
+#### <font color='yellow'>여가 시간</font>
+<font color='yellow'>브루스는 플러그인 개발이 여가래요. 정말 그럴까요?</font>
 
-#### 미래의 계획
-저는 이 플러그인을 계속 개발할 생각입니다.
+#### <font color='yellow'>미래의 계획</font>
+<font color='yellow'>저는 이 플러그인을 계속 개발할 생각입니다.</font>
 
-#### 돈 벌기
-브루스는 학생이라서 돈은 상관이 없대요 와우!
+#### <font color='yellow'>돈 벌기</font>
+<font color='yellow'>브루스는 학생이라서 돈은 상관이 없대요 와우!</font>
 
-#### 프리디의 의미
-브루스의 잘생기고 아름다운 강아지에요.
+#### <font color='yellow'>프리디의 의미</font>
+<font color='yellow'>브루스의 잘생기고 아름다운 강아지에요.</font>
 
-## 멋진 플러그인들!
+## <font color='green'>멋진 플러그인들!</font>
 
-### 프리디 미니게임 메이커 [바로가기](./FreedyMinigameMaker)
-이 플러그인은 컨텐츠를 스타일링하기 위한 가볍고 사용하기 쉬운 구문을 통해 미니게임을 만들 수 있습니다.
+### <font color='orange'>프리디 미니게임 메이커</font> [바로가기](./FreedyMinigameMaker)
+<font color='orange'>이 플러그인은 컨텐츠를 스타일링하기 위한 가볍고 사용하기 쉬운 구문을 통해 미니게임을 만들 수 있습니다.</font>
 
-### 프로젝타일 메이커 [바로가기](./ProjectileMaker)
-이 플러그인은 발사체를 스타일링하기 위한 가볍고 사용하기 쉬운 명령어를 통해 멋진 이펙트를 만들 수 있습니다.
+### <font color='orange'>프로젝타일 메이커</font> [바로가기](./ProjectileMaker)
+<font color='orange'>이 플러그인은 발사체를 스타일링하기 위한 가볍고 사용하기 쉬운 명령어를 통해 멋진 이펙트를 만들 수 있습니다.</font>
 
-## 지원
-브루스는 미니게임의 업그레이드를 위해서 언제나 사용자에게 도움을 줄 것 입니다. 이 웹사이트 맨 밑에 연락처가 있습니다.
+## <font color='red'>지원</font>
+<font color='red'>브루스는 미니게임의 업그레이드를 위해서 언제나 사용자에게 도움을 줄 것 입니다. 이 웹사이트 맨 밑에 연락처가 있습니다.</font>
 
 ***
 
-## 브루스 연락처:
+## <font color='gray'>브루스 연락처:</font>
 
-#### 전화번호: 010-2484-9240
-#### 카카오톡: Bruce0203
-#### 인스타그램: @ijongweon292
-#### 디스코드: 브루스#8183
+#### <font color='gray'>전화번호: 010-2484-9240</font>
+#### <font color='gray'>카카오톡: Bruce0203</font>
+#### <font color='gray'>인스타그램: @ijongweon292</font>
+#### <font color='gray'>디스코드: 브루스#8183</font>
 
 ***
 
