@@ -1,6 +1,6 @@
 # <font color='SlateBlue'>프리디 미니게임 메이커</font>
 
-![image](freedyminigamemaker.png)
+![image](FreedyMinigameMaker.png)
 
 ***
 
