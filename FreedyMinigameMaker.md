@@ -1,8 +1,12 @@
 # <font color='#FFCC00'>프리디 미니게임 메이커</font>
 
-![bg](#003366)
-
----
+<pre><span style="display:block; background-color:white"><code>## Constructed an OTU  table and other variables with the following settings:
+## thresh_prevalence: 80
+## thresh_abundance: 0.5
+## thresh_NA: 5
+## subj: subject_1
+hello
+</code></span></pre>
 
 ![image](FreedyMinigameMaker.png)
 
