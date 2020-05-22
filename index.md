@@ -1,4 +1,5 @@
 <!-- .slide: data-background="./image1.png" -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 ![image](FreedyPlugins.png)
 
 # <font color='SandyBrown'>간편하고 유용한 마인크래프트 플러그인, 프리디 플러그인</font>
