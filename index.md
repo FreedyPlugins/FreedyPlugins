@@ -1,4 +1,4 @@
----?image=assets/img/main.png
+style="color:orange;">Word up</span>
 
 # 창조적이고 유용한 마인크래프트 플러그인, 프리디 플러그인
 
