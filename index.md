@@ -23,15 +23,15 @@
 ***
 
 
-#### <font color='LightSeaGreen'>**마케팅** 브루스가 이 플러그인을 개발했습니다. 자 어서. 홍보를 합시다.</font>  
+#### <font color='LightSeaGreen'>> 마케팅 - 브루스가 이 플러그인을 개발했습니다. 자 어서. 홍보를 합시다.</font>  
 
-#### <font color='LightSeaGreen'>**여가 시간** 브루스는 플러그인 개발이 여가래요. 정말 그럴까요?</font>  
+#### <font color='LightSeaGreen'>> 여가 시간 - 브루스는 플러그인 개발이 여가래요. 정말 그럴까요?</font>  
 
-#### <font color='LightSeaGreen'>**미래의 계획** 저는 이 플러그인을 계속 개발할 생각입니다.</font>  
+#### <font color='LightSeaGreen'>> 미래의 계획 - 저는 이 플러그인을 계속 개발할 생각입니다.</font>  
 
-#### <font color='LightSeaGreen'>**돈 벌기** 브루스는 학생이라서 돈은 상관이 없대요 와우!</font>  
+#### <font color='LightSeaGreen'>> 돈 벌기 - 브루스는 학생이라서 돈은 상관이 없대요 와우!</font>  
 
-#### <font color='LightSeaGreen'>**프리디의 의미** 브루스의 잘생기고 아름다운 강아지에요.</font>  
+#### <font color='LightSeaGreen'>> 프리디의 의미 - 브루스의 잘생기고 아름다운 강아지에요.</font>  
 
 
 ***
