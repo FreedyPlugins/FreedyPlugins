@@ -10,14 +10,14 @@
 
 #### <font color='SlateBlue'>가벼운 성능이고 사용자가 간편하게 미니게임을 수정하고 적용할 수 있습니다.</font>
 
-## <font color='SteelBlue'>다운로드</font>
+### <font color='SteelBlue'>다운로드</font>
 <font color='DarkSlateBlue'>최신버전(추천합니다):</font> [클릭 다운로드](https://github.com/FreedyPlugins/FreedyMinigameMaker/releases/latest/download/FreedyMinigameMaker.jar)
 
 <font color='DarkSlateBlue'>개발버전(최신기능을바로만나고싶다면):</font> [클릭 다운로드](https://github.com/FreedyPlugins/FreedyMinigameMaker/raw/master/FreedyMinigameMaker.jar)
 
-## <font color='SteelBlue'>위키, 자습서</font> [바로가기](./FreedyMinigameMakerWiki)
+### <font color='SteelBlue'>위키, 자습서</font> [바로가기](./FreedyMinigameMakerWiki)
 
-## <font color='SteelBlue'>플러그인 환경</font>
+### <font color='SteelBlue'>플러그인 환경</font>
 
 <font color='DarkSlateBlue'>이 플러그인은 1.12.2 에서 실행되도록 개발되었습니다 다른 버전은 지원되지 않습니다.</font>  
 
@@ -31,7 +31,7 @@
 
 #### <font color='DarkSlateBlue'>개발자는 이 플러그인이 초래할 수있는 손상에 대해 법적 책임을지지 않습니다.</font>
 
-## <font color='SteelBlue'>지원</font>
+## <font color='SteelBlue'>지원 또는 도움</font>
 <font color='DarkSlateBlue'>브루스는 미니게임의 업그레이드를 위해서 언제나 사용자에게 도움을 줄 것 입니다. 이 웹사이트 맨 밑에 연락처가 있습니다.</font>
 
 ***
