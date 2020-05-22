@@ -9,22 +9,22 @@
 #### <font color='YellowGreen'>Freedy Plugins 의 플러그인을 사용하여 버킷에서 서버를 유지 관리하고 구성할 수 있습니다.</font>
 #### <font color='YellowGreen'>Freedy Plugins 의 비전문가 개발자 브루스는 플러그인들을 만들어 왔습니다. </font>
 
-#### <font color='yellow'>마케팅</font>
-<font color='yellow'>브루스가 이 플러그인을 개발했습니다. 자 어서. 홍보를 합시다.</font>
+#### <font color='PaleTurquoise'>마케팅</font>
+<font color='PaleTurquoise'>브루스가 이 플러그인을 개발했습니다. 자 어서. 홍보를 합시다.</font>
 
-#### <font color='yellow'>여가 시간</font>
-<font color='yellow'>브루스는 플러그인 개발이 여가래요. 정말 그럴까요?</font>
+#### <font color='PaleTurquoise'>여가 시간</font>
+<font color='PaleTurquoise'>브루스는 플러그인 개발이 여가래요. 정말 그럴까요?</font>
 
-#### <font color='yellow'>미래의 계획</font>
-<font color='yellow'>저는 이 플러그인을 계속 개발할 생각입니다.</font>
+#### <font color='PaleTurquoise'>미래의 계획</font>
+<font color='PaleTurquoise'>저는 이 플러그인을 계속 개발할 생각입니다.</font>
 
-#### <font color='yellow'>돈 벌기</font>
-<font color='yellow'>브루스는 학생이라서 돈은 상관이 없대요 와우!</font>
+#### <font color='PaleTurquoise'>돈 벌기</font>
+<font color='PaleTurquoise'>브루스는 학생이라서 돈은 상관이 없대요 와우!</font>
 
-#### <font color='yellow'>프리디의 의미</font>
-<font color='yellow'>브루스의 잘생기고 아름다운 강아지에요.</font>
+#### <font color='PaleTurquoise'>프리디의 의미</font>
+<font color='PaleTurquoise'>브루스의 잘생기고 아름다운 강아지에요.</font>
 
-## <font color='green'>멋진 플러그인들!</font>
+## <font color='PaleTurquoise'>멋진 플러그인들!</font>
 
 ### <font color='orange'>프리디 미니게임 메이커</font> [바로가기](./FreedyMinigameMaker)
 <font color='orange'>이 플러그인은 컨텐츠를 스타일링하기 위한 가볍고 사용하기 쉬운 구문을 통해 미니게임을 만들 수 있습니다.</font>
