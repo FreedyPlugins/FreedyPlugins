@@ -1,6 +1,6 @@
 <!-- .slide: data-background="./image1.png" -->
 
-# <font color='red'>창조적이고 유용한 마인크래프트 플러그인, 프리디 플러그인</font>
+# <font color='green'>창조적이고 유용한 마인크래프트 플러그인, 프리디 플러그인</font>
 
 ***
 
