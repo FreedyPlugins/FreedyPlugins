@@ -1,5 +1,6 @@
 <!-- .slide: data-background="./image1.png" -->
-<link rel="icon" href="/favicon.ico" />
+
+<link rel="shortcut icon" type="image/png" href="/favicon.ico">
 
 ![image](FreedyPlugins.png)
 
@@ -14,7 +15,7 @@
 
 ***
 
-### <font color='#F4733D'>플러그인들</font>
+## <font color='#F4733D'>플러그인들</font>
 
 #### <font color='#2CC0B3'>프리디 미니게임 메이커</font> [바로가기](./FreedyMinigameMaker)
 <font color='#38595E'>이 플러그인은 컨텐츠를 스타일링하기 위한 가볍고 사용하기 쉬운 구문을 통해 미니게임을 만들 수 있습니다.</font>
@@ -24,24 +25,24 @@
 
 ***
 
-### <font color='#F4733D'>지원 또는 도움</font>
+#### <font color='#F4733D'>지원 또는 도움</font>
 <font color='#38595E'>브루스는 미니게임의 업그레이드를 위해서 언제나 사용자에게 도움을 줄 것 입니다. 이 웹사이트 맨 밑에 연락처가 있습니다.</font>
 
 ***
 
-## <font color='#F4733D'>커뮤니티 및 관련 사이트</font>
+### <font color='#F4733D'>커뮤니티 및 관련 사이트</font>
 
-#### <font color='gray'>디스코드: </font> [바로가기](https://discord.gg/xej5Ut3)
-#### <font color='gray'>깃허브: </font> [바로가기](https://github.com/FreedyPlugins)
-#### <font color='gray'>오픈채팅: </font> [바로가기](https://open.kakao.com/o/gzol3Qeb)  
+#### <font color='#E3E4E5'>디스코드: </font> [바로가기](https://discord.gg/xej5Ut3)
+#### <font color='#E3E4E5'>깃허브: </font> [바로가기](https://github.com/FreedyPlugins)
+#### <font color='#E3E4E5'>오픈채팅: </font> [바로가기](https://open.kakao.com/o/gzol3Qeb)  
 
-## <font color='#F4733D'>브루스 연락처:</font>
+### <font color='#F4733D'>브루스 연락처:</font>
 
-#### <font color='gray'>전화번호: 010-2484-9240</font>
-#### <font color='gray'>카카오톡: Bruce0203</font>
-#### <font color='gray'>인스타그램: @ijongweon292</font>
-#### <font color='gray'>디스코드: 브루스#8183</font>
+#### <font color='#E3E4E5'>전화번호: 010-2484-9240</font>
+#### <font color='#E3E4E5'>카카오톡: Bruce0203</font>
+#### <font color='#E3E4E5'>인스타그램: @ijongweon292</font>
+#### <font color='#E3E4E5'>디스코드: 브루스#8183</font>
 
 ***
 
-© 2020 Freedy Plugins. All Rights Reserved.
+<font color='#E3E4E5'>© 2020 Freedy Plugins. All Rights Reserved.</font>
