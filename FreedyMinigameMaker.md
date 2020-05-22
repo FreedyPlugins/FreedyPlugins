@@ -4,11 +4,11 @@
 
 ***
 
-#### <font color='RoyalBlue'>마침내, 미니게임을 만들어 보세요</font>
+#### <font color='SlateBlue'>마침내, 미니게임을 만들어 보세요</font>
 
-#### <font color='RoyalBlue'>컨텐츠(미니게임)를 가볍고 사용하기 쉬운 구문을 통해 만들 수 있습니다.</font>
+#### <font color='SlateBlue'>컨텐츠(미니게임)를 가볍고 사용하기 쉬운 구문을 통해 만들 수 있습니다.</font>
 
-#### <font color='RoyalBlue'>가벼운 성능이고 사용자가 간편하게 미니게임을 수정하고 적용할 수 있습니다.</font>
+#### <font color='SlateBlue'>가벼운 성능이고 사용자가 간편하게 미니게임을 수정하고 적용할 수 있습니다.</font>
 
 ## <font color='SteelBlue'>다운로드</font>
 <font color='DarkSlateBlue'>최신버전(추천합니다):</font> [클릭 다운로드](https://github.com/FreedyPlugins/FreedyMinigameMaker/releases/latest/download/FreedyMinigameMaker.jar)
@@ -19,9 +19,9 @@
 
 ## <font color='SteelBlue'>플러그인 환경</font>
 
-<font color='DarkSlateBlue'>이 플러그인은 1.12.2 에서 실행되도록 개발되었습니다 다른 버전은 지원되지 않습니다.</font>
+<font color='DarkSlateBlue'>이 플러그인은 1.12.2 에서 실행되도록 개발되었습니다 다른 버전은 지원되지 않습니다.</font>  
 
-<font color='DarkSlateBlue'>이 플러그인은 Spigot 및 Paper에서 실행되도록 개발되었습니다. 다른 서버 유형은 아마 작동하지만 지원되지 않습니다.</font>
+<font color='DarkSlateBlue'>이 플러그인은 Spigot 및 Paper에서 실행되도록 개발되었습니다. 다른 서버 유형은 아마 작동하지만 지원되지 않습니다.</font>  
 
 ## <font color='SteelBlue'>라이센스와 이용약관</font>
 
