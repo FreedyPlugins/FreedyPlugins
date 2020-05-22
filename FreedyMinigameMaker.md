@@ -25,23 +25,23 @@
 
 ## <font color='SteelBlue'>라이센스와 이용약관</font>
 
-#### <font color='SteelBlue'>플러그인의 소스를 수정해서 사용 가능합니다.</font>
+#### <font color='DarkSlateBlue'>플러그인의 소스를 수정해서 사용 가능합니다.</font>
 
-#### <font color='SteelBlue'>이 플러그인을 판매, 재배포 할 수 없습니다.</font>
+#### <font color='DarkSlateBlue'>이 플러그인을 판매, 재배포 할 수 없습니다.</font>
 
-#### <font color='SteelBlue'>개발자는 이 플러그인이 초래할 수있는 손상에 대해 법적 책임을지지 않습니다.</font>
+#### <font color='DarkSlateBlue'>개발자는 이 플러그인이 초래할 수있는 손상에 대해 법적 책임을지지 않습니다.</font>
 
 ## <font color='SteelBlue'>지원</font>
 <font color='DarkSlateBlue'>브루스는 미니게임의 업그레이드를 위해서 언제나 사용자에게 도움을 줄 것 입니다. 이 웹사이트 맨 밑에 연락처가 있습니다.
 
 ***
 
-## <font color='gray'>브루스 연락처:</font>
+## <font color='gray'>브루스 연락처:</font>  
 
-#### <font color='gray'>전화번호: 010-2484-9240</font>
-#### <font color='gray'>카카오톡: Bruce0203</font>
-#### <font color='gray'>인스타그램: @ijongweon292</font>
-#### <font color='gray'>디스코드: 브루스#8183</font>
+#### <font color='gray'>전화번호: 010-2484-9240</font>  
+#### <font color='gray'>카카오톡: Bruce0203</font>  
+#### <font color='gray'>인스타그램: @ijongweon292</font>  
+#### <font color='gray'>디스코드: 브루스#8183</font>  
 
 ***
 
