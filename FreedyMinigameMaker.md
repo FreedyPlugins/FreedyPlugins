@@ -1,6 +1,6 @@
-![image](freedyminigamemaker.png)
-
 # 프리디 미니게임 메이커
+
+![image](freedyminigamemaker.png)
 
 ***
 
