@@ -10,22 +10,46 @@
 
 #### <font color='SlateBlue'>이 곳은 아직 완성되지 않았습니다. 다음에 다시 찾아주세요.</font>
 
-***
-
-## <font color='SteelBlue'>커뮤니티 및 관련 사이트</font>
-
-#### <font color='gray'>디스코드: </font> [바로가기](https://discord.gg/xej5Ut3)
-#### <font color='gray'>깃허브: </font> [바로가기](https://github.com/FreedyPlugins)
-#### <font color='gray'>오픈채팅: </font> [바로가기](https://open.kakao.com/o/gzol3Qeb)  
-
-
-## <font color='SteelBlue'>브루스 연락처:</font>  
-
-#### <font color='gray'>전화번호: 010-2484-9240</font>  
-#### <font color='gray'>카카오톡: Bruce0203</font>  
-#### <font color='gray'>인스타그램: @ijongweon292</font>  
-#### <font color='gray'>디스코드: 브루스#8183</font>  
 
 ***
 
-© 2020 Freedy Plugins. All Rights Reserved.
+### <font color='#27496d'>플러그인 환경</font>
+
+<font color='#00909e'>이 플러그인은 1.12.2 에서 실행되도록 개발되었습니다 다른 버전은 지원되지 않습니다.</font>  
+
+<font color='#00909e'>이 플러그인은 Spigot 및 Paper에서 실행되도록 개발되었습니다. 다른 서버 유형은 아마 작동하지만 지원되지 않습니다.</font>  
+
+***
+
+## <font color='#27496d'>라이센스와 이용약관</font>
+
+#### <font color='#00909e'>플러그인의 소스를 수정해서 사용 가능합니다.</font>
+
+#### <font color='#00909e'>이 플러그인을 판매, 재배포 할 수 없습니다.</font>
+
+#### <font color='#00909e'>개발자는 이 플러그인이 초래할 수있는 손상에 대해 법적 책임을지지 않습니다.</font>
+
+***
+
+## <font color='#27496d'>지원 또는 도움</font>
+<font color='#00909e'>브루스는 미니게임의 업그레이드를 위해서 언제나 사용자에게 도움을 줄 것 입니다. 이 웹사이트 맨 밑에 연락처가 있습니다.</font>
+
+***
+
+### <font color='#27496d'>커뮤니티 및 관련 사이트</font>
+
+#### <font color='#dae1e7'>디스코드: </font> [바로가기](https://discord.gg/xej5Ut3)
+#### <font color='#dae1e7'>깃허브: </font> [바로가기](https://github.com/FreedyPlugins)
+#### <font color='#dae1e7'>오픈채팅: </font> [바로가기](https://open.kakao.com/o/gzol3Qeb)  
+
+
+### <font color='#27496d'>브루스 연락처:</font>  
+
+#### <font color='#dae1e7'>전화번호: 010-2484-9240</font>  
+#### <font color='#dae1e7'>카카오톡: Bruce0203</font>  
+#### <font color='#dae1e7'>인스타그램: @ijongweon292</font>  
+#### <font color='#dae1e7'>디스코드: 브루스#8183</font>  
+
+***
+
+<font color='#dae1e7'>© 2020 Freedy Plugins. All Rights Reserved.</font>
