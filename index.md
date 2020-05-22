@@ -4,10 +4,10 @@
 
 ***
 
-#### <font color='ForestGreen'>공식 웹사이트입니다. 여기서 플러그인을 다운로드할 수 있습니다.</font>
-#### <font color='ForestGreen'>개발자 브루스의 무료 마인크래프트 플러그인</font>
-#### <font color='ForestGreen'>Freedy Plugins 의 플러그인을 사용하여 버킷에서 서버를 유지 관리하고 구성할 수 있습니다.</font>
-#### <font color='ForestGreen'>Freedy Plugins 의 비전문가 개발자 브루스는 플러그인들을 만들어 왔습니다. </font>
+#### <font color='LightSeaGreen'>공식 웹사이트입니다. 여기서 플러그인을 다운로드할 수 있습니다.</font>
+#### <font color='LightSeaGreen'>개발자 브루스의 무료 마인크래프트 플러그인</font>
+#### <font color='LightSeaGreen'>Freedy Plugins 의 플러그인을 사용하여 버킷에서 서버를 유지 관리하고 구성할 수 있습니다.</font>
+#### <font color='LightSeaGreen'>Freedy Plugins 의 비전문가 개발자 브루스는 플러그인들을 만들어 왔습니다. </font>
 
 ## <font color='SandyBrown'>멋진 플러그인들!</font>
 
