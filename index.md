@@ -1,4 +1,5 @@
 <!-- .slide: data-background="./image1.png" -->
+![image](welcome_image.png)
 
 # <font color='SandyBrown'>창조적이고 유용한 마인크래프트 플러그인, 프리디 플러그인</font>
 
@@ -36,7 +37,7 @@
 
 ***
 
-## <font color='gray'>브루스 연락처:</font>
+## <font color='SandyBrown'>브루스 연락처:</font>
 
 #### <font color='gray'>전화번호: 010-2484-9240</font>
 #### <font color='gray'>카카오톡: Bruce0203</font>
