@@ -12,13 +12,17 @@
 #### <font color='LightSeaGreen'>플러그인을 사용하여 버킷에서 서버를 유지 관리하고 구성할 수 있습니다.</font>
 #### <font color='LightSeaGreen'>비전문가 개발자 브루스는 플러그인들을 만들어 왔습니다. </font>
 
-## <font color='SandyBrown'>프리디 플러그인 입니다</font>
+***
 
-### <font color='SlateBlue'>프리디 미니게임 메이커</font> [바로가기](./FreedyMinigameMaker)
+### <font color='SandyBrown'>프리디 플러그인 입니다</font>
+
+#### <font color='SlateBlue'>프리디 미니게임 메이커</font> [바로가기](./FreedyMinigameMaker)
 <font color='SlateBlue'>이 플러그인은 컨텐츠를 스타일링하기 위한 가볍고 사용하기 쉬운 구문을 통해 미니게임을 만들 수 있습니다.</font>
 
-### <font color='SlateBlue'>프로젝타일 메이커</font> [바로가기](./ProjectileMaker)
+#### <font color='SlateBlue'>프로젝타일 메이커</font> [바로가기](./ProjectileMaker)
 <font color='SlateBlue'>이 플러그인은 발사체를 스타일링하기 위한 가볍고 사용하기 쉬운 명령어를 통해 멋진 이펙트를 만들 수 있습니다.</font>
+
+***
 
 ## <font color='SandyBrown'>지원</font>
 <font color='LightSalmon'>브루스는 미니게임의 업그레이드를 위해서 언제나 사용자에게 도움을 줄 것 입니다. 이 웹사이트 맨 밑에 연락처가 있습니다.</font>
