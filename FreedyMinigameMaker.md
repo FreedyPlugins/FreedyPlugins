@@ -36,7 +36,7 @@
 
 ***
 
-## <font color='gray'>브루스 연락처:</font>  
+## <font color='SteelBlue'>브루스 연락처:</font>  
 
 #### <font color='gray'>전화번호: 010-2484-9240</font>  
 #### <font color='gray'>카카오톡: Bruce0203</font>  
