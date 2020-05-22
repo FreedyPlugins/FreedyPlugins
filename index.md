@@ -1,4 +1,4 @@
-![images](main.png)
+---?image=assets/img/main.png
 
 # 창조적이고 유용한 마인크래프트 플러그인, 프리디 플러그인
 
