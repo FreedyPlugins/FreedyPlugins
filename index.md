@@ -1,4 +1,4 @@
-style="color:orange;">Word up</span>
+<!-- .slide: data-background="./image1.png" -->
 
 # 창조적이고 유용한 마인크래프트 플러그인, 프리디 플러그인
 
