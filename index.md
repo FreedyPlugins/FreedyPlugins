@@ -2,9 +2,9 @@
 
 <link rel="shortcut icon" type="image/png" href="/favicon.ico">
 
-![image](FreedyPlugins.png)
-
 # <font color='#142850'>간편하고 유용한 마인크래프트 플러그인, 프리디 플러그인</font>
+
+![image](FreedyPlugins.png)
 
 ***
 
