@@ -32,7 +32,7 @@
 #### <font color='DarkSlateBlue'>개발자는 이 플러그인이 초래할 수있는 손상에 대해 법적 책임을지지 않습니다.</font>
 
 ## <font color='SteelBlue'>지원</font>
-<font color='DarkSlateBlue'>브루스는 미니게임의 업그레이드를 위해서 언제나 사용자에게 도움을 줄 것 입니다. 이 웹사이트 맨 밑에 연락처가 있습니다.
+<font color='DarkSlateBlue'>브루스는 미니게임의 업그레이드를 위해서 언제나 사용자에게 도움을 줄 것 입니다. 이 웹사이트 맨 밑에 연락처가 있습니다.</font>
 
 ***
 
