@@ -2,6 +2,8 @@
 
 ![bg](#003366)
 
+---
+
 ![image](FreedyMinigameMaker.png)
 
 ***
