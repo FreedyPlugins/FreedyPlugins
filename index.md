@@ -19,7 +19,7 @@
 
 ---
 
-### <font color='#00909e'>프리디미니게임메이커</font> [바로가기](./FreedyMinigameMaker)
+### <font color='#00909e'>프리디미니게임메이커 (HOT!)</font> [바로가기](./FreedyMinigameMaker)
 <font color='#38595E'>이 플러그인은 컨텐츠를 스타일링하기 위한 가볍고 사용하기 쉬운 구문을 통해 미니게임을 만들 수 있습니다.</font>  
   
 ---
