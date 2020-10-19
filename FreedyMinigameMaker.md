@@ -4,7 +4,8 @@
 
 ![image](FreedyMinigameMaker.png)
 
-***
+
+## <font color='#142850'>개요</font>
 
 #### <font color='#dae1e7'>마침내, 미니게임을 만들어 보세요</font>
 
@@ -29,7 +30,6 @@
 
 <font color='#00909e'>이 플러그인은 Spigot 및 Paper에서 실행되도록 개발되었습니다. 다른 서버 유형은 아마 작동하지만 지원되지 않습니다.</font>  
 
-***
 
 ## <font color='#27496d'>라이센스와 이용약관</font>
 
@@ -39,12 +39,10 @@
 
 #### <font color='#00909e'>개발자는 이 플러그인이 초래할 수있는 손상에 대해 법적 책임을지지 않습니다.</font>
 
-***
 
 ## <font color='#27496d'>지원 또는 도움</font>
 <font color='#00909e'>브루스는 미니게임의 업그레이드를 위해서 언제나 사용자에게 도움을 줄 것 입니다. 이 웹사이트 맨 밑에 연락처가 있습니다.</font>
 
-***
 
 ### <font color='#27496d'>커뮤니티 및 관련 사이트</font>
 
@@ -60,6 +58,5 @@
 #### <font color='#dae1e7'>인스타그램: @ijongweon292</font>  
 #### <font color='#dae1e7'>디스코드: 브루스#8183</font>  
 
-***
 
 <font color='#dae1e7'>© 2020 Freedy Plugins. All Rights Reserved.</font>
