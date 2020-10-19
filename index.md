@@ -6,14 +6,13 @@
 
 ![image](FreedyPlugins.png)
 
-***
+
+## <font color='#27496d'>개요</font>
 
 <font color='#dae1e7'>이곳에서 브루스의 플러그인들을 찾을 수 있습니다.</font>  
 <font color='#dae1e7'>개발자 브루스의 무료 마인크래프트 플러그인</font>  
 <font color='#dae1e7'>플러그인을 사용하여 버킷에서 서버를 유지 관리하고 구성할 수 있습니다.</font>  
-<font color='#dae1e7'>비전문가 개발자 브루스는 플러그인들 개발합니다.</font>  
 
-***
 
 ## <font color='#27496d'>플러그인들</font>
 
