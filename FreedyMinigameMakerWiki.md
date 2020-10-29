@@ -44,7 +44,7 @@
 fut {player} if true == true {do(fut {Player} sendMsg public 안녕하세요! && fut {player} sendMsg public 어서오세요!)}
 ```
 
-> 주의! {do()}나 {else()} 구문 속에 {add()}나 {data()} 같은 데이타 함수를 넣으면 안되요! fut <player> do player, <player> 실행 명령을 통해 데이타 함수를 사용하세요
+>> 주의! {do()}나 {else()} 구문 속에 {add()}나 {data()} 같은 데이타 함수를 넣으면 안되요! fut <player> do player, <player> 실행 명령을 통해 데이타 함수를 사용하세요
   
 ***
 
@@ -119,6 +119,10 @@ fut {player} if true == true {do(fut {Player} sendMsg public 안녕하세요! &&
 `/fut <player> setBlock <world> <x> <y> <z> <blockType>`
 
 `/fut <player> while <조건1> == <조건2> {do(<명령1> && <명령2>)}`
+
+`/fut <player> if <조건1> == <조건2> {do(<명령1> && <명령2>)}{else(<명령1> && <명령2>)}`
+
+`/fut <player> do <명령번들> 함수이름, 함수값, 함수이름2, 함수값2 ...`
 
 `/fut <player> setFile <파일이름> <데이타>`
 
