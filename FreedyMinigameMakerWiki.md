@@ -9,7 +9,7 @@
 이 플러그인은 게임 플레이의 특정 부분에서 명령을 실행하여 작동합니다.  
 예를 들어, 만약 미니게임이 플레이중이라면 플레이어가 움직이 전에 있었던 곳 바로 밑에 있는 블럭을 없애는 명령 구문입니다.
 ```yaml
-/fut {player} if {isPlaying} == true {do(fut {player} setBlock {world} {fromBlockX} {calc({fromBlockY}-1)} {fromBlockZ} AIR)}
+/fut {player} if {isPlaying} == true fut {player} setBlock {world} {fromBlockX} {calc({fromBlockY}-1)} {fromBlockZ} AIR
 ```  
 
 #### 조건 명령
