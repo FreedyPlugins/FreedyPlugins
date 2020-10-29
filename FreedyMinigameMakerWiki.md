@@ -86,6 +86,12 @@ fut {player} if true == true {do(fut {Player} sendMsg public 안녕하세요! &&
 
 `/fut <player> give <커스텀아이템이름>`
 
+`/fut <player> giveHand <커스텀아이템이름>`
+
+`/fut <player> give <커스텀아이템이름>`
+
+`/fut <player> cursor <커서번호>`
+
 `/fut <player> kit <킷이름>`
 
 `/fut <player> openGui <메뉴이름>`
@@ -112,6 +118,11 @@ fut {player} if true == true {do(fut {Player} sendMsg public 안녕하세요! &&
 
 `/fut <player> setBlock <world> <x> <y> <z> <blockType>`
 
+`/fut <player> while <조건1> == <조건2> {do(<명령1> && <명령2>)}`
+
+`/fut <player> setFile <파일이름> <데이타>`
+
+`/fut {player} saveFile`
 
 ***
 
@@ -151,6 +162,9 @@ fut {player} if true == true {do(fut {Player} sendMsg public 안녕하세요! &&
 `{gameType}`
 미니게임의 타입을 대체합니다.
 
+`{blockName(world, 10, 2, -10)}`
+world라는 이름의 월드에 좌표 10 2 -10에 있는 블럭 코드를 대체합니다.
+
 `{calc(1+2+3)}`
 1 더하기 2 더하기 3 의 값을 대체합니다.
 
@@ -181,6 +195,36 @@ apple, bread, cheese 충에 하나를 골라 대체합니다.
 `{indexOf(0, 10, 20, 30)}`
 10, 20, 30 중에 0 번째에 오는 데이타를 대체합니다.
 
+`{valueOf(20, 10, 20, 30)}`
+10, 20, 30 중에 20 이라는 데이타의 나열 번호를 대체합니다
+
+`{sizeOf(일식이, 두식이, 세식이)}`
+일식이, 두식이, 세식이 데이타들의 개수를 대체합니다
+
+`{suffle(1, 2, 3, 4, 5)}`
+1, 2, 3, 4, 5를 섞어서 2, 3, 5, 1, 4처럼 랜덤으로 대체합니다
+
+`{highList(1, 4, 2, 5, 3)}`
+1, 4, 2, 5, 3을 크기가 큰 숫자부터 나열해서 대체합니다
+
+`{flip(1, 2, 3, 4, 5)}`
+1, 2, 3, 4, 5의 순서를 거꾸로 뒤집어 5, 4, 3, 2, 1로 대체합니다
+
+`{constant(testMsg)}`
+config.yml 파일에 미니게임 데이타에서 testMsg 값을 대체합니다
+
+`{integer(1.0)}`
+1.0의 소수점을 없앤 1을 대체합니다
+
+`{round(1.3)}`
+소수 1.3을 반올림해서 1을 대체합니다
+
+{roundDown(1.3)}
+소수 1.3을 내림해서 1을 대체합니다
+
+{roundUp(1.3)}
+소수 1.3을 올림해서 2를 대체합니다
+
 `{playerList(default)}`
 미니게임에 참여중인 플레이어 이름 리스트를 대체합니다.
 
@@ -194,6 +238,13 @@ apple, bread, cheese 충에 하나를 골라 대체합니다.
 이종원에서 '이'자를 '백'자로 대체한 값을 대체합니다.
 ***
 
+`{remove(하세요, 안녕하세요)}`
+'안녕하세요'에서 '하세요'를 삭제한 값을 대체합니다.
+
+`{file(testFile)}`
+플러그인 폴더에 data.yml 파일에 있는 testFile 값을 가져옵니다.
+
+`{date()}`
 #### 이벤트 번들
 
 
