@@ -18,25 +18,34 @@
 
 만약 값1과 값2가 같다면 명령어를 실행하는 명령 구문입니다.
 
-`/fut <플레이어> if <값1> == <값2> {do(<실행될명령>)}`  
+`/fut <플레이어> if <값1> == <값2> <실행될명령>`  
   
 
 만약 값1과 값2가 같고 값3과 값4가 같다면 명령어를 실행하는 명령 구문입니다.
   
 
-`/fut <플레이어> if <값1> == <값2> fut <플레이어> if <값3> == <값4> {do(<실행될명령>)}`  
+`/fut <플레이어> if <값1> == <값2> fut <플레이어> if <값3> == <값4> <실행될명령>`  
   
 
-만약 값1과 값2가 같다면 명령1을 실행하고 또, 값3과 값4가 같다면 명령2를 실행하는 명령 구문입니다.
-
-`/fut <플레이어> if <값1> == <값2> {do(<실행될명령1>)}fut <플레이어> if <값3> == <값4> {do(<실행될명령2>)}`  
+만약 값1과 값2가 같다면 명령1과 명령2를 실행하는 구문입니다
   
 
-만약 값1과 값2가 같다면 명령1을 실행하고 만약 아니라면 명령2를 실행하고 만약 값3과 값4가 같다면 명령3을 실행하고 만약 아니라면, 명령4를 실행하는 명령 구문입니다.
-
-`/fut <플레이어> if <값1> == <값2> {do(<실행될명령1>)}{else(<실행될명령2>)}fut <플레이어> if <값3> == <값4> {do(<실행될명령3>)}{else(<실행될명령4>)}`  
+`/fut <플레이어> if <값1> == <값2> {do(<명령1> && <명령2>)}`  
   
 
+만약 값1과 값2가 같다면 명령1과 명령2를 실행하고 값1과 값2가 같지 않다면 명령3과 명령4를 실행하는 구문입니다
+  
+
+`/fut <플레이어> if <값1> == <값2> {do(<명령1> && <명령2>)}{else(<명령1> && <명령2>)}`  
+
+> 알림! {do()}나 {else()} 구문에서 여러 명령을 실행하려면 명렁과 명령 사이에 ' && ' (공백과 공백 사이에 '&&'를 넣은 문자열)을 넣어주세요
+
+```yaml
+fut {player} if true == true {do(fut {Player} sendMsg public 안녕하세요! && fut {player} sendMsg public 어서오세요!)}
+```
+
+> 주의! {do()}나 {else()} 구문 속에 {add()}나 {data()} 같은 데이타 함수를 넣으면 안되요! fut <player> do player, <player> 실행 명령을 통해 데이타 함수를 사용하세요
+  
 ***
 
 #### 실행 명령
@@ -57,9 +66,23 @@
 
 `/fut <player> sendTitle <public|private|team|game> <fadeIn> <stay> <fadeOut> <제목-부제목>`
 
+`/fut <player> sendActionBar <public|private|team|game> <메새지>`
+
 `/fut <player> sendSound <private|team|game> <사운드>`
 
 사운드목록: https://helpch.at/docs/1.12.2/org/bukkit/Sound.html
+
+`/fut <player> addPotion <private|team|game> <포션>`
+
+`/fut <player> removePotion <private|team|game>`
+
+`/fut <player> gameMode <private|team|game> <CREATIVE|SURVIVAL|SPECTATOR|ADVENTURE>`
+
+`/fut <player> food <private|team|game> <배고픔게이지>`
+
+`/fut <player> health <private|team|game> <체력 게이지>`
+
+`/fut <player> gui <메뉴이름>`
 
 `/fut <player> give <커스텀아이템이름>`
 
@@ -69,19 +92,26 @@
 
 `/fut <player> closeGui`
 
+`/fut <player> knockBack <x> <y> <z>`
+
 `/fut <player> join <게임이름>`
+
+`/fut <player> joinAll <게임이름>`
+
+`/fut <player> kick`
 
 `/fut <player> executeCmd <명령줄>`
 
 `/fut <player> executeDelayCmd <딜레이틱> <명령줄>`
 
-`/fut <player> executeConCmd <딜레이틱> <명령줄>`
+`/fut <player> executeConCmd <명령줄>`
+
+`/fut <player> executeConDelayCmd <딜레이틱> <명령줄>`
 
 `/fut <player> resetBlocks <게임이름>`
 
 `/fut <player> setBlock <world> <x> <y> <z> <blockType>`
 
-`fut <player> topTpInWorldBoarder`
 
 ***
 
@@ -160,14 +190,15 @@ apple, bread, cheese 충에 하나를 골라 대체합니다.
 `{length(abcd)}`
 텍스트의 길이를 구해서 대체합니다.
 
-`{replace(안녕친구들, 안녕, 잘가)}`
-
-> 이 곳은 아직 완성되지 않았어요! 다음에 다시 찾아주세요.
+`{replace(이, 백, 이종원)}`
+이종원에서 '이'자를 '백'자로 대체한 값을 대체합니다.
+***
 
 #### 이벤트 번들
 
 
 **이벤트 번들은 어떤 상황에서 명령들을 실행합니다**
+
 
 ```yaml
 blockBreakCmd:
@@ -176,52 +207,52 @@ blockBreakCmd:
 ```
 
 `preJoinCmd`
-플레이어가 미니게임에 참여하기 직전에 실행됩니다
+플레이어가 미니게임에 참여하기 직전에 실행됩니다.
 
 `joinCmd`
-플레이어가 미니게임에 참여했을 때 실행됩니다
+플레이어가 미니게임에 참여했을 때 실행됩니다.
 
 `preQuitCmd`
-플레이어가 미니게임을 퇴장하기 직전에 실행됩니다
+플레이어가 미니게임을 퇴장하기 직전에 실행됩니다.
 
 `quitCmd`
-플레이어가 미니게임을 퇴장했을 때 실행됩니다
+플레이어가 미니게임을 퇴장했을 때 실행됩니다.
 
 `conStartCmd`
-미니게임이 시작됬을 때 실행됩니다
+미니게임이 시작됬을 때 실행됩니다.
 
 `preConEndCmd`
-미니게임이 종료되기 직전에 실행됩니다
+미니게임이 종료되기 직전에 실행됩니다.
 
 `conEndCmd`
-미니게임이 종료되고 실행됩니다
+미니게임이 종료되고 실행됩니다.
 
 `interactCmd`
-미니게임에 참여 중인 플레이어가 엔티티를 제외한 무언가를 클릭하거나 상호작용했을 때 실행됩니다
+미니게임에 참여 중인 플레이어가 엔티티를 제외한 무언가를 클릭하거나 상호작용했을 때 실행됩니다.
 
 `interactEntityCmd`
-미니게임에 참여 중인 플레이어가 엔티티를 클릭했을 때 실행됩니다
+미니게임에 참여 중인 플레이어가 엔티티를 클릭했을 때 실행됩니다.
 
 `moveCmd:`
-미니게임에 참여 중인 플레이어가 블럭 단위로 한 칸 움직였을 때 실행됩니다
+미니게임에 참여 중인 플레이어가 블럭 단위로 한 칸 움직였을 때 실행됩니다.
 
 `blockBreakCmd`
-미니게임에 참여 중인 플레이어가 블럭을 부술 때 실행됩니다
+미니게임에 참여 중인 플레이어가 블럭을 부술 때 실행됩니다.
 
 `blockPlaceCmd`
-미니게임에 참여 중인 플레이어가 블럭을 설치할 때 실행됩니다
+미니게임에 참여 중인 플레이어가 블럭을 설치할 때 실행됩니다.
 
 `preDeathCmd`
-미니게임에 참여 중인 플레이어가 죽기 직전에 실행됩니다
+미니게임에 참여 중인 플레이어가 죽기 직전에 실행됩니다.
 
 `deathCmd`
-미니게임에 참여 중인 플레이어가 죽고 실행됩니다
+미니게임에 참여 중인 플레이어가 죽고 실행됩니다.
 
 `damagedCmd`
-미니게임에 참여 중인 플레이어가 어떤 엔티티에게 데미지를 줄 때 실행됩니다
+미니게임에 참여 중인 플레이어가 어떤 엔티티에게 데미지를 줄 때 실행됩니다.
 
 `chatCmd`
-미니게임에 참여 중인 플레이어가 채팅을 칠 때 실행됩니다
+미니게임에 참여 중인 플레이어가 채팅을 칠 때 실행됩니다.
 
 
-
+> 이 곳은 아직 완성되지 않았어요! 다음에 다시 찾아주세요..
