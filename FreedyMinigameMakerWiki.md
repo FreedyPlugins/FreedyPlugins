@@ -251,6 +251,10 @@ config.yml 파일에 미니게임 데이타에서 testMsg 값을 대체합니다
 플러그인 폴더에 data.yml 파일에 있는 testFile 값을 가져옵니다.
 
 `{date()}`
+
+***
+
+
 #### 이벤트 번들
 
 
