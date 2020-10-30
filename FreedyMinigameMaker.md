@@ -18,7 +18,7 @@
 ### <font color='#27496d'>다운로드</font>
 <font color='#00909e'>최신버전(추천합니다):</font> [클릭 다운로드](https://github.com/FreedyPlugins/FreedyMinigameMaker/releases/latest/download/FreedyMinigameMaker.jar)
 
-<font color='#00909e'>개발버전(최신기능을바로만나고싶다면):</font> [클릭 다운로드](https://github.com/FreedyPlugins/FreedyMinigameMaker/raw/master/FreedyMinigameMaker.jar)
+<font color='#00909e'>개발버전:</font> [클릭 다운로드](https://github.com/FreedyPlugins/FreedyMinigameMaker/raw/master/FreedyMinigameMaker.jar)
 
 ### <font color='#27496d'>위키, 자습서</font> [바로가기](./FreedyMinigameMakerWiki)
 
@@ -46,9 +46,7 @@
 
 ### <font color='#27496d'>커뮤니티 및 관련 사이트</font>
 
-#### <font color='#dae1e7'>디스코드: </font> [바로가기](https://discord.gg/xej5Ut3)
 #### <font color='#dae1e7'>깃허브: </font> [바로가기](https://github.com/FreedyPlugins)
-#### <font color='#dae1e7'>오픈채팅: </font> [바로가기](https://open.kakao.com/o/gzol3Qeb)  
 
 
 ### <font color='#27496d'>브루스 연락처:</font>  
@@ -56,7 +54,7 @@
 #### <font color='#dae1e7'>전화번호: 010-2484-9240</font>  
 #### <font color='#dae1e7'>카카오톡: Bruce0203</font>  
 #### <font color='#dae1e7'>인스타그램: @ijongweon292</font>  
-#### <font color='#dae1e7'>디스코드: 브루스#8183</font>  
+#### <font color='#dae1e7'>디스코드: 종원#6938</font>  
 
 
 <font color='#dae1e7'>© 2020 Freedy Plugins. All Rights Reserved.</font>
