@@ -1,6 +1,5 @@
 # 프리디 미니게임 메이커 위키, 자습서
 
-***
 
 ![image](FreedyMinigameMaker.png)
 
