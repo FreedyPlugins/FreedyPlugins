@@ -20,7 +20,7 @@
 
 
 
-### <font color='#27496d'>위키, 자습서</font> [바로가기](./FreedyMinigameMakerWiki)
+### [위키, 자습서](./FreedyMinigameMakerWiki)
 
 ***
 
