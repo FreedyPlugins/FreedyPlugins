@@ -18,7 +18,7 @@
 ### <font color='#27496d'>다운로드</font>
 <font color='#00909e'>최신버전(추천합니다):</font> [클릭 다운로드](https://github.com/FreedyPlugins/FreedyMinigameMaker/releases/latest/download/FreedyMinigameMaker.jar)
 
-<font color='#00909e'>개발버전:</font> [클릭 다운로드](https://github.com/FreedyPlugins/FreedyMinigameMaker/raw/master/FreedyMinigameMaker.jar)
+
 
 ### <font color='#27496d'>위키, 자습서</font> [바로가기](./FreedyMinigameMakerWiki)
 
