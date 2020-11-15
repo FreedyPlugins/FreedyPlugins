@@ -5,13 +5,13 @@
 ![image](FreedyMinigameMaker.png)
 
 
-## <font color='#142850'>개요</font>
+## <font color='#27496d'>개요</font>
 
-#### <font color='#dae1e7'>마침내, 미니게임을 만들어 보세요</font>
+#### <font color='#00909e'>마침내, 미니게임을 만들어 보세요</font>
 
-#### <font color='#dae1e7'>컨텐츠(미니게임)를 가볍고 사용하기 쉬운 구문을 통해 만들 수 있습니다.</font>
+#### <font color='#00909e'>컨텐츠(미니게임)를 가볍고 사용하기 쉬운 구문을 통해 만들 수 있습니다.</font>
 
-#### <font color='#dae1e7'>가벼운 성능이고 사용자가 간편하게 미니게임을 수정하고 적용할 수 있습니다.</font>
+#### <font color='#00909e'>가벼운 성능이고 사용자가 간편하게 미니게임을 수정하고 적용할 수 있습니다.</font>
 
 ***
 
