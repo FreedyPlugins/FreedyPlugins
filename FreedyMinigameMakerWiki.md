@@ -87,27 +87,29 @@ fut {player} if true == true {do(fut {Player} sendMsg public 안녕하세요! &&
 
 `/fut <player> cancelEvent`
 
-`/fut <player> teleport <private|team|game> <미니게임> <저장된위치>` 
+`/fut <player> teleport <private|game> <미니게임> <저장된위치>` 
 
-`/fut <player> sendMsg <public|private|team|game> <메새지>`
+`/fut <player> sendMsg <public|private|game> <메새지>`
 
-`/fut <player> sendTitle <public|private|team|game> <fadeIn> <stay> <fadeOut> <제목-부제목>`
+`/fut <player> sendTitle <public|private|game> <fadeIn> <stay> <fadeOut> <제목-부제목>`
 
-`/fut <player> sendActionBar <public|private|team|game> <메새지>`
+`/fut <player> sendActionBar <public|private|game> <메새지>`
 
-`/fut <player> sendSound <private|team|game> <사운드>`
+`/fut <player> sendBossBar <private|game> <customName> <progress> <color> <message|none>`
+
+`/fut <player> sendSound <private|game> <사운드>`
 
 사운드목록: https://helpch.at/docs/1.12.2/org/bukkit/Sound.html
 
-`/fut <player> addPotion <private|team|game> <포션>`
+`/fut <player> addPotion <private|game> <포션>`
 
-`/fut <player> removePotion <private|team|game>`
+`/fut <player> removePotion <private|game>`
 
-`/fut <player> gameMode <private|team|game> <CREATIVE|SURVIVAL|SPECTATOR|ADVENTURE>`
+`/fut <player> gameMode <private|game> <CREATIVE|SURVIVAL|SPECTATOR|ADVENTURE>`
 
-`/fut <player> food <private|team|game> <배고픔게이지>`
+`/fut <player> food <private|game> <배고픔게이지>`
 
-`/fut <player> health <private|team|game> <체력 게이지>`
+`/fut <player> health <private|game> <체력 게이지>`
 
 `/fut <player> gui <메뉴이름>`
 
@@ -153,7 +155,11 @@ fut {player} if true == true {do(fut {Player} sendMsg public 안녕하세요! &&
 
 `/fut <player> setFile <파일이름> <데이타>`
 
-`/fut {player} saveFile`
+`/fut <player> saveFile`
+
+`/fut <player> nearByEntities <x> <y> <z> <cmd>`
+
+`/fut <player> conLog <message>`
 
 ***
 
@@ -274,7 +280,14 @@ config.yml 파일에 미니게임 데이타에서 testMsg 값을 대체합니다
 `{file(testFile)}`
 플러그인 폴더에 data.yml 파일에 있는 testFile 값을 가져옵니다.
 
-`{date()}`
+`{contain(쿠키, 똥, 종이, 아이패드, 쿠키, 게임)}`
+똥, 종이, 아이패드, 쿠키, 게임에서 쿠키가 포함되어 있는지에 여부를 대체합니다
+
+`{sub(1, 3, 안녕하세요방갑습니다)}`
+안녕하세요방갑습니다에서 '녕하세'를 대체합니다
+
+`{numeric(123)}`
+123이 숫자임 여부를 대체합니다
 
 ***
 
@@ -336,8 +349,20 @@ blockBreakCmd:
 `damagedCmd` `{entityName} {entityType} {itemName} {itemDurability} {itemType}`
 미니게임에 참여 중인 플레이어가 어떤 엔티티에게 데미지를 줄 때 실행됩니다.
 
+`damageCmd` `{cause}`
+미니게임에 참여 중인 플레이어가 데미지를 입었을 때 실행됩니다.
+
+`dropCmd` `{itemName} {itemDurability} {itemType}`
+미니게임에 참여 중인 플레이어가 아이템을 떨굴 때 실행됩니다.
+
+`pickupCmd` `{itemName} {itemDurability} {itemType}`
+미니게임에 참여 중인 플레이어가 아이템을 주울 때 실행됩니다.
+
 `chatCmd` `{format} {chat}`
 미니게임에 참여 중인 플레이어가 채팅을 칠 때 실행됩니다.
+
+`commandCmd` `{command} {args}`
+미니게임에 참여 중인 플레이어가 명령어를 칠 때 실행됩니다.
 
 `명령번들이름Cmd` `{커스텀함수}`
 `/fut <미니게임플레이어> do 명령번들이름 커스텀함수1, 값1, 커스텀함수2, 값2 ...`
