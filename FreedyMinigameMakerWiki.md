@@ -1,4 +1,4 @@
-# 프리디 미니게임 메이커 위키, 자습서
+# 프리디 미니게임 메이커 설명서
 
 
 ![image](FreedyMinigameMaker.png)
@@ -86,6 +86,7 @@ fut {player} if true == true {do(fut {Player} sendMsg public 안녕하세요! &&
 `/fut <player> addPlayerData <customData> <amount>`
 
 `/fut <player> cancelEvent`
+
 
 `/fut <player> teleport <private|game> <미니게임> <저장된위치>` 
 
