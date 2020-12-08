@@ -1,18 +1,82 @@
-# 프리디 미니게임 메이커 설명서
-
-
-![image](FreedyMinigameMaker.png)
-
-
-#### 어.. 어디서 부터 시작해야 할까요...? 잘 들어주실 수 있을 겁니다.
+# 프리디미니게임메이커 설명서
 
 이 플러그인으로 당신만의 미니게임을 처음부터 만들고 당신의 상상력으로 커스터마이징 할 수 있습니다.  
 그러니까 이 플러그인은 미니게임 개발 도구라고 볼 수 있습니다.  
 이 플러그인은 게임 플레이의 특정 부분에서 명령을 실행하여 작동합니다.  
 예를 들어, 만약 미니게임이 플레이중이라면 플레이어가 움직이 전에 있었던 곳 바로 밑에 있는 블럭을 없애는 명령 구문입니다.
+
 ```yaml
-/fut {player} if {isPlaying} == true fut {player} setBlock {world} {fromBlockX} {calc({fromBlockY}-1)} {fromBlockZ} AIR
+/fut {player} if {isPlaying} == true fut {player} setBlock {world} {fromBlockX} {math(add, {fromBlockY}, -1)} {fromBlockZ} AIR
 ```  
+
+또다시 예를 들어 보면, 만약 미니게임이 플레이중이지 않고, 플레이어가 5명이라면 게임이 시작되었다고 알리는 구문입니다.
+```yaml
+/fut {player} if {isPlaying} == false fut {player} if {playerSize} >= 5 fut {player} sendMsg game 게임이 시작되었습니다!
+```  
+
+네 예제는 많아요.
+
+하지만 이제서 중요한 건 이 구문을 어떻게 쓰는 것인가 입니다.
+
+미니게임 중에 많은 이벤트가 존재합니다!
+
+플레이어가 미니게임에 참여할때, 퇴장할떄,
+
+미니게임이 시작될 때, 미니게임이 끝날 때.
+
+그리고 여러 이벤트를 직접 만드실 수 있어요!
+
+미니게임이 실행 중일 때마다 구문이 작동되게 하는 반복이벤트도 있습니다!
+
+음 좋아요! 미니게임을 생성해봅시다.
+
+군말없이 알려드리죠.
+
+ > 경고! 명령어의 대소문자를 지키세요.
+ 
+ `/fmg set <게임이름> needClearInv true' 미니게임참여할 때 인벤토리를 비워야만한다면 이 명령어 입력
+
+`/fmg create <게임이름> <최대인원> <시작인원> <시작대기초>` 미니게임 한개 생성
+
+`/fmg set <게임이름> wait` 미니게임 입장시 위치 설정 - 안해도 됨
+
+`/fmg set <게임이름> start` 미니게임 시작시 위치 설정 - 안해도 됨
+
+`/fmg set <게임이름> end` 미니게임 종료시 위치 설정 - 안해도 됨
+
+`/fmg set none kit create <킷이름>` 전투용 키트제작
+
+`/fmg set none kit create empty` 미니게임 끝날 때 적용하는 인벤토리 키트 제작 (없다면 빈 인벤토리로 꼭 해야 함)
+
+`/fmg set <게임이름> setCmd conStartCmd fut {player} sendTitle game 10 20 10 {color(&aFIGHT!)}`
+
+`/fmg set <게임이름> setCmd conStartCmd fut {allPlayer} kit <킷이름>`
+
+`/fmg set <게임이름> setCmd preDeathCmd fut {player} cancelEvent`
+
+`/fmg set <게임이름> setCmd preDeathCmd fut {player} sendMsg game {player}이(가) 죽었습니다`
+
+`/fmg set <게임이름> setCmd preDeathCmd fut {player} setPlayerData dead true`
+
+`/fmg set <게임이름> setCmd preDeathCmd fut {player} do keepedWinner player, {player}`
+
+`/fmg set <게임이름> setCmd keepedWinnerCmd fut {player} setData alivePlayers 0`
+
+`/fmg set <게임이름> setCmd keepedWinnerCmd fut {player} executeConCmd fut {allPlayer} if {playerData(dead)} /= true fut {player} addData alivePlayers 1`
+
+`/fmg set <게임이름> setCmd keepedWinnerCmd fut {player} executeConCmd fut {allPlayer} if {playerData(dead)} /= true fut {player} setData p {allPlayer}`
+
+`/fmg set <게임이름> setCmd keepedWinnerCmd fut {player} if {integer({data(alivePlayers)})} == 1 fut {player} do stop player, {data(p)}`
+
+`/fmg set <게임이름> setCmd stopCmd fut {player} sendMsg public {data(p)}이(가) {game}을 승리했습니다!`
+
+`/fmg set <게임이름> setCmd stopCmd fut {player} shutDown`
+
+`/fmg set <게임이름> setCmd quitCmd fut {player} kit empty`
+
+이제 구문을 어떻게 사용하고 이벤트에 구문을 어떻게 적용하는지 알려드리겠습니다.
+
+
 
 #### 조건 명령
 
