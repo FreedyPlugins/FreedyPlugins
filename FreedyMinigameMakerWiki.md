@@ -223,7 +223,7 @@ fut {player} if true == true {do(fut {Player} sendMsg public 안녕하세요! &&
 
 `/fut <player> saveFile`
 
-`/fut <player> nearByEntities <x> <y> <z> <cmd>`
+`/fut <player> nearByEntities <x> <y> <z> <cmd>` {nearByEntityType} {nearByEntityName} {nearByEntityUUID}
 
 `/fut <player> conLog <message>`
 
