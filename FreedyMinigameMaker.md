@@ -15,7 +15,7 @@
 
 
 
-### [>> 설명서 <<](./FreedyMinigameMakerWiki)
+### [>> 설명서 <<](https://github.com/FreedyPlugins/FreedyMinigameMaker/wiki)
 
 
 ### <font color='#27496d'>플러그인 환경</font>
