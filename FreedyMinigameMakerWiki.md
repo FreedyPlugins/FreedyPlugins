@@ -185,90 +185,10 @@ fut {player} if true == true {do(fut {Player} sendMsg public 안녕하세요! &&
 
 #### 실행 명령
 
-`/fut <player> setData <customData> <data>`
+미니게임 유틸리티 명령어는 미니게임을 실행하는데 필요한 기능을 가지고 있습니다.
 
-`/fut <player> addData <customData> <amount>`
+사용법을 확인하려면 콘솔에서 fut 명령어를 입력해보세요.
 
-`/fut <player> setPlayerData <customData> <data>`
-
-`/fut <player> addPlayerData <customData> <amount>`
-
-`/fut <player> cancelEvent`
-
-
-`/fut <player> teleport <private|game> <미니게임> <저장된위치>` 
-
-`/fut <player> sendMsg <public|private|game> <메새지>`
-
-`/fut <player> sendTitle <public|private|game> <fadeIn> <stay> <fadeOut> <제목-부제목>`
-
-`/fut <player> sendActionBar <public|private|game> <메새지>`
-
-`/fut <player> sendBossBar <private|game> <customName> <progress> <color> <message|none>`
-
-`/fut <player> sendSound <private|game> <사운드>`
-
-사운드목록: https://helpch.at/docs/1.12.2/org/bukkit/Sound.html
-
-`/fut <player> addPotion <private|game> <포션>`
-
-`/fut <player> removePotion <private|game>`
-
-`/fut <player> gameMode <private|game> <CREATIVE|SURVIVAL|SPECTATOR|ADVENTURE>`
-
-`/fut <player> food <private|game> <배고픔게이지>`
-
-`/fut <player> health <private|game> <체력 게이지>`
-
-`/fut <player> gui <메뉴이름>`
-
-`/fut <player> give <커스텀아이템이름>`
-
-`/fut <player> giveHand <커스텀아이템이름>`
-
-`/fut <player> give <커스텀아이템이름>`
-
-`/fut <player> cursor <커서번호>`
-
-`/fut <player> kit <킷이름>`
-
-`/fut <player> openGui <메뉴이름>`
-
-`/fut <player> closeGui`
-
-`/fut <player> knockBack <x> <y> <z>`
-
-`/fut <player> join <게임이름>`
-
-`/fut <player> joinAll <게임이름>`
-
-`/fut <player> kick`
-
-`/fut <player> executeCmd <명령줄>`
-
-`/fut <player> executeDelayCmd <딜레이틱> <명령줄>`
-
-`/fut <player> executeConCmd <명령줄>`
-
-`/fut <player> executeConDelayCmd <딜레이틱> <명령줄>`
-
-`/fut <player> resetBlocks <게임이름>`
-
-`/fut <player> setBlock <world> <x> <y> <z> <blockType>`
-
-`/fut <player> while <조건1> == <조건2> {do(<명령1> && <명령2>)}`
-
-`/fut <player> if <조건1> == <조건2> {do(<명령1> && <명령2>)}{else(<명령1> && <명령2>)}`
-
-`/fut <player> do <명령번들> 함수이름, 함수값, 함수이름2, 함수값2 ...`
-
-`/fut <player> setFile <파일이름> <데이타>`
-
-`/fut <player> saveFile`
-
-`/fut <player> nearByEntities <x> <y> <z> <cmd>` {nearByEntityType} {nearByEntityName} {nearByEntityUUID}
-
-`/fut <player> conLog <message>`
 
 ***
 
@@ -550,3 +470,59 @@ do 실행 명령을 통해서 실행됩니다 keeped번들은 데이타 함수�
 이러한 keeped번들의 장점은 while 구문에서 데이타 함수를 매주기마다 새롭게 불러올 수 있고, 또 allPlayer 데이타 함수의 반복 구문에서 새롭게 데이타를 불러올 수 있습니다.
 
 > 이 곳은 아직 완성되지 않았어요! 다음에 다시 찾아주세요..
+
+
+
+## 개발자 API
+
+## 디펜덴시
+```xml
+        <dependency>
+            <groupId>Freedy</groupId>
+            <artifactId>FreedyMinigameMaker</artifactId>
+            <version>버전</version>
+            <scope>system</scope>
+        </dependency>
+```
+
+
+## 예시
+```java
+package freedy.learnspigot.events;
+
+import freedy.freedyminigamemaker.FreedyMinigameMaker;
+import freedy.freedyminigamemaker.MiniGame;
+import freedy.freedyminigamemaker.MiniGames;
+import freedy.learnspigot.LearnSpigot;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+
+public class ChatEvent implements CommandExecutor {
+
+    LearnSpigot plugin;
+
+    public ChatEvent(LearnSpigot plugin) {
+        this.plugin = plugin;
+    }
+
+    @Override
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        if (args.length == 1) {
+            if (sender instanceof Player) {
+                Player player = (Player) sender;
+                MiniGames miniGames = FreedyMinigameMaker.miniGames;
+                if (miniGames.isJoined(player)) {
+                    MiniGame miniGame = miniGames.getJoined(player);
+                    for (Player p : miniGame.playerList) {
+                        p.sendMessage("<" + p.getName() + "> " + args[0]);
+                    }
+                }
+            }
+        }
+
+        return true;
+    }
+}
+```
