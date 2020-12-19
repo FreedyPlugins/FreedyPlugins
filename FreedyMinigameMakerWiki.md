@@ -547,7 +547,7 @@ public class ChatEvent implements CommandExecutor {
         this.plugin = plugin;
     }
 
-    @Override
+
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (args.length == 1) {
             if (sender instanceof Player) {
