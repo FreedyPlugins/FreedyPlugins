@@ -14,14 +14,14 @@
 <font color='#dae1e7'>플러그인을 사용하여 버킷에서 서버를 유지 관리하고 구성할 수 있습니다.</font>  
 
 
-## <font color='#27496d'>플러그인들</font>
+### <font color='#27496d'>플러그인들</font>
 
 
-### <font color='#00909e'>프리디미니게임메이커 (HOT!)</font> [바로가기](./FreedyMinigameMaker)
+## <font color='#00909e'>프리디미니게임메이커 (HOT!)</font> [바로가기](./FreedyMinigameMaker)
 <font color='#38595E'>이 플러그인은 컨텐츠를 스타일링하기 위한 가볍고 사용하기 쉬운 구문을 통해 미니게임을 만들 수 있습니다.</font>  
   
   
-### __<font color='#00909e'>프로젝타일메이커 (NOT READY...)</font>__ [바로가기](./ProjectileMaker)
+## __<font color='#00909e'>프로젝타일메이커 (NOT READY...)</font>__ [바로가기](./ProjectileMaker)
 <font color='#38595E'>이 플러그인은 발사체를 스타일링하기 위한 가볍고 사용하기 쉬운 명령어를 통해 멋진 이펙트를 만들 수 있습니다.</font>
 
 
