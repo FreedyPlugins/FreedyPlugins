@@ -7,14 +7,14 @@
 ![image](FreedyPlugins.png)
 
 
-## <font color='#27496d'>개요</font>
+## <font color='#000000'>개요</font>
 
 <font color='#00909e'>이곳에서 브루스의 플러그인들을 찾을 수 있습니다.</font>  
 <font color='#00909e'>브루스의 무료 마인크래프트 플러그인</font>  
 <font color='#00909e'>플러그인을 사용하여 버킷에서 서버를 유지 관리하고 구성할 수 있습니다.</font>  
 
 
-### <font color='#27496d'>플러그인들</font>
+### <font color='#000000'>플러그인들</font>
 
 
 ### <font color='#00909e'>프리디미니게임메이커 (HOT!)</font> [바로가기](./FreedyMinigameMaker)
