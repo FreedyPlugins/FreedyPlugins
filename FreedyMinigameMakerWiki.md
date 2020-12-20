@@ -209,6 +209,90 @@ fut {player} if true == true {do(fut {Player} sendMsg public 안녕하세요! &&
 
 ***
 
+#### 부가 기능 명령
+
+미니게임을 실행하는데 필요한 기능을 어떻게 사용하는지 알려드리겠습니다.
+
+## 키트
+
+키트는 config 설정에서 인벤토리를 저장하고 불러오는 기능을 합니다.
+
+`/fmg set none kit create <킷이름>`
+
+이 명령어를 실행한 플레이어의 인벤토리에 모든 아이템을 config에 저장합니다
+
+그리고 이 키트는 미니게임과 따로 저장되기 때문에 모든 미니게임에서 불러올 수 있습니다.
+
+키트 적용 명령어 입니다.
+
+`/fut <플레이어> kit <킷이름>`
+
+## 위치 저장
+
+텔레포트해야 할 위치가 필요하기 떄문에 위치를 저장할 수 있습니다.
+
+미니게임 상수로 저장됩니다.
+
+`/fmg set <게임이름> loc <위치이름>`
+
+이 명령어를 실행한 플레이어의 위치를 어떤 미니게임에 상수로 저장합니다.
+
+텔레포트 명령어 입니다.
+
+`/fut <플레이어> teleport <게임이름> <위치이름>`
+
+## 블럭 리젠
+
+미니게임 중 변경된 블럭 사항을 되돌리기 위한 기능입니다.
+
+`/fut <player> addBlock <world> <x> <y> <z> [blocksName]`
+
+이 명령어를 실행한 플레이어가 참여중인 미니게임 블럭 저장소에 쓰여진 좌표에 있는 블럭을 저장합니다. 만약 blocksName이 쓰여있다면, 미니게임에 그 이름으로 된 블럭 저장소를 하나 만듭니다.
+
+gameType이 build 로 되어있을 경우 플레이어가 설치하거나 파괴하기 직전에 블록을 미니게임 블럭 저장소에 저장합니다.
+
+블럭을 되돌리는 명령어 입니다.
+
+`/fut none resetBlocks <게임이름> [blocksName]`
+
+blocksName이 쓰여져 있으면 미니게임의 그 블럭 저장소에 있던 블럭으로 되돌립니다.
+
+blocksName이 없으면 미니게임의 블럭 저장소에 있던 블럭으로 되돌립니다.
+
+## 반복 명령
+
+미니게임 명령어에 {allPlayer} 또는 {onlinePlayer}가 포함되어 있다면 명령어가 반복적으로 여러번 실행됩니다.
+
+{allPlayer}는 미니게임에 참여 중인 플레이어 이름으로 계속 대체해 가면서 미니게임에 참여 중인 플레이어들의 수만큼 실행됩니다.
+
+{onlinePlayer}는 서버에 참여 중인 플레이어 이름으로 계속 대체해 가면서 서버 플레이어들의 수만큼 실행됩니다.
+
+`/fut <player> while {data(index)} <= 5 {do(fut {player} sendMsg private 안녕!)}`
+
+이 명령어는 {data(index)}가 5보나 작거나 같을 때까지 {do()}안에 있는 명령어를 실행합니다.
+
+그리고 이 while명령을 일반적인 명령번들에서 실행시킬 수는 없습니다. 왜냐하면, {data(index)} 같은 데이타 함수를 대체하는 건 명령어가 실행되기 전에 이미 대체되어서 변수가 아닌 상수로 조건에 적용되기 때문에 데이타 함수를 미리 대체하지 않는 keeped 명령 번들을 이용해야 합니다. keeped번들은 명령번들 앞에 keeped가 포함되어 있기만 하면 됩니다 **keeped**!
+
+```yaml
+joinCmd:
+- fut {player} setData index 0
+- fut {player} do keepedWhile
+keepedWhileCmd:
+- fut {player} while {data(index)} <= 5 {do(fut {player} do final && fut {player} addData index 1)}
+finalCmd:
+- fut {player} sendMsg public {data(index)}번째 나온 매세지
+```
+
+조심하세요, 이 명령어는 진짜로 조건이 틀리기 전까지는 절대 멈추지 않고 실행합니다. 이 명령어가 너무 오래 실행되면 서버가 터집니다.
+
+## 
+
+
+
+
+
+***
+
 #### 데이타 함수
 
 
