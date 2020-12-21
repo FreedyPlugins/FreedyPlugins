@@ -4,9 +4,6 @@
 
 # <font color='#142850'>간편하고 유용한 마인크래프트 플러그인, 프리디 플러그인</font>
 
-![image](FreedyPlugins.png)
-
-
 ## <font color='#000000'>개요</font>
 
 <font color='#00909e'>이곳에서 브루스의 플러그인들을 찾을 수 있습니다.</font> 
@@ -27,6 +24,7 @@
 <font color='#38595E'>이 플러그인은 발사체를 스타일링하기 위한 가볍고 사용하기 쉬운 명령어를 통해 멋진 이펙트를 만들 수 있습니다.</font>
 
  
+![image](FreedyPlugins.png)
 
 
 <font color='#dae1e7'>© 2020 Freedy Plugins. All Rights Reserved.</font>
