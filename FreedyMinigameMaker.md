@@ -1,5 +1,3 @@
-# <font color='#142850'>프리디 미니게임 메이커</font>
-
 ![image](FreedyMinigameMaker.png)
 
 
