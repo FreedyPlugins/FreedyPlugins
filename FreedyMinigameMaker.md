@@ -9,9 +9,9 @@
 
 #### 가벼운 성능이고 사용자가 간편하게 미니게임을 수정하고 적용할 수 있습니다.
 
-### [>> 다운로드 <<](https://github.com/FreedyPlugins/FreedyMinigameMaker/releases/latest/download/FreedyMinigameMaker.jar)
+### [ 다운로드 ](https://github.com/FreedyPlugins/FreedyMinigameMaker/releases/latest/download/FreedyMinigameMaker.jar)
 
-### [>> 사용법 <<](./FreedyMinigameMakerWiki)
+### [ 사용법 ](./FreedyMinigameMakerWiki)
 
 
 ### <font color='#27496d'>플러그인 환경</font>
