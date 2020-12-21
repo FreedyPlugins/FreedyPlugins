@@ -1,5 +1,3 @@
-![image](FreedyMinigameMaker.png)
-
 
 ## <font color='#27496d'>개요</font>
 
@@ -32,6 +30,9 @@
 
 ## <font color='#27496d'>지원 또는 도움</font>
 브루스는 미니게임의 업그레이드를 위해서 언제나 사용자에게 도움을 줄 것 입니다. 이 웹사이트 맨 밑에 연락처가 있습니다.
+
+
+![image](FreedyMinigameMaker.png)
 
 
 ### <font color='#27496d'>커뮤니티 및 관련 사이트</font>
