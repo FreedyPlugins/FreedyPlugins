@@ -138,7 +138,16 @@ miniGames:
     - fut {player} sendActionBar private {toBlockX} {toBlockY} {toBlockZ}
 ```
 
+## 이벤트 취소
 
+미니게임 이벤트가 더 이상 진행되는 것을 멈출 때 사용됩니다.
+
+이 명령을 실행하면 이벤트가 취소 됩니다.
+
+`/fut <player> cancelEvent`
+
+fut <player> do ... 로 실행된 명령번들, 반복 명령 번들 {do()}, {else()}에서는 즉시 취소되고 다음 명령 까지 취소되지만, 
+미니게임 이벤트에서는 명령번들의 명령들이 모두 실행 된 후에 움직임 이벤트나 블럭 클릭 이벤트 같은 이벤트가 취소됩니다.
 
 ## 반복 명령
 
@@ -147,6 +156,16 @@ miniGames:
 반복 명령 이름을 wait으로 설정하면 미니게임이 시작 대기 중이거나 미니게임이 플레이 중일 때 실행됩니다.
 
 이름이 wait이 아닌 반복 명령은 미니게임이 플레이 중일 때만 실행됩니다.
+
+
+```yaml
+repeats:
+  timer:
+    time: 20     #반복 명령 주기
+    cmd:     #반복 명령 번들
+    - fut {player} ...
+    - fut {player} ...
+```
 
 ```yaml
 miniGames:
