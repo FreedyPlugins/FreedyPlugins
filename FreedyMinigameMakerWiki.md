@@ -23,6 +23,10 @@
 ## 다운로드 
 ##### [>> 다운로드링크 <<](https://github.com/FreedyPlugins/FreedyMinigameMaker/releases/latest/download/FreedyMinigameMaker.jar)
 
+## 제안 및 버그
+
+##### [>>  <<](https://github.com/FreedyPlugins/FreedyPlugins/issues/new/choose)
+
 
 #### 조건 명령
 
@@ -317,6 +321,8 @@ finalCmd:
 
 GUI인벤토리 메뉴를 플레이어에게 띄웁니다.
 
+인벤토리 아이템을 수정하면 인벤토리를 다시 띄워야 적용됩니다.
+
 `/fmg set none inv create 인벤토리이름 <9|18|27|36|45|54> 인벤토리타이틀`
 
 인벤토리를 생성합니다.
@@ -329,8 +335,17 @@ GUI인벤토리 메뉴를 플레이어에게 띄웁니다.
 
 인벤토리메뉴를 엽니다.
 
-`/
+`/fut <player> setGui <invName> <index> <customItemName>`
 
+저장되어 있던 아이템을 플레이어의 GUI메뉴에 띄웁니다.
+
+`/fut <player> setGuiItem name <invName> <index> <itemName>`
+
+GUI메뉴에 아이템 이름을 수정합니다.
+
+`/fut <player> setGuiItem name <invName> <index> <line> <loreName>`
+
+GUI메뉴에 아이템 로어를 수정합니다.
 
 ***
 
