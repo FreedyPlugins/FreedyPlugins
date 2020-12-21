@@ -213,6 +213,103 @@ fut {player} if true == true {do(fut {Player} sendMsg public 안녕하세요! &&
 
 미니게임을 실행하는데 필요한 기능을 어떻게 사용하는지 알려드리겠습니다.
 
+## 커맨드블럭 호환
+
+커맨드블럭에 fut 명령을 입력할 때 @p같은 명령어가 잘 작동 되지 않습니다.
+
+@s, @p 등등, 중에서 오직 @p만 작동하는데, 커맨드블럭 반경 4 블럭에 있는 가장 가까운 플레이어 이름을 대체합니다.
+
+
+
+## 미니게임 대기 시작
+
+미니게임은 플레이어가 한명이라도 있어야 실행됩니다.
+
+플레이어가 아무도 없는 미니게임은 자동으로 비활성화됩니다.
+
+그리고 미니게임의 최대 인원을 설정할 수 있고 
+
+미니게임의 시작 인원을 설정할 수 있고
+
+시작 인원이 모두 모였을 때 몇 초후 시작 되게 할 수 있습니다. 
+
+## 미니게임 이벤트
+
+미니게임 이벤트는 말그대로 어떤 상황 또는 사건이 일어나면 이벤트 명령 번들이 실행됩니다.
+
+플레이어가 블럭 단위로 움직였을 때는 아래와 같이 할 수 있습니다
+
+이벤트에 관한 더 자세한 설명은 아래 페이지를 참고하세요.
+
+[이벤트번들바로가기](https://freedyplugins.github.io/FreedyPlugins/FreedyMinigameMakerWiki#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%B2%88%EB%93%A4)
+
+```yaml
+miniGames:
+  테스트미니게임:
+    maxPlayers: 20
+    maxStartPlayers: 2
+    waitForStartTime: 100 
+    moveCmd:
+    - fut {player} sendActionBar private {toBlockX} {toBlockY} {toBlockZ}
+```
+
+
+
+## 반복 명령
+
+미니게임 시작 대기 중이거나 미니게임 플레이 중 일 때 반복 명령이 실행됩니다
+
+반복 명령 이름을 wait으로 설정하면 미니게임이 시작 대기 중이거나 미니게임이 플레이 중일 때 실행됩니다.
+
+이름이 wait이 아닌 반복 명령은 미니게임이 플레이 중일 때만 실행됩니다.
+
+```yaml
+miniGames:
+  테스트미니게임:
+    maxPlayers: 20
+    maxStartPlayers: 2
+    waitForStartTime: 100 
+    gameTime: 100
+    repeatList:
+    - wait
+    - timer
+    repeats:
+      timer:
+        time: 1
+        cmd:
+        - fut {player} if {isPlaying} == false fut {player} if {numeric({data(timer)})} == false fut {player} setData timer {constant(gameTime)}
+        - fut {player} if {isPlaying} == false fut {player} if {numeric({data(timer)})} == true fut {player} do printBossBar
+      wait:
+        time: 20
+        cmd:
+        - fut {player} if {isPlaying} == false fut {player} if {numeric({data(wait)})} == false fut {player} setData wait 5
+        - fut {player} if {isPlaying} == false fut {player} if {numeric({data(wait)})} == true fut {player} do printTime
+    printTimeCmd:
+    - fut {player} sendTitle game 10 50 10 {integer({data(wait)})}
+    - fut {player} addData wait -1
+    printBossBarCmd:
+    - fut {player} sendBossBar game {game} {math(divide, {data(timer)}, {constant(gameTime)})} GREEN {game}
+    - fut {player} addData timer -1
+    - fut {player} if {data(timer)} < 0 fut {player} do stop
+    stopCmd:
+    - fut {player} sendMsg game 게임이 종료되었습니다
+    - fut {player} shutDown
+    quitCmd:
+    - fut {player} sendBossBar private {game} 0 GREEN none
+```
+
+이 미니게임 설정을 예시로 들어보았습니다.
+
+명령어로 설정하는 방법입니다.
+
+/fmg set 테스트미니게임 setCmd repeatList 999 wait
+/fmg set 테스트미니게임 msg repeats.time 20
+/fmg set 테스트미니게임 setCmd repeats.cmd 0 fut {player} ...
+
+
+
+
+
 ## 키트
 
 키트는 config 설정에서 인벤토리를 저장하고 불러오는 기능을 합니다.
@@ -240,6 +337,8 @@ fut {player} if true == true {do(fut {Player} sendMsg public 안녕하세요! &&
 텔레포트 명령어 입니다.
 
 `/fut <플레이어> teleport <게임이름> <위치이름>`
+
+위치 이름을 wait이나 start, end로 하면 미니게임 입장시, 시작시, 퇴장시에 자동으로 텔레포트 됩니다 알아두세요!
 
 ## 블럭 리젠
 
@@ -323,6 +422,8 @@ GUI인벤토리 메뉴를 플레이어에게 띄웁니다.
 `/fut <player> gui <인벤토리이름>`
 
 인벤토리메뉴를 엽니다.
+
+`/
 
 
 ***
