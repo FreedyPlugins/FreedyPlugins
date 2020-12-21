@@ -188,7 +188,9 @@ miniGames:
 명령어로 설정하는 방법입니다.
 
 /fmg set 테스트미니게임 setCmd repeatList 999 wait
+
 /fmg set 테스트미니게임 msg repeats.time 20
+
 /fmg set 테스트미니게임 setCmd repeats.cmd 0 fut {player} ...
 
 
@@ -287,7 +289,7 @@ finalCmd:
 
 플레이어가 손에 들고 자리에 아이템을 덮어씌웁니다.
 
-`/fut <player> giveCursor <아이템이름> <인벤토리자리번호> [아이템갯수]
+`/fut <player> giveCursor <아이템이름> <인벤토리자리번호> [아이템갯수]`
 
 플레이어의 인벤토리에서 번호값에 아이템을 덮어씌웁니다.
 
@@ -471,7 +473,7 @@ Uuid의 엔티티의 위치를 대체합니다
 ### `{playerList(default)}`
 미니게임에 있는 플레이어 이름을 모두 출력합니다. default가 아닌 all 이라면 모든 온라인 플레이어의이름을 모두 대체합니다.
 
-### '{add(사, 일, 이, 삼)}'
+### '{add(사, 일, 이, 삼)}`
 일, 이, 삼에 사를 추가한 목록을 출력합니다.
 
 ### `{remove(일, 일, 이, 삼)}`
