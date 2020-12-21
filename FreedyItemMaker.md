@@ -1,4 +1,4 @@
-![image](FreedyItemMaker.png)
+![image](ItemMaker.png)
 
 
 ## <font color='#27496d'>개요</font>
