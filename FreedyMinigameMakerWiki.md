@@ -25,7 +25,7 @@
 
 ## 제안 및 버그
 
-##### [>>  <<](https://github.com/FreedyPlugins/FreedyPlugins/issues/new/choose)
+##### [>> 제보하기링크 <<](https://github.com/FreedyPlugins/FreedyPlugins/issues/new/choose)
 
 
 #### 조건 명령
