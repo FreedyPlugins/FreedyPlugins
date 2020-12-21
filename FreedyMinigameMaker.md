@@ -11,9 +11,7 @@
 
 ### [>> 다운로드 <<](https://github.com/FreedyPlugins/FreedyMinigameMaker/releases/latest/download/FreedyMinigameMaker.jar)
 
-
-
-### [>> 설명서 <<](./FreedyMinigameMakerWiki)
+### [>> 사용법 <<](./FreedyMinigameMakerWiki)
 
 
 ### <font color='#27496d'>플러그인 환경</font>
