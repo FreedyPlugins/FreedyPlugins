@@ -1,4 +1,4 @@
-## FreedyMinigameMaker Wiki
+## FreedyMinigameMaker
 이 플러그인으로 당신만의 미니게임을 처음부터 만들고 당신의 상상력으로 커스터마이징 할 수 있습니다.  
 그러니까 이 플러그인은 미니게임 개발 도구라고 볼 수 있습니다.  
 이 플러그인은 게임 플레이의 특정 부분에서 명령을 실행하여 작동합니다.  
@@ -26,6 +26,10 @@
 ## 제안 및 버그
 
 ##### [>> 제보하기링크 <<](https://github.com/FreedyPlugins/FreedyPlugins/issues/new/choose)
+  
+## 소스코드
+
+##### [>> 소스코드링크 <<](https://github.com/FreedyPlugins/FreedyMinigameMaker/tree/master/FreedyMinigameMaker)
   
 ***
 
