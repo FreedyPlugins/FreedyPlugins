@@ -182,7 +182,7 @@ repeats:
 miniGames:
   테스트미니게임:
     maxPlayers: 20
-    maxStartPlayers: 2
+    maxStartPlayers: 1
     waitForStartTime: 100 
     gameTime: 100
     repeatList:
