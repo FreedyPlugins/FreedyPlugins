@@ -485,6 +485,12 @@ GUI메뉴에 아이템 로어를 수정합니다.
 `/fut {player} teleport private testGame start`
 플레이어 티피한다 개인적으로 testGame 미니게임에 저장되어 있는 start 위치로
 
+
+> 구문을 테스트 하기 위해서는 아래와 같은 명령어로 테스트해보세요! {allPlayer} {onlinePlayer}는 미니게임 config에서만 작동합니다
+ 
+`/fut <player> execute fut {player} sendMsg private {x}`
+  
+
 ## 구문 리스트
 
 ### `{allPlayer}` 
