@@ -20,6 +20,9 @@
 
 > 그리고 더 많은 기능들 ...
 
+## English Wiki
+##### [>> link <<](./EnglishWiki)
+
 ## 다운로드 
 ##### [>> 다운로드링크 <<](https://github.com/FreedyPlugins/FreedyMinigameMaker/releases/latest/download/FreedyMinigameMaker.jar)
 
