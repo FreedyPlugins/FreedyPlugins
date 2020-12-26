@@ -37,7 +37,7 @@ In addition, you will receive suggestions for plug-in features or error reports.
 
 Minigame utility commands have the functions necessary to run minigames.
 
-To check the usage, try entering the fut command in the console.
+To check the usage, try entering the fut command as player.
 
 
 ***
