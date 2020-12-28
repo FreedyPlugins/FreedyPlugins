@@ -25,7 +25,7 @@
 
 #### <font color='#00909e'>제작자는 이 플러그인이 초래할 수있는 손상에 대해 법적 책임을지지 않습니다.</font>
 
-![image](ProjectileMaker.png)
+![image](CombatWeapons.png)
 
 
 ### <font color='#27496d'>커뮤니티 및 관련 사이트</font>
