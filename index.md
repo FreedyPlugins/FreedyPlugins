@@ -14,7 +14,7 @@
 <font color='#38595E'>이 플러그인은 컨텐츠를 스타일링하기 위한 가볍고 사용하기 쉬운 구문을 통해 미니게임을 만들 수 있습니다.</font>  
   
   
-## __<font color='#00909e'>프로젝타일메이커 (NOT READY...)</font>__ [바로가기](./ProjectileMaker)
+## __<font color='#00909e'>전투무기 (NOT READY...)</font>__ [바로가기](./CombatWeapons)
 <font color='#38595E'>이 플러그인은 발사체를 스타일링하기 위한 가볍고 사용하기 쉬운 명령어를 통해 멋진 이펙트를 만들 수 있습니다.</font>
 
  
