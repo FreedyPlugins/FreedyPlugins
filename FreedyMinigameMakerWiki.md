@@ -531,8 +531,17 @@ GUI메뉴에 아이템 로어를 수정합니다.
 ### `{playerHealth}`
 플레이어의 체력을 대체합니다.
 
+### `{playerHealth}`
+플레이어의 체력을 대체합니다.
+
 ### `{playerFood}`
 플레이어의 배고픔을 대체합니다
+
+### `{playerExp}`
+플레이어의 경험치를 대체합니다.
+
+### `{playerIsBlocking}`
+플레이어가 블럭을 부수고 있는지 대체합니다.
 
 ### `{math(add, 1, 2)}`
 1 더하기 2 의 값을 대체합니다. add이외에 remainder, multiply, divide 이 있습니다
@@ -621,6 +630,9 @@ apple, bread, cheese 충에 하나를 골라 대체합니다.
 
 ### `{playerTargetBlock(100)}`
 플레이어가 100블럭 범위안에서 바라보고 있는 블럭의 위치를 대체합니다.
+
+### `{hasPerm(perm.command)}`
+플레이어가 권한이 있는지를 대체합니다.
 
 ### `{itemAmount(1)}`
 플레이어의 인벤토리에 1번째 칸 아이템 갯수를 출력합니다.
