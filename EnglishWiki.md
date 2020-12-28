@@ -1,43 +1,22 @@
 ## FreedyMinigameMaker
-With this plugin, you can create your own minigame from scratch and customize it with your imagination.
-So this plugin can be seen as a mini game development tool.
-This plugin works by executing commands in certain parts of the gameplay.
-It also provides the main mechanism for mini-games to work and has several features.
-In addition, you will receive suggestions for plug-in features or error reports. Please contact us.
+With this plugin, you can create your own minigame from scratch and customize it with your imagination. So this plugin can be seen as a mini game development tool. This plugin works by executing commands in certain parts of the gameplay. It also provides the main mechanism for mini-games to work and has several features. In addition, you will receive suggestions for plug-in features or error reports. Please contact us.
 
 ## Supported features
-> Save custom GUi menus, custom kits, custom items, and custom locations
+> Custom GUi menu, custom kit, custom item, save custom location, send message, title, sound, support various syntax of mini game commands, support timer function of mini game, mini game data, player data mini game variable support, math operation Support, and more features...
 
-> Send message, title, sound
+## English Wiki [>> link <<](./EnglishWiki)
 
-> Supports various syntax of mini-game commands
+## Download [>> Download Link <<](https://github.com/FreedyPlugins/FreedyMinigameMaker/releases/latest/download/FreedyMinigameMaker.jar)
 
-> Support timer function of mini game
-
-> Supports mini game data, player data mini game variables
-
-> Math operation support
-
-> And many more features...
-
-## Download
-##### [>> Download Link <<](https://github.com/FreedyPlugins/FreedyMinigameMaker/releases/latest/download/FreedyMinigameMaker.jar)
-
-## suggestions and bugs
-
-##### [>> Report link <<](https://github.com/FreedyPlugins/FreedyPlugins/issues/new/choose)
+## Suggestions and bugs [>> Report link <<](https://github.com/FreedyPlugins/FreedyPlugins/issues/new/choose)
   
-## source code
-
-##### [>> Source code link <<](https://github.com/FreedyPlugins/FreedyMinigameMaker/tree/master/FreedyMinigameMaker)
+## Source code [>> Source code link <<](https://github.com/FreedyPlugins/FreedyMinigameMaker/tree/master/FreedyMinigameMaker)
   
 ***
 
 #### run command
 
-Minigame utility commands have the functions necessary to run minigames.
-
-To check the usage, try entering the fut command as player.
+Minigame utility commands have the functions necessary to run minigames. To check how to use it, try entering the fut command in the game.
 
 
 ***
@@ -101,9 +80,7 @@ If the value 1 and the value 2 are the same, command 1 and command 2 are execute
 
 ## Vanilla command execution
 
-If a command in a minigame configuration, such as a minigame command bundle or event command or repeat command bundle, is a Minecraft default command such as /tp or /say,
-
-Please don't run it right away.
+If a command in a minigame configuration, such as a minigame command bundle, event command, or repeat command bundle, is a Minecraft basic command such as /tp or /say, do not run it immediately.
 
 `/fut <player> execute say hello`
 
@@ -111,33 +88,17 @@ You have to do this to work.
 
 ## Command block compatibility
 
-When entering the fut command in the command block, commands like @p do not work well.
-
-Of the @s, @p, and so on, only @p works, replacing the nearest player name in a 4 block radius of the command block.
+When entering the fut command in the command block, commands like @p do not work well. Of the @s, @p, and so on, only @p works, replacing the nearest player name in a 4 block radius of the command block.
 
 
 
 ## Start waiting for the mini game
 
-Minigames require at least one player to play.
-
-Minigames with no players are automatically disabled.
-
-And you can set the maximum number of minigames
-
-You can set the starting number of minigames
-
-You can have it start after a few seconds when all the starters are gathered.
+Minigames require at least one player to play. Minigames with no players are automatically disabled. And you can set the maximum number of mini-games, you can set the starting number of mini-games, and start after a few seconds when all of the starting people are gathered.
 
 ## Minigame event
 
-Minigame events are literally triggered by a bundle of event commands when a situation or event occurs.
-
-When the player moves in blocks, you can do the following:
-
-For more details on the event, please refer to the page below.
-
-[Go to Event Bundle](https://freedyplugins.github.io/FreedyPlugins/FreedyMinigameMakerWiki#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%B2%88%EB%93 %A4)
+Minigame events are literally triggered by a bundle of event commands when a situation or event occurs. When the player moves in blocks, you can do it as follows. For more information on the event, see the page below.
 
 ```yaml
 miniGames:
@@ -151,22 +112,15 @@ miniGames:
 
 ## event cancellation
 
-Used to stop a minigame event from proceeding.
-
-Executing this command cancels the event.
+Used to stop a minigame event from proceeding. Executing this command cancels the event.
 
 `/fut <player> cancelEvent`
 
-In the command bundle executed with fut <player> do ..., the repeat command bundle {do()}, {else()} is canceled immediately and until the next command, but
-In the mini-game event, events such as movement events and block click events are canceled after all commands in the command bundle have been executed.
+In the command bundle executed with fut <player> do ..., the repeat command bundle {do()}, {else()} is canceled immediately and until the next command is cancelled, but in the minigame event, all commands in the command bundle are executed. Afterwards, events such as movement events or block click events are canceled.
 
 ## repeat command
 
-The repeat command is executed while waiting to start a mini-game or while playing a mini-game.
-
-If you set the repeat command name to wait, it will run when the minigame is waiting to start or when a minigame is playing.
-
-Repeat commands with a name other than wait will only be executed while the minigame is playing.
+The repeat command is executed when the minigame is waiting to start or when a minigame is playing. If the repeat command name is set to wait, the minigame is waiting to start or when a minigame is playing. Repeat commands with a name other than wait will only be executed while the minigame is playing.
 
 
 ```yaml
@@ -213,9 +167,7 @@ miniGames:
     -fut {player} sendBossBar private {game} 0 GREEN none
 ```
 
-I've taken this mini game setup as an example.
-
-This is how to set it with a command.
+I've taken this mini game setup as an example. This is how to set it with a command.
 
 /fmg set test minigame setCmd repeatList 999 wait
 
@@ -249,7 +201,7 @@ Add to the value of the minigame data.
 Save the player data of the mini game.
 
 `/fut <player> addPlayerData <customdata> <amount>`
-It is added to the value of the player data of the minigame.
+Adds to the value of the player data in the minigame.
 
 `/fut <player> execute <command>`
 Vanilla command execution
@@ -502,7 +454,7 @@ Substitute the names of all players participating in the server.
 Commands with this syntax are executed for the number of players participating in the server.
 
 ### `{playerName}` or `{player}` (both are the same)
-It will be replaced with the name of the player who caused this command to be triggered.
+Replaced with the name of the player who caused this command to be triggered.
 
 ### `{playerIndex}`
 Replace this command with the participating player listing number of the player who caused this command to be triggered.
@@ -579,8 +531,17 @@ Replaces the number of players the player is in the mini-game. It starts with 0,
 ### `{playerHealth}`
 Replaces the player's health.
 
+### `{playerHealth}`
+Replaces the player's health.
+
 ### `{playerFood}`
 Replaces the player’s hunger
+
+### `{playerExp}`
+Replaces the player's experience.
+
+### `{playerIsBlocking}`
+Replace if the player is breaking blocks.
 
 ### `{math(add, 1, 2)}`
 Substitute the value of 1 plus 2. Besides add, there are remainder, multiply, and divide.
@@ -593,7 +554,7 @@ It is replaced with the minigame data that was saved separately.
 
 ### `{miniGamedata(test, isPlaying)}`
 
-Prints whether the test minigame has started. Instead of isPlaying, you can use playerList to display all players participating in the mini-game. Other than that, it is replaced with the minigame data that was saved separately.
+Prints whether the test minigame has started. Instead of isPlaying, you can use playerList to display all players participating in the mini-game. Other than that, it is replaced with the mini-game data stored separately.
 
 ### `{color(&aHello)}`
 Replace it with green text
@@ -669,6 +630,9 @@ Replace with minigame constants saved in the config file.
 
 ### `{playerTargetBlock(100)}`
 Replaces the position of the block that the player is looking at within 100 blocks.
+
+### `{hasPerm(perm.command)}`
+Replaces whether the player has permission.
 
 ### `{itemAmount(1)}`
 Prints the number of items in the 1st slot in the player's inventory.
@@ -772,7 +736,7 @@ Fires when a player participating in a minigame deals damage to an entity.
 Executed when a player participating in a mini-game takes damage.
 
 `projectileCmd` `{cause}` `{damage}` `{projectileType}` `{projectileName}` `{projectileUuid}` `{entityName} {entityType}`
-Executed when a player participating in a mini game takes damage from a projectile.
+Executed when a player participating in a mini-game takes damage from a projectile.
 
 `dropCmd` `{itemName} {itemDurability} {itemType}`
 Fired when a player participating in a mini-game drops an item.
