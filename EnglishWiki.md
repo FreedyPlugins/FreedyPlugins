@@ -20,7 +20,7 @@ Minigame utility commands have the functions necessary to run minigames. To chec
 
 #### In-game test
 
-`/fut <player> sendMsg private {math(add, 2, 2)}` This command to the player data function does not work
+`/fut <player> sendMsg private {math(add, 2, 2)}` Commands executed by the player don't work with data functions
 
 `/fut <player> execute fut {player} sendMsg private {math(add, 2, 2)}` So you can do this.
 
