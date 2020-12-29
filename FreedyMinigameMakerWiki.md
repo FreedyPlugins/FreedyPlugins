@@ -248,7 +248,7 @@ data.yml 을 세이브합니다.
 
 `/fut <player> executeConDelayCmd <tick> <command>`
 <tick> 틱 후 콘솔에서 명령을 실행합니다.
-  
+
 `/fut <player> executeDelayCmd <tick> <command>`
 <tick> 틱 후 플레이어로 명령을 실행합니다.
 
