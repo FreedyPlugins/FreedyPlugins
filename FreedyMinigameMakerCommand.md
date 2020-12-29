@@ -1,5 +1,14 @@
 # FreedyMinigameMaker 명령 구성
 
+## 페이지 순간이동기
+
+[명령 구성](./FreedyMinigameMakerCommand)
+
+[이벤트 명령](./FreedyMinigameMakerEvent)
+
+[데이타 함수](./FreedyMinigameMakerSyntax)
+
+***
 
 #### 실행 명령
 
