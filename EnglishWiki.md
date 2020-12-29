@@ -823,7 +823,7 @@ When a GUI menu with a menu name is clicked, the command bundle is executed to t
 
 config example
 
-Bingo minigame: https://pastebin.com/raw/Nqp5q3Zk
+Bingo minigame only for 1.16.4: https://pastebin.com/raw/Nqp5q3Zk
 
 > This place is not finished yet! Please come back next time...
 
