@@ -22,7 +22,7 @@
 
 `/fut <player> sendMsg private {math(add, 2, 2)}` 이 명령을 플레이어로 데이타 함수는 작동하지 않습니다
 
-`/fut <player> execute fut {player} ...` 그래서 이렇게 해주면 가능합니다.
+`/fut <player> execute fut {player} sendMsg private {math(add, 2, 2)}' 그래서 이렇게 해주면 가능합니다.
 
 ***
 
