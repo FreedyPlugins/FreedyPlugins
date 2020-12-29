@@ -249,7 +249,7 @@ Execute commands as a player.
 `/fut <player> executeConDelayCmd <tick> <command>`
 <tick> Runs the command in the console after ticking.
   
-`/fut <player> executeDelayCmd <tick> <command>
+`/fut <player> executeDelayCmd <tick> <command>`
 <tick> Execute commands as player after tick.
 
 
