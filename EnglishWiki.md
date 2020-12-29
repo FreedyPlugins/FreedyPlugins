@@ -247,10 +247,10 @@ Just run the command in the console.
 Execute commands as a player.
 
 `/fut <player> executeConDelayCmd <tick> <command>`
-<tick> Runs the command in the console after ticking.
+Runs the command in the console after ticking.
 
 `/fut <player> executeDelayCmd <tick> <command>`
-<tick> Execute commands as player after tick.
+Execute commands as player after tick.
 
 
 
