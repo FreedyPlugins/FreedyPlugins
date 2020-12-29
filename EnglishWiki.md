@@ -821,9 +821,11 @@ It is executed through the do run command. Keeped bundles are not replaced by da
 When a GUI menu with a menu name is clicked, the command bundle is executed to the clicked location {slot}.
 
 
+config example
+
+Bingo minigame: https://pastebin.com/raw/Nqp5q3Zk
 
 > This place is not finished yet! Please come back next time...
-
 
 
 ## Developer API
