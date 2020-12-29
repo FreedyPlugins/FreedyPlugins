@@ -4,6 +4,8 @@ With this plugin, you can create your own minigame from scratch and customize it
 ## Supported features
 > Custom GUi menu, custom kit, custom item, save custom location, send message, title, sound, support various syntax of mini game commands, support timer function of mini game, mini game data, player data mini game variable support, math operation Support, and more features...
 
+## English Wiki [>> English Wiki Link <<](./EnglishWiki)
+
 ## Download [>> Download Link <<](https://github.com/FreedyPlugins/FreedyMinigameMaker/releases/latest/download/FreedyMinigameMaker.jar)
 
 ## Suggestions and bugs [>> Report link <<](https://github.com/FreedyPlugins/FreedyPlugins/issues/new/choose)
@@ -16,6 +18,11 @@ With this plugin, you can create your own minigame from scratch and customize it
 
 Minigame utility commands have the functions necessary to run minigames. To check how to use it, try entering the fut command in the game.
 
+#### In-game test
+
+`/fut <player> sendMsg private {math(add, 2, 2)}` This command to the player data function does not work
+
+`/fut <player> execute fut {player} sendMsg private {math(add, 2, 2)}` So you can do this.
 
 ***
 
@@ -175,7 +182,35 @@ I've taken this mini game setup as an example. This is how to set it with a comm
 
 ## Minigame execution command
 
-`/fut <player> join`
+`/fmg join <minigame>`
+Join the player who executed this command with the freedyminigamemaker.join permission to the minigame.
+
+`/fmg quit`
+Retire the player who executed this command with freedyminigamemaker.quit privileges.
+
+`/fmg create <gameName> <maxPlayers> <maxStartPlayers> <waitForStartTime>`
+Create an empty minigame.
+
+`/fmg list`
+View the list of mini games.
+
+`/fmg reload`
+Reload config.yml and settings.yml.
+
+`/fmg quitAllGames`
+All mini-games will end.`
+
+`/fut <player> join <gameName>`
+Engage the player in a minigame.
+  
+`/fut <player> move <gameName`
+Force the player to move to the mini game.
+
+`/fut <player> joinAll <gameName>`
+All online players who are not participating in the mini-game are invited to participate in the mini-game.
+
+`/fut <player> kick`
+Exit the player from the minigame.
 
 `/fut <player> conLog <message>`
 Print the message to the console.
@@ -202,7 +237,21 @@ Save the player data of the mini game.
 Adds to the value of the player data in the minigame.
 
 `/fut <player> execute <command>`
-Vanilla command execution
+
+It is used to replace the data function that is not replaced when executed as a flare or as a command block, and executes the <command> command by replacing the data function with the minigame in which the player is participating.
+
+`/fut <player> executeConCmd <command>`
+Just run the command in the console.
+
+`/fut <player> executeCmd <command>`
+Execute commands as a player.
+
+`/fut <player> executeConDelayCmd <tick> <command>`
+<tick> Runs the command in the console after ticking.
+  
+`/fut <player> executeDelayCmd <tick> <command>
+<tick> Execute commands as player after tick.
+
 
 
 ## Player and entity settings
@@ -709,6 +758,9 @@ Fired when a player participating in a minigame clicks or interacts with somethi
 `interactEntityCmd` `{entityName} {entityType} {itemName} {itemDurability} {itemType}`
 Fired when a player participating in a minigame clicks an entity.
 
+`itemConsumeCmd`
+Fired when a player participating in a mini-game eats food or uses an item.
+
 `moveCmd:` `{fromBlockType} {fromBlockX} {fromBlockY} {fromBlockZ} {fromBlockFace} {fromBlockWorld} {toBlockType} {toBlockX} {toBlockY} {toBlockZ} {toBlockFace} {toBlockWorld}`
 Executed when the player participating in the mini-game moves one space by block.
 
@@ -723,9 +775,6 @@ Fired when a player participating in a mini game hits a block.
 
 `preDeathCmd` `{killerType} {killerName}`
 Fires just before the player in the minigame dies.
-
-`deathCmd` `{killer}`
-The player participating in the minigame dies and runs.
 
 `damagedCmd` `{entityName} {entityType} {itemName} {itemDurability} {itemType}`
 Fires when a player participating in a minigame deals damage to an entity.
@@ -766,8 +815,7 @@ It is executed through the do run command.
 
 `keeped command bundle name Cmd` `{custom function}`
 `/fut <minigame player> do keeped Command bundle name Custom function 1, value 1, custom function 2, value 2 ...`
-It is executed through the do execution command. Keeped bundles are not replaced by data functions. So you have to replace the data function with the meaningless /fut <player> if true == true statement in front of it.
-The advantage of these keeped bundles is that data functions can be newly loaded every week in the while statement, and data can be newly loaded in the iteration statement of the allPlayer data function.
+It is executed through the do run command. Keeped bundles are not replaced by data functions. So you have to replace the data function with the meaningless /fut <player> execute fut <player> ... statement in front of it. Also, the {player} syntax is not replaced, so you need to add a custom function through the do command. /fut <player> do keepedTestBundle player, {player} Run the keepedTestBundleCmd command bundle like this. The advantage of these keeped bundles is that data functions can be newly loaded every week in the while statement, and data can be newly loaded in the iteration statement of the allPlayer data function.
 
 `Menu name ClickCmd` `{slot}`
 When a GUI menu with a menu name is clicked, the command bundle is executed to the clicked location {slot}.
