@@ -4,7 +4,7 @@ With this plugin, you can create your own minigame from scratch and customize it
 ## Supported features
 > Custom GUi menu, custom kit, custom item, save custom location, send message, title, sound, support various syntax of mini game commands, support timer function of mini game, mini game data, player data mini game variable support, math operation Support, and more features...
 
-## English Wiki [>> English Wiki Link <<](./EnglishWiki)
+## Korean Wiki [>> Korean Wiki Link <<](./FreedyMinigameMakerWiki)
 
 ## Download [>> Download Link <<](https://github.com/FreedyPlugins/FreedyMinigameMaker/releases/latest/download/FreedyMinigameMaker.jar)
 
