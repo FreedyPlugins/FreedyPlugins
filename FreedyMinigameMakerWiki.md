@@ -823,7 +823,7 @@ do 실행 명령을 통해서 실행됩니다. keeped번들은 데이타 함수�
 
 config 예제
 
-빙고 미니게임: https://pastebin.com/raw/Nqp5q3Zk
+빙고 미니게임 1.16.4 전용: https://pastebin.com/raw/Nqp5q3Zk
 
 > 이 곳은 아직 완성되지 않았어요! 다음에 다시 찾아주세요..
 
