@@ -18,6 +18,11 @@
 
 미니게임 유틸리티 명령어는 미니게임을 실행하는데 필요한 기능을 가지고 있습니다. 사용법을 확인하려면 게임에서 fut 명령어를 입력해보세요.
 
+#### 인게임 테스트 
+
+`/fut <player> sendMsg private {math(add, 2, 2)}` 이 명령을 플레이어로 데이타 함수는 작동하지 않습니다
+
+`/fut <player> execute fut {player} ...` 그래서 이렇게 해주면 가능합니다.
 
 ***
 
@@ -177,7 +182,35 @@ miniGames:
 
 ## 미니게임 실행 명령어
 
-`/fut <player> join`
+`/fmg join <미니게임>`
+freedyminigamemaker.join 권한과 함께 이 명령을 실행한 플레이어를 미니게임에 참여시킵니다.
+
+`/fmg quit`
+freedyminigamemaker.quit 권한과 함께 이 명령을 실행한 플레이어를 퇴장시킵니다.
+
+`/fmg create <gameName> <maxPlayers> <maxStartPlayers> <waitForStartTime>`
+비어 있는 미니게임을 생성합니다.
+
+`/fmg list`
+미니게임 목록을 봅니다.
+
+`/fmg reload`
+config.yml 과 settings.yml 을 리로드합니다.
+
+`/fmg quitAllGames`
+모든 미니게임이 종료됩니다.`
+
+`/fut <player> join <gameName>`
+플레이어를 미니게임에 참여시킵니다.
+  
+`/fut <player> move <gameName`
+플레이어를 미니게임으로 강제 이동 시킵니다.
+
+`/fut <player> joinAll <gameName>`
+미니게임에 참여 중이지 않은 모든 온라인 플레이어들을 미니게임에 참여시킵니다.
+
+`/fut <player> kick`
+플레이어를 미니게임에서 퇴장시킵니다.
 
 `/fut <player> conLog <message>`
 콘솔에 매세지를 출력합니다.
@@ -204,7 +237,21 @@ data.yml 을 세이브합니다.
 미니게임의 플레이어 데이타의 값에 더합니다.
 
 `/fut <player> execute <command>`
-바닐라 명령어 실행
+
+플레리어로 실행됬거나, 커맨드블럭으로 실행됬을 때 대체되지 않는 데이타 함수를 대체하기 위해 사용되며, 플레이어가 참여 중인 미니게임으로 데이타 함수를 대체해서 <command> 명령을 실행합니다.
+
+`/fut <player> executeConCmd <command>`
+그저 콘솔에서 명령을 실행합니다.
+
+`/fut <player> executeCmd <command>`
+플레이어로 명령을 실행합니다.
+
+`/fut <player> executeConDelayCmd <tick> <command>`
+<tick> 틱 후 콘솔에서 명령을 실행합니다.
+  
+`/fut <player> executeDelayCmd <tick> <command>
+<tick> 틱 후 플레이어로 명령을 실행합니다.
+
 
 
 ## 플레이어 및 엔티티 설정
