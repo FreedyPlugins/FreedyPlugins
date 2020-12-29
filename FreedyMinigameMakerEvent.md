@@ -1,3 +1,4 @@
+# FreedyMinigameMaker 이벤트 명령
 
 #### 이벤트 번들
 
