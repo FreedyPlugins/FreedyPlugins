@@ -4,7 +4,7 @@
 ## 지원되는 기능
 > 커스텀 GUi 메뉴, 커스텀 키트, 커스텀 아이템, 커스텀 위치 저장, 메세지, 타이틀, 사운드 보내기, 미니게임 커맨드의 다양한 구문 지원, 미니게임의 타이머 기능 지원, 미니게임 데이타, 플레이어 데이타 미니게임 변수 지원, 수학 연산 지원, 그리고 더 많은 기능들 ...
 
-## English Wiki  [>> link <<](./EnglishWiki)
+## English Wiki  [>> 영어위키링크 <<](./EnglishWiki)
 
 ## 다운로드   [>> 다운로드링크 <<](https://github.com/FreedyPlugins/FreedyMinigameMaker/releases/latest/download/FreedyMinigameMaker.jar)
 
