@@ -590,6 +590,21 @@ GUI메뉴에 아이템 로어를 수정합니다.
 ### `{playerIsBlocking}`
 플레이어가 블럭을 부수고 있는지 대체합니다.
 
+### `{playerIsLeashed}`
+플레이어가 달리고 있는지 대체합니다.
+
+### `{playerIsSneaking}`
+플레이어가 움크리고 있는지 대체합니다.
+
+### `{playerIsGliding}`
+플레이어가 겉날개를 달고 글라이딩 중 인지 대체합니다.
+
+### `{playerIsSwimming}`
+플레이어가 수영 중인지 대체합니다.
+
+### `{playerIsSleeping}`
+플레이어가 침대에서 잠 자고 있는지 대체합니다.
+
 ### `{math(add, 1, 2)}`
 1 더하기 2 의 값을 대체합니다. add이외에 remainder, multiply, divide 이 있습니다
 
@@ -752,7 +767,7 @@ blockBreakCmd:
 `conEndCmd`
 미니게임이 종료되고 실행됩니다.
 
-`interactCmd` `{actionName} {action} {itemName} {itemDurability} {itemType}`
+`interactCmd` `{actionName} {action} {itemName} {itemAmount} {itemDurability} {itemType}`
 미니게임에 참여 중인 플레이어가 엔티티를 제외한 무언가를 클릭하거나 상호작용했을 때 실행됩니다.
 
 `interactEntityCmd` `{entityName} {entityType} {itemName} {itemDurability} {itemType}`
@@ -776,19 +791,31 @@ blockBreakCmd:
 `preDeathCmd` `{killerType} {killerName}`
 미니게임에 참여 중인 플레이어가 죽기 직전에 실행됩니다.
 
-`damagedCmd` `{entityName} {entityType} {itemName} {itemDurability} {itemType}`
+`damagedCmd` `{entityName} {entityType} {itemName} {itemAmount} {itemDurability} {itemType}`
 미니게임에 참여 중인 플레이어가 어떤 엔티티에게 데미지를 줄 때 실행됩니다.
 
 `damageCmd` `{cause}`
 미니게임에 참여 중인 플레이어가 데미지를 입었을 때 실행됩니다.
 
-`projectileCmd` `{cause}` `{damage}` `{projectileType}` `{projectileName}` `{projectileUuid}` `{entityName} {entityType}`
+`projectileCmd` `{cause} {damage} {projectileType} {projectileName} {projectileUuid} {entityName} {entityType}`
 미니게임에 참여 중인 플레이어가 발사체로부터 데미지를 입었을 때 실행됩니다.
 
-`dropCmd` `{itemName} {itemDurability} {itemType}`
+`projectileHitCmd` `{projectileType} {projectileName} {projectileUuid} {entityName} {entityType} {blockType} {blockX} {blockY} {blockZ} {blockFace}`
+발사체가 엔티티나 블럭에 닿았을 때 실행됩니다.
+
+`itemHeldCmd` `{newSlot} {previousSlot}`
+플레이어가 9칸 핫바 슬롯을 바꿀 때 실행됩니다.
+
+`swapHandCmd` `{itemName} {itemAmount} {itemDurability} {itemType} {offItemName} {offItemAmount} {offItemDurability} {offItemType}`
+플레이어가 F 키를 통해서 아이템을 대체할 때 실행됩니다.
+
+`sneakCmd` 
+플레이어가 SHIFT 키를 통해 움크릴 떄 실행됩니다.
+
+`dropCmd` `{itemName} {itemAmount} {itemDurability} {itemType}`
 미니게임에 참여 중인 플레이어가 아이템을 떨굴 때 실행됩니다.
 
-`pickupCmd` `{itemName} {itemDurability} {itemType}`
+`pickupCmd` `{itemName} {itemAmount} {itemDurability} {itemType}`
 미니게임에 참여 중인 플레이어가 아이템을 주울 때 실행됩니다.
 
 `chatCmd` `{format} {chat}`
@@ -797,16 +824,16 @@ blockBreakCmd:
 `commandCmd` `{command} {args}`
 미니게임에 참여 중인 플레이어가 명령어를 칠 때 실행됩니다.
 
-`worldChangeCmd` `{fromWorld}` `{toWorld}`
+`worldChangeCmd` `{fromWorld} {toWorld}`
 미니게임에 참여 중인 플레이어가 월드를 이동할 때 실행됩니다.
 
-`vehicleDamageCmd` `{vehicleName}` `{vehicleType}`
+`vehicleDamageCmd` `{vehicleName} {vehicleType}`
 미니게임에 참여 중인 플레이어가 보트나 카트에게 대미지를 줄 때 실행됩니다.
 
-`vehicleExitCmd` `{vehicleName}` `{vehicleType}`
+`vehicleExitCmd` `{vehicleName} {vehicleType}`
 미니게임에 참여 중인 플레이어가 보트나 카트를 타고 있다가 내릴 때 실행됩니다.
 
-`vehicleCollisionCmd` `{vehicleName}` `{vehicleType}`
+`vehicleCollisionCmd` `{vehicleName} {vehicleType}`
 미니게임에 참여 중인 플레이어가 타고 있는 보트나 카트가 엔티티와 충돌할 때 실행됩니다.
 
 `명령번들이름Cmd` `{커스텀함수}`
