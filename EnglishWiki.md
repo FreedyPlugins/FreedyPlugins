@@ -4,7 +4,7 @@ With this plugin, you can create your own minigame from scratch and customize it
 ## Supported features
 > Custom GUi menu, custom kit, custom item, save custom location, send message, title, sound, support various syntax of mini game commands, support timer function of mini game, mini game data, player data mini game variable support, math operation Support, and more features...
 
-## Korean Wiki [>> Korean Wiki Link <<](./FreedyMinigameMakerWiki)
+## English Wiki [>> English Wiki Link <<](./EnglishWiki)
 
 ## Download [>> Download Link <<](https://github.com/FreedyPlugins/FreedyMinigameMaker/releases/latest/download/FreedyMinigameMaker.jar)
 
@@ -20,9 +20,9 @@ Minigame utility commands have the functions necessary to run minigames. To chec
 
 #### In-game test
 
-`/fut <player> sendMsg private {math(add, 2, 2)}` Commands executed by the player don't work with data functions
+`/fut <player> sendMsg private {math(add, 2, 2)}` Commands executed by player do not work with data functions
 
-`/fut <player> execute fut {player} sendMsg private {math(add, 2, 2)}` So you can do this.
+`/fut <player> execute fut {player} sendMsg private {math(add, 2, 2)}` So this is possible.
 
 ***
 
@@ -80,7 +80,6 @@ If the value 1 and the value 2 are the same, command 1 and command 2 are execute
 
 
 > Notification! To execute multiple commands in {do()} or {else()} syntax, put '&&' (a string with'&&' between spaces and spaces) between the command and the command.
->> Attention! Don't put data functions like {add()} or {data()} in {do()} or {else()} statements! fut <player> do player, use data function via <player> run command
 
 
 ## Vanilla command execution
@@ -247,10 +246,10 @@ Just run the command in the console.
 Execute commands as a player.
 
 `/fut <player> executeConDelayCmd <tick> <command>`
-Runs the command in the console after ticking.
+After ticking, run the command in the console.
 
 `/fut <player> executeDelayCmd <tick> <command>`
-Execute commands as player after tick.
+After ticking, execute the command as the player.
 
 
 
@@ -377,7 +376,7 @@ If blocksName does not exist, it reverts to the block in the minigame's block st
 
 If the minigame command contains {allPlayer} or {onlinePlayer}, the command is executed repeatedly multiple times.
 
-{allPlayer} continues to be replaced by the name of the player participating in the minigame, and runs as many times as the number of players participating in the minigame.
+{allPlayer} continues to be replaced by the name of the player participating in the minigame, and runs as many as the number of players participating in the minigame.
 
 {onlinePlayer} runs as many times as the number of server players, continuing to substitute the name of the player participating in the server.
 
@@ -501,7 +500,7 @@ Substitute the names of all players participating in the server.
 Commands with this syntax are executed for the number of players participating in the server.
 
 ### `{playerName}` or `{player}` (both are the same)
-Replaced with the name of the player who caused this command to be triggered.
+It will be replaced with the name of the player who caused this command to be triggered.
 
 ### `{playerIndex}`
 Replace this command with the participating player listing number of the player who caused this command to be triggered.
@@ -564,7 +563,7 @@ Replaces the player's cost.
 Replaces the player's pitch value.
 
 ### `{world}`
-Replaces the world name the player is in.
+Replace the world name the player is in.
 
 ### `{playerName}`
 Substitute the player's name. Same as {player}.
@@ -589,6 +588,21 @@ Replaces the player's experience.
 
 ### `{playerIsBlocking}`
 Replace if the player is breaking blocks.
+
+### `{playerIsLeashed}`
+Replace if the player is running.
+
+### `{playerIsSneaking}`
+Replaces if the player is being shrunk.
+
+### `{playerIsGliding}`
+Replaces if player is gliding with elytra.
+
+### `{playerIsSwimming}`
+Replaces if the player is swimming.
+
+### `{playerIsSleeping}`
+Replaces whether the player is sleeping in bed.
 
 ### `{math(add, 1, 2)}`
 Substitute the value of 1 plus 2. Besides add, there are remainder, multiply, and divide.
@@ -617,6 +631,9 @@ Replace the block coordinate at the highest position among the y coordinates of 
 
 ### `{contain(ㅁ, ㄱ, ㄴ, ㄷ, ㄹ, ㅁ)}`
 Substitutes for ㅁ among ㄱ, ㄴ, ㄷ, ㄹ, ㅁ
+
+### `{softContain(e, Hello, My name is Bruce)}`
+Replaces "Hello, My name is Bruce" with English e
 
 ### `{sub(1, 3, hello)}`
 Hello, cut from 1 to 3 of the string to replace Hello
@@ -677,6 +694,9 @@ Replace with minigame constants saved in the config file.
 
 ### `{playerTargetBlock(100)}`
 Replaces the position of the block that the player is looking at within 100 blocks.
+
+### `{playerTargetEntity(100)}`
+Replaces the position of the entity the player is looking at within 100 blocks.
 
 ### `{hasPerm(perm.command)}`
 Replaces whether the player has permission.
@@ -744,7 +764,7 @@ Fired just before the player leaves the minigame.
 Fired when the player exits the minigame.
 
 `conStartCmd`
-Runs when the minigame is started.
+Runs when the mini-game is started.
 
 `preConEndCmd`
 Runs just before the minigame ends.
@@ -752,7 +772,7 @@ Runs just before the minigame ends.
 `conEndCmd`
 The mini-game ends and runs.
 
-`interactCmd` `{actionName} {action} {itemName} {itemDurability} {itemType}`
+`interactCmd` `{actionName} {action} {itemName} {itemAmount} {itemDurability} {itemType}`
 Fired when a player participating in a minigame clicks or interacts with something other than an entity.
 
 `interactEntityCmd` `{entityName} {entityType} {itemName} {itemDurability} {itemType}`
@@ -760,6 +780,9 @@ Fired when a player participating in a minigame clicks an entity.
 
 `itemConsumeCmd`
 Fired when a player participating in a mini-game eats food or uses an item.
+
+`PlayerInventoryClickCmd` `{slot} {invType} {clickType}`
+Fired when the player clicks on the saved inventory.
 
 `moveCmd:` `{fromBlockType} {fromBlockX} {fromBlockY} {fromBlockZ} {fromBlockFace} {fromBlockWorld} {toBlockType} {toBlockX} {toBlockY} {toBlockZ} {toBlockFace} {toBlockWorld}`
 Executed when the player participating in the mini-game moves one space by block.
@@ -776,19 +799,31 @@ Fired when a player participating in a mini game hits a block.
 `preDeathCmd` `{killerType} {killerName}`
 Fires just before the player in the minigame dies.
 
-`damagedCmd` `{entityName} {entityType} {itemName} {itemDurability} {itemType}`
+`damagedCmd` `{entityName} {entityType} {itemName} {itemAmount} {itemDurability} {itemType}`
 Fires when a player participating in a minigame deals damage to an entity.
 
 `damageCmd` `{cause}`
 Executed when a player participating in a mini-game takes damage.
 
-`projectileCmd` `{cause}` `{damage}` `{projectileType}` `{projectileName}` `{projectileUuid}` `{entityName} {entityType}`
+`projectileCmd` `{cause} {damage} {projectileType} {projectileName} {projectileUuid} {entityName} {entityType}`
 Executed when a player participating in a mini-game takes damage from a projectile.
 
-`dropCmd` `{itemName} {itemDurability} {itemType}`
+`projectileHitCmd` `{projectileType} {projectileName} {projectileUuid} {entityName} {entityType} {blockType} {blockX} {blockY} {blockZ} {blockFace}`
+Fired when the projectile hits an entity or block.
+
+`itemHeldCmd` `{newSlot} {previousSlot}`
+Fired when the player changes the 9-space hotbar slot.
+
+`swapHandCmd` `{itemName} {itemAmount} {itemDurability} {itemType} {offItemName} {offItemAmount} {offItemDurability} {offItemType}`
+Fired when the player replaces an item via the F key.
+
+`sneakCmd`
+Fired when the player moves with the SHIFT key.
+
+`dropCmd` `{itemName} {itemAmount} {itemDurability} {itemType}`
 Fired when a player participating in a mini-game drops an item.
 
-`pickupCmd` `{itemName} {itemDurability} {itemType}`
+`pickupCmd` `{itemName} {itemAmount} {itemDurability} {itemType}`
 Fired when a player participating in a mini-game picks up an item.
 
 `chatCmd` `{format} {chat}`
@@ -797,51 +832,58 @@ Fired when a player participating in a minigame hits a chat.
 `commandCmd` `{command} {args}`
 Executed when a player participating in a minigame hits a command.
 
-`worldChangeCmd` `{fromWorld}` `{toWorld}`
-Fired when a player participating in a mini-game moves around the world.
+`worldChangeCmd` `{fromWorld} {toWorld}`
+미니게임에 참여 중인 플레이어가 월드를 이동할 때 실행됩니다.
 
-`vehicleDamageCmd` `{vehicleName}` `{vehicleType}`
-Fired when a player participating in a minigame deals damage to a boat or cart.
+`fishingThrowCmd` `{entityUuid} {entityName} {entityType} {hookLoc}`
+낚시대를 던질 때 실행됩니다.
 
-`vehicleExitCmd` `{vehicleName}` `{vehicleType}`
-Fired when a player participating in a mini-game is riding and disembarking a boat or cart.
+`fishingBackCmd` `{entityUuid} {entityName} {entityType} {hookLoc}`
+낚시대를 회수할 때 실행됩니다.
 
-`vehicleCollisionCmd` `{vehicleName}` `{vehicleType}`
-Fires when a boat or cart in a player participating in a minigame collides with an entity.
+`vehicleDamageCmd` `{vehicleName} {vehicleType}`
+미니게임에 참여 중인 플레이어가 보트나 카트에게 대미지를 줄 때 실행됩니다.
 
-`Command bundle name Cmd` `{custom function}`
-`/fut <minigame player> do command bundle custom function 1, value 1, custom function 2, value 2 ...`
-It is executed through the do run command.
+`vehicleExitCmd` `{vehicleName} {vehicleType}`
+미니게임에 참여 중인 플레이어가 보트나 카트를 타고 있다가 내릴 때 실행됩니다.
 
-`keeped<commandBundleName>Cmd` `{custom function}`
-`/fut <minigame player> do keeped Command bundle name Custom function 1, value 1, custom function 2, value 2 ...`
-It is executed through the do run command. Keeped bundles are not replaced by data functions. So you have to replace the data function with the meaningless /fut <player> execute fut <player> ... statement in front of it. Also, the {player} syntax is not replaced, so you need to add a custom function through the do command. /fut <player> do keepedTestBundle player, {player} Run the keepedTestBundleCmd command bundle like this. The advantage of these keeped bundles is that data functions can be newly loaded every week in the while statement, and data can be newly loaded in the iteration statement of the allPlayer data function.
+`vehicleCollisionCmd` `{vehicleName} {vehicleType}`
+미니게임에 참여 중인 플레이어가 타고 있는 보트나 카트가 엔티티와 충돌할 때 실행됩니다.
 
-`<invName>ClickCmd` `{slot}`
-When a GUI menu with a menu name is clicked, the command bundle is executed to the clicked location {slot}.
+`명령번들이름Cmd` `{커스텀함수}`
+`/fut <미니게임플레이어> do 명령번들이름 커스텀함수1, 값1, 커스텀함수2, 값2 ...`
+do 실행 명령을 통해서 실행됩니다.
+
+`keeped명령번들이름Cmd` `{커스텀함수}`
+`/fut <미니게임플레이어> do keeped명령번들이름 커스텀함수1, 값1, 커스텀함수2, 값2 ...`
+do 실행 명령을 통해서 실행됩니다. keeped번들은 데이타 함수가 대체되지 않습니다. 그래서 무의미한 /fut <player> execute fut <player> ... 구문을 앞에 붙여서 데이타 함수를 대체해야 합니다. 그리고 또한, {player} 구문도 대체가 되지 않기 떄문에, do 명령을 통해 커스텀함수를 추가해야 합니다. /fut <player> do keepedTestBundle player, {player} 이렇게 keepedTestBundleCmd명령번들을 실행합니다. 이러한 keeped번들의 장점은 while 구문에서 데이타 함수를 매주기마다 새롭게 불러올 수 있고, 또 allPlayer 데이타 함수의 반복 구문에서 새롭게 데이타를 불러올 수 있습니다.
+
+`메뉴이름ClickCmd` `{slot}`
+어떤 메뉴이름의 GUI메뉴를 클릭했을 때 그 클릭한 위치 {slot}으로 명령번들을 실행합니다.
 
 
-config example
+config 예제
 
-Bingo minigame only for 1.16.4: https://pastebin.com/raw/Nqp5q3Zk
+빙고 미니게임 1.16.4 전용: https://pastebin.com/raw/Nqp5q3Zk
 
-> This place is not finished yet! Please come back next time...
+> 이 곳은 아직 완성되지 않았어요! 다음에 다시 찾아주세요..
 
 
-## Developer API
 
-## Dependency
+## 개발자 API
+
+## 디펜덴시
 ```xml
         <dependency>
             <groupId>Freedy</groupId>
             <artifactId>FreedyMinigameMaker</artifactId>
-            <version>version</version>
+            <version>버전</version>
             <scope>system</scope>
         </dependency>
 ```
 
 
-## example
+## 예시
 ```java
 package freedy.learnspigot.events;
 
@@ -870,8 +912,8 @@ public class ChatEvent implements CommandExecutor {
                 MiniGames miniGames = FreedyMinigameMaker.miniGames;
                 if (miniGames.isJoined(player)) {
                     MiniGame miniGame = miniGames.getJoined(player);
-                    for (Player p: miniGame.playerList) {
-                        p.sendMessage("<" + p.getName() + "> "+ args[0]);
+                    for (Player p : miniGame.playerList) {
+                        p.sendMessage("<" + p.getName() + "> " + args[0]);
                     }
                 }
             }
