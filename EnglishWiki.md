@@ -813,11 +813,11 @@ Fires when a boat or cart in a player participating in a minigame collides with 
 `/fut <minigame player> do command bundle custom function 1, value 1, custom function 2, value 2 ...`
 It is executed through the do run command.
 
-`keeped command bundle name Cmd` `{custom function}`
+`keeped<commandBundleName>Cmd` `{custom function}`
 `/fut <minigame player> do keeped Command bundle name Custom function 1, value 1, custom function 2, value 2 ...`
 It is executed through the do run command. Keeped bundles are not replaced by data functions. So you have to replace the data function with the meaningless /fut <player> execute fut <player> ... statement in front of it. Also, the {player} syntax is not replaced, so you need to add a custom function through the do command. /fut <player> do keepedTestBundle player, {player} Run the keepedTestBundleCmd command bundle like this. The advantage of these keeped bundles is that data functions can be newly loaded every week in the while statement, and data can be newly loaded in the iteration statement of the allPlayer data function.
 
-`Menu name ClickCmd` `{slot}`
+`<invName>ClickCmd` `{slot}`
 When a GUI menu with a menu name is clicked, the command bundle is executed to the clicked location {slot}.
 
 
