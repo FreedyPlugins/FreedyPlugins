@@ -106,7 +106,7 @@ Minigame events are literally triggered by a bundle of event commands when a sit
 
 ```yaml
 miniGames:
-  Test mini game:
+  Test:
     maxPlayers: 20
     maxStartPlayers: 2
     waitForStartTime: 100
@@ -138,7 +138,7 @@ repeats:
 
 ```yaml
 miniGames:
-  Test mini game:
+  Test:
     maxPlayers: 20
     maxStartPlayers: 1
     waitForStartTime: 100
@@ -858,7 +858,7 @@ It is executed through the do run command.
 `/fut <minigame player> do keeped Command bundle name Custom function 1, value 1, custom function 2, value 2 ...`
 It is executed through the do run command. Keeped bundles are not replaced by data functions. So you have to replace the data function with the meaningless /fut <player> execute fut <player> ... statement in front of it. Also, the {player} syntax is not replaced, so you need to add a custom function through the do command. /fut <player> do keepedTestBundle player, {player} Run the keepedTestBundleCmd command bundle like this. The advantage of these keeped bundles is that data functions can be newly loaded every week in the while statement, and data can be newly loaded in the iteration statement of the allPlayer data function.
 
-`Menu name ClickCmd` `{slot}`
+`<invName>ClickCmd` `{slot}`
 When a GUI menu with a menu name is clicked, the command bundle is executed to the clicked location {slot}.
 
 
