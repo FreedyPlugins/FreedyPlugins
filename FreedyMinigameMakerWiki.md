@@ -781,6 +781,9 @@ blockBreakCmd:
 `itemConsumeCmd`
 미니게임에 참여 중인 플레이어가 음식을 먹거나 아이템을 사용했을 때 실행됩니다.
 
+`PlayerInventoryClickCmd` `{slot} {invType} {clickType}`
+플레이어가 저장되어 있는 인벤토리를 클릭했을 때 실행됩니다.
+
 `moveCmd:` `{fromBlockType} {fromBlockX} {fromBlockY} {fromBlockZ} {fromBlockFace} {fromBlockWorld} {toBlockType} {toBlockX} {toBlockY} {toBlockZ} {toBlockFace} {toBlockWorld}`
 미니게임에 참여 중인 플레이어가 블럭 단위로 한 칸 움직였을 때 실행됩니다.
 
