@@ -106,7 +106,7 @@
 
 ```yaml
 miniGames:
-  테스트미니게임:
+  테스트:
     maxPlayers: 20
     maxStartPlayers: 2
     waitForStartTime: 100 
@@ -138,7 +138,7 @@ repeats:
 
 ```yaml
 miniGames:
-  테스트미니게임:
+  테스트:
     maxPlayers: 20
     maxStartPlayers: 1
     waitForStartTime: 100 
