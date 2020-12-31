@@ -94,7 +94,9 @@ You have to do this to work.
 
 When entering the fut command in the command block, commands like @p do not work well. Of the @s, @p, and so on, only @p works, replacing the nearest player name in a 4 block radius of the command block.
 
+## gameType description
 
+If you set the gameType to build in the config, you can restore blocks installed or destroyed by the player in resetBlocks.
 
 ## Start waiting for the mini game
 
@@ -577,9 +579,6 @@ Replaces the number of players the player is in the mini-game. It starts with 0,
 ### `{playerHealth}`
 Replaces the player's health.
 
-### `{playerHealth}`
-Replaces the player's health.
-
 ### `{playerFood}`
 Replaces the player’s hunger
 
@@ -731,7 +730,7 @@ Replaces 4, which is the rounded value of 3.5.
 ### `{roundUp(3.5)}`
 Replaces 4, which is the rounded value of 3.5.
 
-### `roundDown(3.5)}`
+### `{roundDown(3.5)}`
 Replaces 3, which is the rounded value of 3.5.
 
 
