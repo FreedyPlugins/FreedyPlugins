@@ -858,7 +858,7 @@ do 실행 명령을 통해서 실행됩니다.
 `/fut <미니게임플레이어> do keeped명령번들이름 커스텀함수1, 값1, 커스텀함수2, 값2 ...`
 do 실행 명령을 통해서 실행됩니다. keeped번들은 데이타 함수가 대체되지 않습니다. 그래서 무의미한 /fut <player> execute fut <player> ... 구문을 앞에 붙여서 데이타 함수를 대체해야 합니다. 그리고 또한, {player} 구문도 대체가 되지 않기 떄문에, do 명령을 통해 커스텀함수를 추가해야 합니다. /fut <player> do keepedTestBundle player, {player} 이렇게 keepedTestBundleCmd명령번들을 실행합니다. 이러한 keeped번들의 장점은 while 구문에서 데이타 함수를 매주기마다 새롭게 불러올 수 있고, 또 allPlayer 데이타 함수의 반복 구문에서 새롭게 데이타를 불러올 수 있습니다.
 
-`메뉴이름ClickCmd` `{slot}`
+`<invName>ClickCmd` `{slot}`
 어떤 메뉴이름의 GUI메뉴를 클릭했을 때 그 클릭한 위치 {slot}으로 명령번들을 실행합니다.
 
 
