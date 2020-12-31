@@ -632,6 +632,9 @@ Uuid의 엔티티의 위치를 대체합니다
 ### `{contain(ㅁ, ㄱ, ㄴ, ㄷ, ㄹ, ㅁ)}`
 ㄱ, ㄴ, ㄷ, ㄹ, ㅁ 중에서 ㅁ 이 있는지를 대체합니다
 
+### `{softContain(e, Hello, My name is Bruce)}`
+"Hello, My name is Bruce" 에서 영어 e가 포함되어 있는지 대체합니다
+
 ### `{sub(1, 3, 안녕하세요)}`
 안녕하세요 문자열의 1 부터 3까지 잘라서 녕하세를 대체합니다
 
@@ -691,6 +694,9 @@ apple, bread, cheese 충에 하나를 골라 대체합니다.
 
 ### `{playerTargetBlock(100)}`
 플레이어가 100블럭 범위안에서 바라보고 있는 블럭의 위치를 대체합니다.
+
+### `{playerTargetEntity(100)}`
+플레이어가 100블럭 범위 안에서 바라보고 있는 엔티티의 위치를 대체합니다.
 
 ### `{hasPerm(perm.command)}`
 플레이어가 권한이 있는지를 대체합니다.
@@ -825,6 +831,12 @@ blockBreakCmd:
 
 `worldChangeCmd` `{fromWorld} {toWorld}`
 미니게임에 참여 중인 플레이어가 월드를 이동할 때 실행됩니다.
+
+`fishingThrowCmd` `{entityUuid} {entityName} {entityType} {hookLoc}`
+낚시대를 던질 때 실행됩니다.
+
+`fishingBackCmd` `{entityUuid} {entityName} {entityType} {hookLoc}`
+낚시대를 회수할 때 실행됩니다.
 
 `vehicleDamageCmd` `{vehicleName} {vehicleType}`
 미니게임에 참여 중인 플레이어가 보트나 카트에게 대미지를 줄 때 실행됩니다.
