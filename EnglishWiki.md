@@ -833,57 +833,57 @@ Fired when a player participating in a minigame hits a chat.
 Executed when a player participating in a minigame hits a command.
 
 `worldChangeCmd` `{fromWorld} {toWorld}`
-미니게임에 참여 중인 플레이어가 월드를 이동할 때 실행됩니다.
+Fired when a player participating in a mini-game moves around the world.
 
 `fishingThrowCmd` `{entityUuid} {entityName} {entityType} {hookLoc}`
-낚시대를 던질 때 실행됩니다.
+It runs when throwing a fishing rod.
 
 `fishingBackCmd` `{entityUuid} {entityName} {entityType} {hookLoc}`
-낚시대를 회수할 때 실행됩니다.
+Fired when retrieving a fishing rod.
 
 `vehicleDamageCmd` `{vehicleName} {vehicleType}`
-미니게임에 참여 중인 플레이어가 보트나 카트에게 대미지를 줄 때 실행됩니다.
+Fired when a player participating in a minigame deals damage to a boat or cart.
 
 `vehicleExitCmd` `{vehicleName} {vehicleType}`
-미니게임에 참여 중인 플레이어가 보트나 카트를 타고 있다가 내릴 때 실행됩니다.
+Fired when a player participating in a mini-game is riding and disembarking a boat or cart.
 
 `vehicleCollisionCmd` `{vehicleName} {vehicleType}`
-미니게임에 참여 중인 플레이어가 타고 있는 보트나 카트가 엔티티와 충돌할 때 실행됩니다.
+Fires when a boat or cart in a player participating in a minigame collides with an entity.
 
-`명령번들이름Cmd` `{커스텀함수}`
-`/fut <미니게임플레이어> do 명령번들이름 커스텀함수1, 값1, 커스텀함수2, 값2 ...`
-do 실행 명령을 통해서 실행됩니다.
+`Command bundle name Cmd` `{custom function}`
+`/fut <minigame player> do command bundle custom function 1, value 1, custom function 2, value 2 ...`
+It is executed through the do run command.
 
-`keeped명령번들이름Cmd` `{커스텀함수}`
-`/fut <미니게임플레이어> do keeped명령번들이름 커스텀함수1, 값1, 커스텀함수2, 값2 ...`
-do 실행 명령을 통해서 실행됩니다. keeped번들은 데이타 함수가 대체되지 않습니다. 그래서 무의미한 /fut <player> execute fut <player> ... 구문을 앞에 붙여서 데이타 함수를 대체해야 합니다. 그리고 또한, {player} 구문도 대체가 되지 않기 떄문에, do 명령을 통해 커스텀함수를 추가해야 합니다. /fut <player> do keepedTestBundle player, {player} 이렇게 keepedTestBundleCmd명령번들을 실행합니다. 이러한 keeped번들의 장점은 while 구문에서 데이타 함수를 매주기마다 새롭게 불러올 수 있고, 또 allPlayer 데이타 함수의 반복 구문에서 새롭게 데이타를 불러올 수 있습니다.
+`keeped command bundle name Cmd` `{custom function}`
+`/fut <minigame player> do keeped Command bundle name Custom function 1, value 1, custom function 2, value 2 ...`
+It is executed through the do run command. Keeped bundles are not replaced by data functions. So you have to replace the data function with the meaningless /fut <player> execute fut <player> ... statement in front of it. Also, the {player} syntax is not replaced, so you need to add a custom function through the do command. /fut <player> do keepedTestBundle player, {player} Run the keepedTestBundleCmd command bundle like this. The advantage of these keeped bundles is that data functions can be newly loaded every week in the while statement, and data can be newly loaded in the iteration statement of the allPlayer data function.
 
-`메뉴이름ClickCmd` `{slot}`
-어떤 메뉴이름의 GUI메뉴를 클릭했을 때 그 클릭한 위치 {slot}으로 명령번들을 실행합니다.
-
-
-config 예제
-
-빙고 미니게임 1.16.4 전용: https://pastebin.com/raw/Nqp5q3Zk
-
-> 이 곳은 아직 완성되지 않았어요! 다음에 다시 찾아주세요..
+`Menu name ClickCmd` `{slot}`
+When a GUI menu with a menu name is clicked, the command bundle is executed to the clicked location {slot}.
 
 
+config example
 
-## 개발자 API
+Bingo minigame 1.16.4 only: https://pastebin.com/raw/Nqp5q3Zk
 
-## 디펜덴시
+> This place is not finished yet! Please come back next time...
+
+
+
+## Developer API
+
+## Dependency
 ```xml
         <dependency>
             <groupId>Freedy</groupId>
             <artifactId>FreedyMinigameMaker</artifactId>
-            <version>버전</version>
+            <version>version</version>
             <scope>system</scope>
         </dependency>
 ```
 
 
-## 예시
+## example
 ```java
 package freedy.learnspigot.events;
 
@@ -912,8 +912,8 @@ public class ChatEvent implements CommandExecutor {
                 MiniGames miniGames = FreedyMinigameMaker.miniGames;
                 if (miniGames.isJoined(player)) {
                     MiniGame miniGame = miniGames.getJoined(player);
-                    for (Player p : miniGame.playerList) {
-                        p.sendMessage("<" + p.getName() + "> " + args[0]);
+                    for (Player p: miniGame.playerList) {
+                        p.sendMessage("<" + p.getName() + "> "+ args[0]);
                     }
                 }
             }
