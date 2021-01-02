@@ -96,7 +96,7 @@ When entering the fut command in the command block, commands like @p do not work
 
 ## gameType description
 
-If you set the gameType to build in the config, you can restore blocks installed or destroyed by the player in resetBlocks.
+If you set the gameType to build in the config, you can restore blocks installed or destroyed by the player in resetBlocks. There is no death or any other option.
 
 ## Start waiting for the mini game
 
@@ -256,6 +256,15 @@ After ticking, execute the command as the player.
 
 
 ## Player and entity settings
+
+`/fut <player> sendMsg private <message>`
+This command sends a chat message to the player.
+
+`/fut <player> sendTitle private <fadeIn> <stay> <fadeOut> <title>-<subtitle>`
+This command sends a title message to the player.
+
+`/fut <player> sendActionBar private <message>`
+This command sends an action bar to the player.
 
 `/fut <player> health private <health>`
 This command sets the player's health.
