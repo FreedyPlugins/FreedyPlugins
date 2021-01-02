@@ -96,7 +96,7 @@
 
 ## gameType 설명
 
-config 에 gameType 을 build로 설정할 경우, 플레이어가 설치하거나 파괴한 블럭을 resetBlocks에서 복구할 수 있습니다.
+config 에 gameType 을 build로 설정할 경우, 플레이어가 설치하거나 파괴한 블럭을 resetBlocks에서 복구할 수 있습니다. death 또는 다른 옵션은 없습니다.
 
 ## 미니게임 대기 시작
 
@@ -253,10 +253,21 @@ data.yml 을 세이브합니다.
 `/fut <player> executeDelayCmd <tick> <command>`
 틱 후 플레이어로 명령을 실행합니다.
 
+`/fut <player> `
+
 
 
 ## 플레이어 및 엔티티 설정
 
+`/fut <player> sendMsg private <message>`
+플레이어에게 채팅 매세지를 보내는 명령어 입니다.
+
+`/fut <player> sendTitle private <fadeIn> <stay> <fadeOut> <title>-<subtitle>`
+플레이어에게 타이틀 매세지를 보내는 명령어 입니다.
+
+`/fut <player> sendActionBar private <message>`
+플레이어에게 엑션바를 보내는 명령어 입니다.
+ 
 `/fut <player> health private <체력>`
 플레이어의 체력을 설정하는 명령어 입니다.
 
