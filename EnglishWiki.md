@@ -626,7 +626,7 @@ It is replaced with the minigame data that was saved separately.
 Prints whether the test minigame has started. Instead of isPlaying, you can use playerList to display all players participating in the mini-game. Other than that, it is replaced with the mini-game data stored separately.
 
 ### `{color(&aHello)}`
-Replace it with green text
+Replace with green text. For servers that support rgb, {color(&F&F&F&F&F)} is possible.
 
 ### `{numeric(1004)}`
 The number 1004 replaces whether it is a number or not
