@@ -124,7 +124,7 @@ Used to stop a minigame event from proceeding. Executing this command cancels th
 
 In the command bundle executed with fut <player> do ..., the repeat command bundle {do()}, {else()} is canceled immediately and until the next command is cancelled, but in the minigame event, all commands in the command bundle are executed. Afterwards, events such as movement events or block click events are canceled.
 
-## repeat command
+## timer command
 
 The repeat command is executed when the minigame is waiting to start or when a minigame is playing. If the repeat command name is set to wait, the minigame is waiting to start or when a minigame is playing. Repeat commands with a name other than wait will only be executed while the minigame is playing.
 
