@@ -333,7 +333,22 @@ Repairs the durability of items held by the player.
 
 
 
+## Scoreboard
 
+Bring up the PolyCoffee scoreboard to the player.
+
+`/fut <player> updateBoard <private|public|game> <title> <lineName> <line> <message>`
+
+When changing an item on a specific line in the scoreboard, it is called with a specific name for each item rather than as a line number. It's lineName.
+
+lineName is used to change the line, so it must be set to be distinct.
+
+However, since lineName is actually displayed on the scoreboard, use only the color code to make it invisible.
+
+
+`/fut <player> updateBoard private testTitle §0§1 1 message!`
+
+scoreBoard is quite difficult to use. But there is no flicker that appears when changing!
 
 ## kit
 
