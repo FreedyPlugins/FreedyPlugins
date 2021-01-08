@@ -1,9 +1,6 @@
 ## FreedyMinigameMaker
 So this plugin can be seen as a mini game development tool. This plugin works by executing commands in certain parts of the gameplay. It also provides the main mechanism for mini-games to work and has several features. In addition, you will receive suggestions for plug-in features or error reports. Please contact us.
 
-## Supported features
-> Custom GUi menu, custom kit, custom item, save custom location, send message, title, sound, support various syntax of mini game commands, support timer function of mini game, mini game data, player data mini game variable support, math operation Support, and more features...
-
 ## English Wiki [>> English Wiki Link <<](./EnglishWiki)
 
 ## Download [>> Download Link <<](https://github.com/FreedyPlugins/FreedyMinigameMaker/releases/latest/download/FreedyMinigameMaker.jar)
