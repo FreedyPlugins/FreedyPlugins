@@ -335,7 +335,22 @@ data.yml 을 세이브합니다.
 
 
 
+## 스코어보드
 
+폴리커프리 스코어보드를 플레이어에게 띄웁니다.
+
+`/fut <player> updateBoard <private|public|game> <title> <lineName> <line> <message>`
+
+스코어보드에서 특정 줄에 항목을 변경할 때 줄 번호로 하지 않고 항목마다 정해진 이름으로 불러옵니다. 그것은 lineName입니다.
+
+lineName은 라인을 변경하기 위한 용도로 쓰이기 때문에 구분되게 설정해야 합니다. 
+
+하지만 lineName은 스코어보드에 실제로 표시되기 떄문에 안보이게 설정하려면 색깔 코드만을 사용하세요.
+
+
+`/fut <player> updateBoard private testTitle §0§1 1 message!`
+
+scoreBoard는 사용하기 상당히 어렵습니다. 하지만 변경할 때 나타나는 깜박임이 없습니다!
 
 ## 키트
 
