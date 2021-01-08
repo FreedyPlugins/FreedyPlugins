@@ -1,5 +1,5 @@
 ## FreedyMinigameMaker
-So this plugin can be seen as a mini game development tool. This plugin works by executing commands in certain parts of the gameplay. It also provides the main mechanism for mini-games to work and has several features. In addition, you will receive suggestions for plug-in features or error reports. Please contact us.
+> So this plugin can be seen as a mini game development tool. This plugin works by executing commands in certain parts of the gameplay. It also provides the main mechanism for mini-games to work and has several features. In addition, you will receive suggestions for plug-in features or error reports. Please contact us.
 
 ## English Wiki [>> English Wiki Link <<](./EnglishWiki)
 
