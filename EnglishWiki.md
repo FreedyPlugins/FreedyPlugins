@@ -1,7 +1,7 @@
 # FreedyMinigameMaker
 > This plugin can be viewed as a mini game development tool. This plugin works by executing commands in certain parts of the gameplay. It also provides the main mechanism for mini-games to work and has several features. In addition, you will receive suggestions for plug-in features or error reports. Please contact us.
 
-## Korean Wiki [>> Korean Wiki Link <<](./FreedyMinigamemakerWiki)
+## Korean Wiki [>> Korean Wiki Link <<](./FreedyMinigameakerWiki)
 
 ## Download [>> Download Link <<](https://github.com/FreedyPlugins/FreedyMinigameMaker/releases/latest/download/FreedyMinigameMaker.jar)
 
