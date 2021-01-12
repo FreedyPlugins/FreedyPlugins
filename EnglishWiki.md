@@ -1,5 +1,5 @@
-## FreedyMinigameMaker
-> So this plugin can be seen as a mini game development tool. This plugin works by executing commands in certain parts of the gameplay. It also provides the main mechanism for mini-games to work and has several features. In addition, you will receive suggestions for plug-in features or error reports. Please contact us.
+# FreedyMinigameMaker
+> This plugin can be viewed as a mini game development tool. This plugin works by executing commands in certain parts of the gameplay. It also provides the main mechanism for mini-games to work and has several features. In addition, you will receive suggestions for plug-in features or error reports. Please contact us.
 
 ## English Wiki [>> English Wiki Link <<](./EnglishWiki)
 
@@ -76,7 +76,7 @@ If the value 1 and the value 2 are the same, it is a statement that executes com
 If the value 1 and the value 2 are the same, command 1 and command 2 are executed, and if the value 1 and value 2 are not the same, command 3 and command 4 are executed.
 
 
-> Notification! To execute multiple commands in {do()} or {else()} syntax, put '&&' (a string with'&&' between spaces and spaces) between the command and the command.
+> Notification! To execute multiple commands in {do()} or {else()} syntax, put '&&' (a string with'&&' between spaces and spaces) between commands and commands.
 
 
 ## Vanilla command execution
@@ -93,7 +93,7 @@ When entering the fut command in the command block, commands like @p do not work
 
 ## gameType description
 
-If you set the gameType to build in the config, you can restore blocks installed or destroyed by the player in resetBlocks. There is no death or any other option.
+If you set the gameType to build in the config, you can recover blocks installed or destroyed by the player in resetBlocks. There is no death or any other option.
 
 ## Start waiting for the mini game
 
@@ -232,7 +232,7 @@ Add to the value of the minigame data.
 Save the player data of the mini game.
 
 `/fut <player> addPlayerData <customdata> <amount>`
-Adds to the value of the player data in the minigame.
+It is added to the value of the player data of the minigame.
 
 `/fut <player> execute <command>`
 
@@ -250,6 +250,9 @@ After ticking, run the command in the console.
 `/fut <player> executeDelayCmd <tick> <command>`
 After ticking, execute the command as the player.
 
+`/fut <player> respawnPoint <locationName>`
+When respawning during a mini-game, it will spawn at a location.
+
 
 
 ## Player and entity settings
@@ -262,7 +265,7 @@ This command sends a title message to the player.
 
 `/fut <player> sendActionBar private <message>`
 This command sends an action bar to the player.
-
+ 
 `/fut <player> health private <health>`
 This command sets the player's health.
 
@@ -297,7 +300,7 @@ This command puts the stored item on the player's head.
 This command puts the stored item on the player's armor.
 
 `/fut <player> setLeggings <customItem>`
-This is a command to put the saved item on the player's pants.
+This is a command to put a stored item on the player's pants.
 
 `/fut <player> setBoots <customItem>`
 This is a command to put the saved item on the player's shoe.
@@ -399,7 +402,7 @@ If blocksName does not exist, it reverts to the block in the minigame's block st
 
 If the minigame command contains {allPlayer} or {onlinePlayer}, the command is executed repeatedly multiple times.
 
-{allPlayer} continues to be replaced by the name of the player participating in the minigame, and runs as many as the number of players participating in the minigame.
+{allPlayer} continues to be replaced by the name of the player participating in the minigame, and runs as many times as the number of players participating in the minigame.
 
 {onlinePlayer} runs as many times as the number of server players, continuing to substitute the name of the player participating in the server.
 
@@ -586,7 +589,7 @@ Replaces the player's cost.
 Replaces the player's pitch value.
 
 ### `{world}`
-Replace the world name the player is in.
+Replaces the world name the player is in.
 
 ### `{playerName}`
 Substitute the player's name. Same as {player}.
@@ -645,6 +648,12 @@ The number 1004 replaces whether it is a number or not
 
 ### `{entityLoc(ce5e7f96-6c5d-43c1-a948-1c8c2388e47a)}`
 Replace the position of the Uuid entity
+
+### `{entityName(ce5e7f96-6c5d-43c1-a948-1c8c2388e47a)}`
+Replace the name of the entity in Uuid
+
+### `{entityType(ce5e7f96-6c5d-43c1-a948-1c8c2388e47a)}`
+Replace Uuid's entity type
 
 ### `{topLoc(world, 10, 5, -1)}`
 Replace the block coordinate at the highest position among the y coordinates of the block in the above coordinates.
@@ -716,7 +725,7 @@ Replace with minigame constants saved in the config file.
 Replaces the position of the block that the player is looking at within 100 blocks.
 
 ### `{playerTargetEntity(100)}`
-Replaces the position of the entity the player is looking at within 100 blocks.
+Replaces the UUID of the entity the player is looking at within 100 blocks.
 
 ### `{hasPerm(perm.command)}`
 Replaces whether the player has permission.
@@ -784,7 +793,7 @@ Fired just before the player leaves the minigame.
 Fired when the player exits the minigame.
 
 `conStartCmd`
-Runs when the mini-game is started.
+Runs when the minigame is started.
 
 `preConEndCmd`
 Runs just before the minigame ends.
@@ -880,13 +889,6 @@ It is executed through the do run command. Keeped bundles are not replaced by da
 
 `<invName>ClickCmd` `{slot}`
 When a GUI menu with a menu name is clicked, the command bundle is executed to the clicked location {slot}.
-
-
-config example
-
-Bingo minigame 1.16.4 only: https://pastebin.com/raw/Nqp5q3Zk
-
-> This place is not finished yet! Please come back next time...
 
 
 
