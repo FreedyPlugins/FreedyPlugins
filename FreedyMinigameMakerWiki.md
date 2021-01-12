@@ -250,7 +250,8 @@ data.yml 을 세이브합니다.
 `/fut <player> executeDelayCmd <tick> <command>`
 틱 후 플레이어로 명령을 실행합니다.
 
-`/fut <player> `
+`/fut <player> respawnPoint <locationName>`
+미니게임 중 리스폰 시 위치로 스폰됩니다.
 
 
 
@@ -648,6 +649,12 @@ GUI메뉴에 아이템 로어를 수정합니다.
 ### `{entityLoc(ce5e7f96-6c5d-43c1-a948-1c8c2388e47a)}`
 Uuid의 엔티티의 위치를 대체합니다
 
+### `{entityName(ce5e7f96-6c5d-43c1-a948-1c8c2388e47a)}`
+Uuid의 엔티티의 이름을 대체합니다
+
+### `{entityType(ce5e7f96-6c5d-43c1-a948-1c8c2388e47a)}`
+Uuid의 엔티티의 타입을 대체합니다
+
 ### `{topLoc(world, 10, 5, -1)}`
 위 좌표에 있는 블럭의 y좌표중에 가장 높은 위치에 있는 블럭좌표를 대체합니다
 
@@ -718,7 +725,7 @@ apple, bread, cheese 충에 하나를 골라 대체합니다.
 플레이어가 100블럭 범위안에서 바라보고 있는 블럭의 위치를 대체합니다.
 
 ### `{playerTargetEntity(100)}`
-플레이어가 100블럭 범위 안에서 바라보고 있는 엔티티의 위치를 대체합니다.
+플레이어가 100블럭 범위 안에서 바라보고 있는 엔티티의 UUID를 대체합니다.
 
 ### `{hasPerm(perm.command)}`
 플레이어가 권한이 있는지를 대체합니다.
