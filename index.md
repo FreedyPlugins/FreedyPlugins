@@ -1,6 +1,6 @@
 <html>
   <head>
-   <meta name="google-site-verification" content="0v1Dhaj5K4Ptw6ncJEt8l7L9EEO1_0j95UjBLaM98lQ" />
+    <script data-ad-client="ca-pub-9491201630267210" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
 </html>
 
