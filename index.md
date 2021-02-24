@@ -19,3 +19,4 @@
 
 
 <font color='#dae1e7'>© 2020 Freedy Plugins. All Rights Reserved.</font>
+<script data-ad-client="ca-pub-1360401960556407" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
