@@ -1,4 +1,9 @@
-<meta name="google-site-verification" content="0v1Dhaj5K4Ptw6ncJEt8l7L9EEO1_0j95UjBLaM98lQ" />
+<!doctype>
+<html>
+  <head>
+   <meta name="google-site-verification" content="0v1Dhaj5K4Ptw6ncJEt8l7L9EEO1_0j95UjBLaM98lQ" />
+  </head>
+</html>
 
 # <font color='#142850'>간편하고 유용한 마인크래프트 플러그인, 프리디 플러그인</font>
 
