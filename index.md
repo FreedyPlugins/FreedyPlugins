@@ -1,5 +1,5 @@
 <!-- .slide: data-background="./image1.png" -->
-
+<head><script data-ad-client="ca-pub-1360401960556407" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head>
 <link rel="shortcut icon" type="image/png" href="/favicon.ico">
 
 # <font color='#142850'>간편하고 유용한 마인크래프트 플러그인, 프리디 플러그인</font>
