@@ -1,6 +1,4 @@
-<head> 
  <meta name="google-site-verification" content="0v1Dhaj5K4Ptw6ncJEt8l7L9EEO1_0j95UjBLaM98lQ" />
- </head>
 # <font color='#142850'>간편하고 유용한 마인크래프트 플러그인, 프리디 플러그인</font>
 
 <font color='#00909e'>이곳에서 브루스와 프리디팀의 플러그인들을 사용하여 버킷에서 서버를 유지 관리하고 구성할 수 있습니다.</font>  
