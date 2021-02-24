@@ -1,4 +1,4 @@
-<!-- .slide: data-background="./image1.png" -->
+
 <script data-ad-client="ca-pub-1360401960556407" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <link rel="shortcut icon" type="image/png" href="/favicon.ico">
 
