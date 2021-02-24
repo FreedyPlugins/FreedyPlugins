@@ -1,6 +1,7 @@
 <html>
   <head>
-    <script data-ad-client="ca-pub-9491201630267210" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-ad-client="ca-pub-9491201630267210" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+    </script>
   </head>
 </html>
 
