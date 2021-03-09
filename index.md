@@ -21,6 +21,7 @@
  data-ad-unit    = "DAN-9zbp4BU1x77Bu7kL" 
  data-ad-width   = "728" 
  data-ad-height  = "90"></ins> 
+ 
 <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
 
 <font color='#dae1e7'>© 2020 Freedy Plugins. All Rights Reserved.</font>
