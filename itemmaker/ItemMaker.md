@@ -1,4 +1,4 @@
-![image](ItemMaker.png)
+![image](../assets/images/ItemMaker.png)
 
 
 ## <font color='#27496d'>개요</font>
