@@ -19,7 +19,6 @@ on move
 on move {
     print ( "당신은 움직였습니다!" )
 }
-
 ```
 위 아래에 있는 소스코드 모두 잘 됩니다.  
 이 코드는 플레이어가 움직이면 매세지를 보내는 겁니다.
@@ -66,6 +65,74 @@ on move {
 `/fmg run <명령>` 명령을 작동 시킵니다.
 
 ---
+
+## 이밴트 
+
+### Join
+플레이어가 서버에 입장했을 때
+
+### Left
+플레이어가 서버를 퇴장했을 때
+
+### Pre game join
+플레이어가 게임에 입장하기 전에
+
+### Game join
+플레이어가 게임을 입장했을 때
+
+### Pre game left
+플레이어가 게임을 퇴장하기 전에
+
+### Game left
+플레이어가 게임을 퇴장했을 때
+
+### Pre game stop
+플레이어가 없어서 미니게임이 비활성화되기 전에
+
+### Game stop
+플레이어가 없어서 미니게임이 비활성화될 때
+
+### Interact
+플레이어가 상호작용할 때
+
+### Move
+플레이어가 움직일 때
+
+### Chat
+플레이어가 채팅할 때
+
+### Command
+플레이어가 명령어를 실행할 때
+
+### Inventory click
+플레이어가 인벤토리를 클릭할 때
+
+### Inventory close 
+플레이어가 인벤토리를 닫을 때
+
+### Attack
+플레이어가 엔티티를 공격할 때
+
+### Damage
+플레이어가 엔티티에게 데미지를 입을 때
+
+### Player damage
+플레이어가 데미지를 입을 때
+
+### Drop item
+플레이어가 아이템을 떨굴 때
+
+### Teleport
+플레이어가 텔레포트 할 때
+
+### Swap hand
+플레이어가 F키로 오른손과 왼손을 맞바꿀 때
+
+
+
+---
+
+## 명령
 
 ## 데이타
 
@@ -284,8 +351,6 @@ for ( set data ( i | 0 ) | data ( i ) < 10 | set data ( i | data ( i ) + 1 ) ) {
 ```
 
 ---
-
-## 명령
 
 ### Send message
 `aliases: [ send, sendmessage, message, msg, print, say, sendmsg ]`
