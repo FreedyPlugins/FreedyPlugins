@@ -219,136 +219,6 @@ on move {
 
 ## 명령
 
-## 데이타
-
-변수, 저장할 수 있는 값이죠. 우리는 이것을 `데이타` 라고 부릅니다.   
-데이타는 총 3가지 종류의 장소에 저장할 수 있습니다.  
-파일, 게임, 그리고 플레이어로 3개의 메모리에 저장할 수 있습니다.  
-`데이타`의 명령 키워드는 `data 또는 var` 입니다. 두개다 잘 됩니다.      
-파일 데이타라면 `all 또는 online` 키워드를 `데이타`에 붙이면 됩니다. `all data`    
-게임 데이타라면 `game` 키워드를 `데이타`에 붙이면 됩니다. `game data`  
-플레이어 데이타라면 `player` 키워드를 `데이타`에 붙이면 됩니다. `player data`  
-파일 데이타는 다른 데이타 종류와 다르게 플러그인이 비활성화되어도 저장되어 있습니다.  
-게임 데이타는 게임 마다 서로 다른 저장소로 저장됩니다.  
-플레이어 데이타는 게임 데이타 처럼 게임 마다 서로 다른 저장소로 저장되면서 플레이어마다 다르게 저장됩니다.
-
-```
-set data ( 이름 | 종원 )
-print data ( 이름 )
-```
-```
-* 위코드 실행했을 때 출력 매세지
-종원
-```
-플레이어 데이타 키워드 `player`는 특별하게 생략할 수 있습니다.  
-`이름` 이나 `종원` 같은 문자는 명령이 아니기 때문에 따옴표를 붙이지 않아도 됩니다.  
-소괄호는 데이타 이름이나 데이타 값을 입력하기 위해 표시해야 합니다.  
-`| 또는 &` 표시는 서로 다른 값이라고 표현하기 위한 구분 문자입니다.  
-`set`은 데이타를 설정하는 키워드입니다.
-```
-set game data ( 이름 | 종원 )
-print game data ( 이름 )
-```
-```
-* 위코드 실행했을 때 출력 매세지
-종원
-```
-```
-set all data ( 이름 | 종원 )
-print all data ( 이름 )
-```
-```
-* 위코드 실행했을 때 출력 매세지
-종원
-```
-`리스트, 아이템, 인벤토리, 블럭, 위치`도 `all`, `game`, `player`를 사용할 수 있습니다.
-
----
-
-## 리스트
-
-```
-add list ( 목록 | 값1 )
-set list ( 목록 | 0 | 값1 )
-get list ( 목록 | 0 )
-size list ( 목록 )
-remove list ( 목록 | 값1 )
-clear list ( 목록 )
-```
-
----
-
-## 위치
-
-위치 이름이 `player` 키워드라면 플레이어의 위치로 합니다.
-
-```
-create location ( 스폰포인트 | world | 0 | 10 | 0 | 180 | 180 ) //월드, X, Y, Z, Yaw, Pitch
-add location ( 스폰포인트 | 0 | 10 | 0 )
-clone location ( player | 스폰포인트 )
-contains location ( player | pos1 | pos2 )
-exists location ( 스폰포인트 )
-posX location ( player )
-posY location ( player )
-posZ location ( player )
-posYaw location ( player )
-posPitch location ( player )
-remove location ( 스폰포인트 )
-equals location ( 스폰포인트 | player )
-```
-
----
-
-## 아이템
-
-```
-set item ( 다야블럭 | code 57 )
-name set item ( 다야블럭 | "&a아름다운블럭" )
-set lore item ( 다야블럭 | 0 | "이 블럭은 아름답습니다." )
-add lore item ( 다야블럭 | "이 블럭은 아름답습니다." )
-exists item ( 다야블럭 )
-remove item ( 다야블럭 )
-```
-
----
-
-## 인벤토리
-
-인벤토리 이름이 `player` 키워드라면 플레이어의 인벤토리로 합니다.
-
-```
-create inventory ( menu | 54 | "메뉴 타이틀!" )
-create inventory ( menu | HOPPER | "메뉴 타이틀!" )
-add inventory ( menu | 다야블럭 )
-set inventory ( menu | 0 | 다야블럭 )
-clone inventory ( menu | menu2 )
-size inventory ( menu )
-type inventory ( menu )
-exists inventory ( menu )
-remove inventory ( menu )
-clear inventory ( menu )
-equals inventory ( menu | player )
-open inventory ( menu )
-close inventory
-get item inventory ( menu | 0 | 메뉴아이템 )
-```
----
-
-## 블럭
-
-블럭 데이타는 파일 데이타에는 없습니다.  
-게임 데이타와 플레이어 데이타에만 있습니다.
-
-```
-set block ( 스폰블럭 | 스폰포인트 )
-code block ( 스폰블럭 )
-type block ( 스폰블럭 )
-get location block ( 스폰블럭 | 블럭위치 )
-```
-
----
-
-
 ## 조건문
 
 ```
@@ -436,6 +306,70 @@ for ( set data ( i | 0 ) | data ( i ) < 10 | set data ( i | data ( i ) + 1 ) ) {
 ```
 
 ---
+
+### Data 
+`aliases: [ data, var ]`
+
+    <game 또는 all 또는 player> data ( some )  //어떤 데이타를 출력한다
+    <game 또는 all 또는 player> set data ( some | Hello ) //어떤 데이타를 설정한다
+
+### List  
+
+    <game 또는 all 또는 player> add list ( play | Hello )  //리스트에 매세지를 추가한다
+    <game 또는 all 또는 player> set list ( play | 0 | Hello )  //어떤 리스트에 0번 매세지를 설정한다
+    <game 또는 all 또는 player> clear list ( play )  //리스트를 없앤다
+    <game 또는 all 또는 player> size list ( play )  //리스트의 매세지 갯수를 출력한다
+    <game 또는 all 또는 player> contains list ( play | Hello )  //리스트에 매세지가 있는지 여부를 출력한다
+    <game 또는 all 또는 player> remove list ( play | Hello )  //리스트에 매세지를 삭제한다
+    <game 또는 all 또는 player> shuffle list ( play )  //리스트를 섞는다
+
+### Location
+
+    <game 또는 all 또는 player> create location ( spawn | world | 0 | 0 | 0 )  //world 월드에 x좌표 0, y좌표 0, z좌표 0 위치를 저장합니다
+    <game 또는 all 또는 player> create location ( spawn | world | 0 | 0 | 0 | 90 | 0 )  //world 월드에 x좌표 0, y좌표 0, z좌표 0, yaw 90, pitch 0 위치를 저장합니다
+    <game 또는 all 또는 player> set posX location ( spawn | 10 )  //위치의 X좌표를 설정합니다
+    <game 또는 all 또는 player> set posY location ( spawn | 10 )  //위치의 Y좌표를 설정합니다
+    <game 또는 all 또는 player> set posZ location ( spawn | 10 )  //위치의 Z좌표를 설정합니다
+    <game 또는 all 또는 player> set posYaw location ( spawn | 10 )  //위치의 yaw를 설정합니다
+    <game 또는 all 또는 player> set posPitch location ( spawn | 10 )  //위치의 pitch를 설정합니다
+    <game 또는 all 또는 player> clone location ( player | spawn )  //위치를 다른 위치에 복제합니다
+    <game 또는 all 또는 player> add location ( spawn | 0 | 10 | 0 )  //위치에 x좌표 0, y좌표 10, z좌표 0만큼 더합니다
+    <game 또는 all 또는 player> remove location ( spawn )  //위치를 삭제합니다
+    <game 또는 all 또는 player> exists location ( spawn )  //위치가 존재하는지 여부를 출력합니다
+    <game 또는 all 또는 player> equals location ( spawn | player )  //두 위치가 서로 같은지 여부를 출력합니다
+    <game 또는 all 또는 player> contains location ( spawn | pos_A | pos_B ) //위치가 두 위치의 직사각형 안에 있는지 출력합니다
+    <game 또는 all 또는 player> get block ( spawn | blockName )  //위치에 있는 블럭을 저장합니다
+
+### Block
+
+    <game 또는 player> set block ( blockName | spawnPoint )  //블럭 위치를 저장합니다
+    <game 또는 player> get location block ( blockName | spawnPoint  //블럭 위치를 저장합니다
+    <game 또는 player> set block ( blockName | code 5 | 1 )  //블럭 코드를 5:1(가문비나무 판자) 로 설정합니다
+    <game 또는 player> code block ( blockName )  /블럭 코드를 출력합니다
+
+### Item 
+
+    set <game 또는 player> item ( itemName | code 35:5 )  //코드 35:5(연두색 양털) 아이템을 저장합니다
+    lore add <game 또는 player> item ( itemName | "아이템 설명" )  //아이템에 로어를 추가합니다
+    lore set <game 또는 player> item ( itemName | 0 | "아이템 설명" )  //아이템에 로어를 설정합니다
+    name set <game 또는 player> item ( itemName | "아이템 이름" )  //아이템의 표시이름을 설정합니다
+    exists <game 또는 player> item ( itemName )  //아이템이 존재하는지 여부를 출력합니다
+
+### Inventory
+
+    <game 또는 player> create inventory ( menu_1 | 54 | "메뉴 타이틀" )  //몇칸짜리 인벤토리를 생성합니다
+    <game 또는 player> set inventory ( menu_1 | 0 | itemName )  //인벤토리에 몇번째칸에 아이템을 설정합니다
+    <game 또는 player> add inventory ( menu_1 | itemname )  //인벤토리에 아이템을 추가합니다
+    <game 또는 player> open inventory ( menu_1 )  //플레이어에게 인벤토리를 띄웁니다
+    <game 또는 player> size inventory ( menu_1 )  //인벤토리의 칸수를 출력합니다
+    <game 또는 player> equals inventory ( menu_1 | player )  //두 인벤토리가 서로 같은지 여부를 출력합니다
+    <game 또는 player> exists inventory ( menu_1 )  //인벤토리가 존재하는지 여부를 출력합니다
+    <game 또는 player> clear inventory ( menu_1 )  //인벤토리에 아이템을 모두 삭제합니다
+    <game 또는 player> clone inventory ( menu_1 | player )  //인벤토리를 다른 인벤토리에 복제합니다
+    <game 또는 player> remove inventory ( menu_1 )  //인벤토리를 삭제합니다
+    <game 또는 player> close inventory  //플레이어의 인벤토리를 닫습니다  
+
+###
 
 ### Send message
 `aliases: [ send, sendmessage, message, msg, print, say, sendmsg ]`
