@@ -369,8 +369,6 @@ for ( set data ( i | 0 ) | data ( i ) < 10 | set data ( i | data ( i ) + 1 ) ) {
     <game 또는 player> remove inventory ( menu_1 )  //인벤토리를 삭제합니다
     <game 또는 player> close inventory  //플레이어의 인벤토리를 닫습니다  
 
-###
-
 ### Send message
 `aliases: [ send, sendmessage, message, msg, print, say, sendmsg ]`
 
@@ -479,6 +477,11 @@ for ( set data ( i | 0 ) | data ( i ) < 10 | set data ( i | data ( i ) + 1 ) ) {
 ### Do
 
     do start  //start 명령번들을 실행합니다
+
+### Return
+
+    return false  //매세지를 번들이나 이밴트에게 전달하고 명령을 중단합니다 
+    //예를 들어서, interact 이밴트에서 실행되면 상호작용이 취소됩니다
 
 ### Refs
 
