@@ -326,6 +326,19 @@ on move {
     game actionbar Hello //게임에 참여해 있는 모든 플레이어에게 액션바 매세지를 보낸다
     all actionbar Hello  //서버에 참여해 있는 모든 플레이어에게 액션바 매세지를 보낸다
 
+### BossBar
+
+    <game 또는 player> create bossbar ( testBossBar | WHITE )  //어떤 색깔에 보스바를 생성합니다
+    <game 또는 player> open bossbar ( testBossBar )  //플레이어에게 보스바를 엽니다
+    <game 또는 player> close bossbar ( testBossBar )  //플레이어의 보스바를 닫습니다
+    <game 또는 player> remove bossbar ( testBossBar )  //보스바를 삭제합니다
+    <game 또는 player> set size bossbar ( testBossBar | 1 )  //보스바의 프로세스바를 0부터 1안에 숫자로 설정합니다
+    <game 또는 player> set type bossbar ( testBossBar | SOLID )  //보스바에 스타일을 설정합니다
+    <game 또는 player> set color bossbar ( testBossBar | WHITE )  //보스바에 색깔을 설정합니다
+    <game 또는 player> exists bossbar ( testBossBar )  //보스바가 존재하는지 여부를 출력합니다
+    //가능한 색깔: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+    //가능한 스타일: SOLID, 6, 10, 12, 20 또는 쓰지 않기
+
 ### Food
 
     food  //플레이어의 배고픔 수치를 출력한다

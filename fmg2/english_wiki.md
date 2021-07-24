@@ -225,7 +225,7 @@ When the player places blocks
     cos 5 //print the trigonometric cosine of the angle
     sin 5 //print the trigonometric sine of the angle
     tan 5 //print the trigonometric tangent of the angle
-    ( 1 + 1 ) // Output the sum of two values
+    ( 1 + 1 ) // Outputs the sum of two values
     ( 1 - 1 ) // Output the value obtained by subtracting two values
     ( 1 * 1 ) // Output the product of two values
     ( 1 / 1 ) // Output the value obtained by dividing two values
@@ -261,9 +261,9 @@ When the player places blocks
     <game or all or player> clone location ( player | spawn ) // clone location to another location
     <game or all or player> add location ( spawn | 0 | 10 | 0 ) //Add x-coordinate 0, y-coordinate 10, z-coordinate 0 to the location
     <game or all or player> remove location ( spawn ) // remove location
-    <game or all or player> exists location ( spawn ) //prints whether the location exists
+    <game or all or player> exists location ( spawn ) //prints whether location exists
     <game or all or player> equals location ( spawn | player ) //prints whether the two locations are equal to each other
-    <game or all or player> contains location ( spawn | <game or all or player> pos_A | <game or all or player> pos_B )
+    <game or all or player> contains location ( spawn | <game or all or player> pos_A | <game or all or player> pos_B ) // print if the location is inside the rectangle of both locations
     <game or all or player> get block ( spawn | <game or player> blockName ) // Save the block at location
 
 ### Block
@@ -284,6 +284,7 @@ When the player places blocks
 ### Inventory
 
     <game or all or player> create inventory ( menu_1 | 54 | "menu title" )
+    <game or all or player> create inventory ( menu_1 | HOPPER | "menu title" ) //Create an inventory of type
     <game or all or player> set inventory ( menu_1 | 0 | <game or all or player> itemName )
     <game or all or player> add inventory ( menu_1 | <game or all or player> itemname ) // Add item to inventory
     <game or all or player> open inventory ( menu_1 ) // Open the inventory to the player
@@ -295,6 +296,7 @@ When the player places blocks
     <game or all or player> remove inventory ( menu_1 ) //Delete inventory
     <game or all or player> close inventory // Close the player's inventory
     <game or all or player> get item inventory ( player | hotbar | <game or all or player> testItem ) // Store the slot of the item the player is holding in the item
+    // Google InventoryType <server version> spigot to find all inventory types
 
 ### Target
 
@@ -322,6 +324,19 @@ When the player places blocks
     actionbar Hello // send action bar message to player
     game actionbar Hello // Sends an action bar message to all players participating in the game
     all actionbar Hello // Sends an action bar message to all players participating in the server
+
+### BossBar
+
+    <game or player> create bossbar ( testBossBar | WHITE ) //Create a bossbar in any color
+    <game or player> open bossbar ( testBossBar ) //Open bossbar to the player
+    <game or player> close bossbar ( testBossBar ) //Closes the player's bossbar
+    <game or player> remove bossbar ( testBossBar ) //Remove bossbar
+    <game or player> set size bossbar ( testBossBar | 1 ) //Set the process bar of the boss bar to a number from 0 to 1
+    <game or player> set type bossbar ( testBossBar | SOLID )
+    <game or player> set color bossbar ( testBossBar | WHITE ) //Set the color of the bossbar
+    <game or player> exists bossbar ( testBossBar ) // Prints whether the boss bar exists
+    // Available colors: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+    // Possible styles: SOLID, 6, 10, 12, 20 or not
 
 ###
 
@@ -370,12 +385,15 @@ When the player places blocks
 
     particle ( player | FLAME | 10 | true ) // Summon 10 particle effects at the location in a stopped state
     particle ( player | FLAME | 10 ) // Summon 10 particle effects at the location
+    // Google Particle <server version> spigot to find all particle effects
+
 
 ###
 
     add potion ( GLOWING | 55555 | 0 ) // Gives level 1 potion effect for the duration (Potion level 1 is 0)
     remove potion ( GLOWING ) // Remove the potion effect
-    clear potion / Removes all potion effects
+    clear potion // Removes all potion effects
+    // Type PottionEffectType <server version> spigot on Google to find all potions
 
 ### Sneaking
 `aliases: [ sneaking, sneak ]`
@@ -443,7 +461,7 @@ When the player places blocks
 
     async print hello // execute the command asynchronously
     //Async is executed outside the server's action flow, so if the command execution time is long, use async
-    // But the asynchronous execution does not flow with other normal executions, so
+    // However, asynchronous execution does not flow with other normal executions, so
     // It is recommended not to share data
 
 ### Delay
