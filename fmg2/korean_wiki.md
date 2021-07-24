@@ -285,6 +285,7 @@ on move {
 ### Inventory
 
     <game 또는 all 또는 player> create inventory ( menu_1 | 54 | "메뉴 타이틀" )  //몇칸짜리 인벤토리를 생성합니다
+    <game 또는 all 또는 player> create inventory ( menu_1 | HOPPER | "메뉴 타이틀" )  //타입의 인벤토리를 생성합니다
     <game 또는 all 또는 player> set inventory ( menu_1 | 0 | <game 또는 all 또는 player> itemName )  //인벤토리에 몇번째칸에 아이템을 설정합니다
     <game 또는 all 또는 player> add inventory ( menu_1 | <game 또는 all 또는 player> itemname )  //인벤토리에 아이템을 추가합니다
     <game 또는 all 또는 player> open inventory ( menu_1 )  //플레이어에게 인벤토리를 띄웁니다
@@ -296,6 +297,7 @@ on move {
     <game 또는 all 또는 player> remove inventory ( menu_1 )  //인벤토리를 삭제합니다
     <game 또는 all 또는 player> close inventory  //플레이어의 인벤토리를 닫습니다  
     <game 또는 all 또는 player> get item inventory ( player | hotbar | <game 또는 all 또는 player> testItem )  //플레이어가 들고 있는 아이템의 슬롯을 아이템에 저장합니다 
+    //구글에 InventoryType <서버버전> spigot 이라고 치면 모든 인벤토리 종류를 찾을 수 있습니다
 
 ### Target
 
@@ -371,12 +373,15 @@ on move {
 
     particle ( player | FLAME | 10 | true )  //위치에 파티클 효과 10개를 멈춰있는 상태로 소환합니다
     particle ( player | FLAME | 10 )  //위치에 파티클 효과 10개를 소환합니다
+    //구글에 Particle <서버버전> spigot 이라고 치면 모든 파티클 효과를 찾을 수 있습니다
+
 
 ### Potion
 
     add potion ( GLOWING | 55555 | 0 )  //레벨 1의 포션효과를 지속시간 동안 줍니다 (포션 1레벨은 0입니다)    
     remove potion ( GLOWING )  //포션효과를 제거합니다
-    clear potion  /포션효과를 모두 제거합니다
+    clear potion  //포션효과를 모두 제거합니다
+    //구글에 PottionEffectType <서버버전> spigot 이라고 치면 모든 포션을 찾을 수 있습니다
 
 ### Sneaking
 `aliases: [ sneaking, sneak ]`
