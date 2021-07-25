@@ -26,7 +26,7 @@ And these are collectively called 'source code', 'code', and 'syntax'.
 `""` `''` Quotation marks are used to separate non-command message characters.  
 
 Braces and parentheses must be preceded and followed by spaces.  
-`print("hello")`(X) `print("hello")`(O)    
+`print("hello")`(X) `print ( "hello" )`(O)    
 `{print "hello"}`(X) `{ print "hello" }`(O)  
 
 ---
@@ -388,7 +388,7 @@ When the player places blocks
     // Google Particle <server version> spigot to find all particle effects
 
 
-###
+### Do
 
     add potion ( GLOWING | 55555 | 0 ) // Gives level 1 potion effect for the duration (Potion level 1 is 0)
     remove potion ( GLOWING ) // Remove the potion effect
@@ -512,8 +512,8 @@ Oh yeah.
 ```
 The `if` command executes the next command when the condition is true.  
 The `else` command executes the next command when the condition is false.  
-In the above syntax, `/=` is true when the two values ​​are different, so "True." is output.  
-If the two values are equal, "False." will be output because the two values are not different.  
+In the above syntax, `/=` is true when the two values ​​are different, so "true." is output.  
+If the two values are equal, "false." will be output because the two values are not different.  
 
 ```
 if ( "first value" = "second value" )
@@ -524,9 +524,9 @@ if ( "first value" = "second value" )
 if ( "first value" = "second value" & "third value" = "4th value" )
     print The first and second values are the same, the third and fourth values are the same
 ```
-The meaning of the source code above and below is the same.
-Only true if the condition before or after `& or &&` is true.
-`| or ||` is true only if any of the conditions before and after are true.
+The meaning of the source code above and below is the same.  
+Only true if the condition before or after `& or &&` is true.  
+`| or ||` is true only if any of the conditions before and after are true.  
 
 ---
 
