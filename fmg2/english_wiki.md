@@ -1,4 +1,4 @@
-Freedie Minigame Maker 2 is a script-type minigame creation plugin.  
+FreedyMinigameMaker2 is a script-type minigame creation plugin.  
 Executing a command is the basic principle.  
 
 ```
