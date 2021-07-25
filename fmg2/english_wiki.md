@@ -1,91 +1,91 @@
-Freedie Minigame Maker 2 is a script-type minigame creation plugin.
-Executing a command is the basic principle.
+Freedie Minigame Maker 2 is a script-type minigame creation plugin.  
+Executing a command is the basic principle.  
 
 ```
 on move
     print "You moved!"
 ```
-It works this way.
+It works this way.  
 
 ```
 on move {
     print ( "You moved!" )
 }
 ```
-All source code above and below works fine.
-This code sends a message when the player moves.
+All source code above and below works fine.  
+This code sends a message when the player moves.  
 
-Here `print` is called `command`.
-And `move` in `on move` is called `event`.
-Commands within curly braces, or commands under events, are called 'bundles'.
-And these are collectively called 'source code', 'code', and 'syntax'.
+Here `print` is called `command`.  
+And `move` in `on move` is called `event`.  
+Commands within curly braces, or commands under events, are called 'bundles'.  
+And these are collectively called 'source code', 'code', and 'syntax'.  
 
-`move` is an `event` that executes the code below when it is moved.
-`print` is a `command` to send the next message to the player.
-`{ }` `( )` The parentheses and curly braces mark the end of the sentence.
-`""` `''` Quotation marks are used to separate non-command message characters.
+`move` is an `event` that executes the code below when it is moved.  
+`print` is a `command` to send the next message to the player.  
+`{ }` `( )` The parentheses and curly braces mark the end of the sentence.  
+`""` `''` Quotation marks are used to separate non-command message characters.  
 
-Braces and parentheses must be preceded and followed by spaces.
-`print("hello")`(X) `print("hello")`(O)
-`{print "hello"}`(X) `{ print "hello" }`(O)
+Braces and parentheses must be preceded and followed by spaces.  
+`print("hello")`(X) `print("hello")`(O)    
+`{print "hello"}`(X) `{ print "hello" }`(O)  
 
 ---
 
 ## Minigames and commands
 
-I'll call the 'mini-game' a 'game'.
-There is a hub game, a game that automatically joins when you enter the server.
-You cannot exit this game other than by exiting the server.
-To join a non-hub game, you must not be in a non-hub game.
+I'll call the 'mini-game' a 'game'.    
+There is a hub game, a game that automatically joins when you enter the server.    
+You cannot exit this game other than by exiting the server.  
+To join a non-hub game, you must not be in a non-hub game.  
 
-`/fmg create <game name>` Creates a game. Game names must not contain illegal characters. Spaces are allowed.
+`/fmg create <game name>` Creates a game. Game names must not contain illegal characters. Spaces are allowed.  
 
-`/fmg delete <game name>` Deletes a game.
+`/fmg delete <game name>` Deletes a game.  
 
-`/fmg reload [gamename]` Reloads all games or specific game files.
+`/fmg reload [gamename]` Reloads all games or specific game files.  
 
-`/fmg join <game name>` Join the game.
+`/fmg join <game name>` Join the game.  
 
-`/fmg quit <game name>` Leaves the game.
+`/fmg quit <game name>` Leaves the game.  
 
-Save the `/fmg save` variable.
+Save the `/fmg save` variable.  
 
-`/fmg game` List the existing games.
+`/fmg game` List the existing games.  
 
-`/fmg do <bundle name>` Run the bundle in the hub game.
+`/fmg do <bundle name>` Run the bundle in the hub game.  
 
-Run the `/fmg run <command>` command.
+Run the `/fmg run <command>` command.  
 
 ---
 
 ## event
 
 ### Join
-When a player enters the server
+When a player enters the server  
 
 ### Left
-When a player leaves the server
+When a player leaves the server  
 
 ### Pre-game join
-Before the player enters the game
+Before the player enters the game  
 
 ### Game join
-When a player enters the game
+When a player enters the game  
 
 ### Pre game left
-before a player leaves the game
+before a player leaves the game  
 
 ### Game left
-When a player leaves the game
+When a player leaves the game  
 
 ### Pre game stop
-Before the minigame is disabled because there are no players
+Before the minigame is disabled because there are no players  
 
 ### Game stop
-When the minigame is disabled because there are no players
+When the minigame is disabled because there are no players  
 
 ### Interact
-when the player interacts
+when the player interacts  
 
 | name | Category | Description |
 |--------------|--------------|--------------|
@@ -96,7 +96,7 @@ when the player interacts
 | interactItem | item | Clicked Item |
 
 ### Move
-when the player moves
+when the player moves  
 
 | name | Category | Description |
 |--------------|--------------|--------------|
@@ -104,21 +104,21 @@ when the player moves
 | moveTo | Location | Next location |
 
 ### Chat
-when the player chats
+when the player chats  
 
 | name | Category | Description |
 |--------------|--------------|--------------|
 | chat | data | chat message |
 
 ### Command
-When the player executes a command
+When the player executes a command  
 
 | name | Category | Description |
 |--------------|--------------|--------------|
 | command | data | command entered |
 
 ### Inventory click
-When the player clicks on the inventory
+When the player clicks on the inventory  
 
 | name | Category | Description |
 |--------------|--------------|--------------|
@@ -133,14 +133,14 @@ When the player clicks on the inventory
 | inventorySlot | data | slot position 2 |
 
 ### Inventory close
-When a player closes their inventory
+When a player closes their inventory  
 
 | name | Category | Description |
 |--------------|--------------|--------------|
 | inventoryClosed | inventory | Closed Inventory |
 
 ### Attack
-When a player attacks an entity
+When a player attacks an entity  
 
 | name | Category | Description |
 |--------------|--------------|--------------|
@@ -150,7 +150,7 @@ When a player attacks an entity
 | entityUuid | data | Entity UUID |
 
 ### Damage
-When a player takes damage from an entity
+When a player takes damage from an entity  
 
 | name | Category | Description |
 |--------------|--------------|--------------|
@@ -161,7 +161,7 @@ When a player takes damage from an entity
 
 
 ### Player damage
-When a player takes damage
+When a player takes damage  
 
 | name | Category | Description |
 |--------------|--------------|--------------|
@@ -170,14 +170,14 @@ When a player takes damage
 | damageFinal | data | final calculated figure |
 
 ### Drop item
-When a player drops an item
+When a player drops an item  
 
 | name | Category | Description |
 |--------------|--------------|--------------|
 | dropItem | item | Dropped Items |
 
 ### Teleport
-when the player teleports
+when the player teleports  
 
 | name | Category | Description |
 |--------------|--------------|--------------|
@@ -185,7 +185,7 @@ when the player teleports
 | teleportTo | Location | Next location |
 
 ### Swap hand
-When the player switches right and left hands with the F key
+When the player switches right and left hands with the F key  
 
 | name | Category | Description |
 |--------------|--------------|--------------|
@@ -193,14 +193,14 @@ When the player switches right and left hands with the F key
 | offHandItem | item | left hand items |
 
 ### block break
-When a player breaks a block
+When a player breaks a block  
 
 | name | Category | Description |
 |--------------|--------------|--------------|
 | blockBreak | block | crushed blocks |
 
 ### Block place
-When the player places blocks
+When the player places blocks  
 
 | name | Category | Description |
 |--------------|--------------|--------------|
@@ -213,11 +213,11 @@ When the player places blocks
 
 ### data modifier
 
-    // This is a modifier to express where data is stored.
-    //all is per file and stored permanently
-    //game is a game unit and is destroyed when the game is deactivated
-    //player is the player and game unit and is destroyed when the game is deactivated or the player leaves the game
-    //Most of them have this meaning, but the modifier all of the target has the meaning of checking all
+    // This is a modifier to express where data is stored.  
+    //all is per file and stored permanently  
+    //game is a game unit and is destroyed when the game is deactivated  
+    //player is the player and game unit and is destroyed when the game is deactivated or the player leaves the game  
+    //Most of them have this meaning, but the modifier all of the target has the meaning of checking all  
 
 
 ### Math Operations
@@ -486,7 +486,7 @@ When the player places blocks
 if ( "first value" = "second value" )
     print "true"
 ```
-A conditional statement is a 'statement' in which 'code' is executed according to a condition.
+A conditional statement is a 'statement' in which 'code' is executed according to a condition.  
 ```
 if ( value1 = value2 ) {
     // If true, it will be executed.
@@ -495,34 +495,34 @@ if ( value1 = value2 ) {
 }
 ```
 
-The `=` equal sign is called a `logical operator'.
-`== or =` True when both values ​​are equal.
-`!= or /=` True if the two values ​​are different.
-`<` True if the number on the left is less than the number on the right.
-`>` True if the left hand side is greater than the right hand side number.
-`<=` True if the number on the left is less than or equal to the number on the right.
-`>=` True if the number on the left is greater than or equal to the number on the right.
+The `=` equal sign is called a logical operator'.
+`== or =` True when both values are equal.  
+`!= or /=` True if the two values are different.  
+`<` True if the number on the left is less than the number on the right.  
+`>` True if the left hand side is greater than the right hand side number.   
+`<=` True if the number on the left is less than or equal to the number on the right.    
+`>=` True if the number on the left is greater than or equal to the number on the right.  
 
 ```
-if ( South Korea /= North Korea ) { print "True." } else { print "False." }
+if ( South Korea /= North Korea ) { print "true." } else { print "false." }
 ```
 ```
 * Output message when the above code is executed
 Oh yeah.
 ```
-The `if` command executes the next command when the condition is true.
-The `else` command executes the next command when the condition is false.
-In the above syntax, `/=` is true when the two values ​​are different, so "True." is output.
-If the two values ​​are equal, "False." will be output because the two values ​​are not different.
+The `if` command executes the next command when the condition is true.  
+The `else` command executes the next command when the condition is false.  
+In the above syntax, `/=` is true when the two values ​​are different, so "True." is output.  
+If the two values are equal, "False." will be output because the two values are not different.  
 
 ```
 if ( "first value" = "second value" )
     if ( "third value" = "fourth value" )
-        print The first and second values ​​are the same, the third and fourth values ​​are the same
+        print The first and second values are the same, the third and fourth values are the same
 ```
 ```
 if ( "first value" = "second value" & "third value" = "4th value" )
-    print The first and second values ​​are the same, the third and fourth values ​​are the same
+    print The first and second values are the same, the third and fourth values are the same
 ```
 The meaning of the source code above and below is the same.
 Only true if the condition before or after `& or &&` is true.
@@ -553,7 +553,7 @@ for (Initial Execution Statement | Conditional Statement | Incremental Statement
 
 //execution flow chart:
 //0. initial execution statement
-//One. If the conditional statement is true, 2 is executed; otherwise, 5 is executed.
+//1. If the conditional statement is true, 2 is executed; otherwise, 5 is executed.
 //2. Execution statement
 //3. increase/decrease syntax
 //4. go to 1
