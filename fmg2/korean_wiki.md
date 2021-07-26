@@ -264,13 +264,13 @@ on move {
     <game 또는 all 또는 player> remove location ( spawn )  //위치를 삭제합니다
     <game 또는 all 또는 player> exists location ( spawn )  //위치가 존재하는지 여부를 출력합니다
     <game 또는 all 또는 player> equals location ( spawn | player )  //두 위치가 서로 같은지 여부를 출력합니다
-    <game 또는 all 또는 player> contains location ( spawn | <game 또는 all 또는 player> pos_A | <game 또는 all 또는 player> pos_B ) //위치가 두 위치의 직사각형 안에 있는지 출력합니다
-    <game 또는 all 또는 player> get block ( spawn | <game 또는 player> blockName )  //위치에 있는 블럭을 저장합니다
+    <game 또는 all 또는 player> contains location ( spawn | <game 또는 all 또는 player> pos_A | <game 또는 all 또는 player> player pos_B ) //위치가 두 위치의 직사각형 안에 있는지 출력합니다
+    <game 또는 all 또는 player> get block ( spawn | <game 또는 player> player blockName )  //위치에 있는 블럭을 저장합니다
 
 ### Block
 
     <game 또는 player> set block ( blockName | <game 또는 all 또는 player> spawnPoint )  //블럭 위치를 저장합니다
-    <game 또는 player> get location block ( blockName | <game 또는 all 또는 player> spawnPoint  //블럭 위치를 저장합니다
+    <game 또는 player> get location block ( blockName | <game 또는 all 또는 player> player spawnPoint  //블럭 위치를 저장합니다
     <game 또는 player> set block ( blockName | code 5 | 1 )  //블럭 코드를 5:1(가문비나무 판자) 로 설정합니다
     <game 또는 player> code block ( blockName )  /블럭 코드를 출력합니다
 
@@ -286,8 +286,8 @@ on move {
 
     <game 또는 all 또는 player> create inventory ( menu_1 | 54 | "메뉴 타이틀" )  //몇칸짜리 인벤토리를 생성합니다
     <game 또는 all 또는 player> create inventory ( menu_1 | HOPPER | "메뉴 타이틀" )  //타입의 인벤토리를 생성합니다
-    <game 또는 all 또는 player> set inventory ( menu_1 | 0 | <game 또는 all 또는 player> itemName )  //인벤토리에 몇번째칸에 아이템을 설정합니다
-    <game 또는 all 또는 player> add inventory ( menu_1 | <game 또는 all 또는 player> itemname )  //인벤토리에 아이템을 추가합니다
+    <game 또는 all 또는 player> set inventory ( menu_1 | 0 | <game 또는 all 또는 player> player itemName )  //인벤토리에 몇번째칸에 아이템을 설정합니다
+    <game 또는 all 또는 player> add inventory ( menu_1 | <game 또는 all 또는 player> player itemname )  //인벤토리에 아이템을 추가합니다
     <game 또는 all 또는 player> open inventory ( menu_1 )  //플레이어에게 인벤토리를 띄웁니다
     <game 또는 all 또는 player> size inventory ( menu_1 )  //인벤토리의 칸수를 출력합니다
     <game 또는 all 또는 player> equals inventory ( menu_1 | player )  //두 인벤토리가 서로 같은지 여부를 출력합니다
@@ -296,14 +296,14 @@ on move {
     <game 또는 all 또는 player> clone inventory ( menu_1 | player )  //인벤토리를 다른 인벤토리에 복제합니다
     <game 또는 all 또는 player> remove inventory ( menu_1 )  //인벤토리를 삭제합니다
     <game 또는 all 또는 player> close inventory  //플레이어의 인벤토리를 닫습니다  
-    <game 또는 all 또는 player> get item inventory ( player | hotbar | <game 또는 all 또는 player> testItem )  //플레이어가 들고 있는 아이템의 슬롯을 아이템에 저장합니다 
+    <game 또는 all 또는 player> get item inventory ( player | hotbar | <game 또는 all 또는 player> player testItem )  //플레이어가 들고 있는 아이템의 슬롯을 아이템에 저장합니다 
     //구글에 InventoryType <서버버전> spigot 이라고 치면 모든 인벤토리 종류를 찾을 수 있습니다
 
 ### Target
 
     name target ( Notch ) set helath 20  //어떤 이름으로 된 플레이어로 다음 명령을 실행합니다
     target ( player uuid ) set food 20  //UUID로 된 플레이어로 다음 명령을 실행합니다
-    all target ( <game 또는 all 또는 player> play ) {
+    all target ( <game 또는 all 또는 player> player play ) {
         add food -1
     }  //플레이어 이름 또는 플레이어 UUID로 이루어진 리스트로 플레이어를 찾고 한번씩 모두 다 다음 명령을 실행합니다
 
@@ -433,7 +433,7 @@ on move {
 
 ### Split
 
-    split ( "1,2,3" | "," | <game 또는 all 또는 player> listName )
+    split ( "1,2,3" | "," | <game 또는 all 또는 player> player listName )
     //첫번째 매세지를 두번째 매세지로 나눠서 리스트에 저장합니다
 
 ### Join
