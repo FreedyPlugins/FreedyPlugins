@@ -64,8 +64,17 @@ on move {
 ### Join
 플레이어가 서버에 입장했을 때
 
+| 이름 | 종류 | 설명 |
+|--------------|--------------|--------------|
+| joinMessage | 데이타 | 입장 매세지 |
+
 ### Left
 플레이어가 서버를 퇴장했을 때
+
+| 이름 | 종류 | 설명 |
+|--------------|--------------|--------------|
+| leftMessage | 데이타 | 퇴장 매세지 |
+
 
 ### Pre game join
 플레이어가 게임에 입장하기 전에
@@ -132,6 +141,14 @@ on move {
 | inventoryRawSlot | 데이타 | 슬롯 위치 |
 | inventorySlotType | 데이타 | 슬롯의 종류 |
 | inventorySlot | 데이타 | 슬롯 위치 2 |
+
+### Inventory interact
+플레이어가 인벤토리를 상호작용할 때
+
+| 이름 | 종류 | 설명 |
+|--------------|--------------|--------------|
+| inventoryInteracted | 인벤토리 | 상호작용한 인벤토리 |
+
 
 ### Inventory close 
 플레이어가 인벤토리를 닫을 때
@@ -207,6 +224,12 @@ on move {
 |--------------|--------------|--------------|
 | blockPlace | 블럭 | 설치한 블럭 |
 
+### Player respawn
+플레이어가 리스폰할 때
+
+| 이름 | 종류 | 설명 |
+|--------------|--------------|--------------|
+| respawnLocation | 위치 | 리스폰 위치 |
 
 ---
 
@@ -306,6 +329,9 @@ on move {
     all target ( <game 또는 all 또는 player> player play ) {
         add food -1
     }  //플레이어 이름 또는 플레이어 UUID로 이루어진 리스트로 플레이어를 찾고 한번씩 모두 다 다음 명령을 실행합니다
+    get list target ( <game 또는 all 또는 player> player testList | game eachMessage ) {
+        print game data ( eachMessage )
+    }  //리스트에 매세지를 한번씩 모두 다 다음 명령을 실행합니다
 
 ### Send message
 `aliases: [ send, sendmessage, message, msg, print, say, sendmsg ]`
