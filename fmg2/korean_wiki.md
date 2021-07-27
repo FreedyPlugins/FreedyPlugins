@@ -304,6 +304,10 @@ on move {
     lore set <game 또는 all 또는 player> item ( itemName | 0 | "아이템 설명" )  //아이템에 로어를 설정합니다
     name set <game 또는 all 또는 player> item ( itemName | "아이템 이름" )  //아이템의 표시이름을 설정합니다
     exists <game 또는 all 또는 player> item ( itemName )  //아이템이 존재하는지 여부를 출력합니다
+    code <game 또는 all 또는 player> item ( itemName )  //아이템 코드를 출력합니다
+    equals <game 또는 all 또는 player> item ( itemName | <game 또는 all 또는 player> targetItem )  //아이템이 같은지 요부를 출력합니다
+    size <game 또는 all 또는 player> item ( itemName )  //아이템의 갯수를 출력합니다
+    size set <game 또는 all 또는 player> item ( itemName )  //아이템의 갯수를 설정합니다
 
 ### Inventory
 
@@ -422,6 +426,11 @@ on move {
     clear potion  //포션효과를 모두 제거합니다
     //구글에 PottionEffectType <서버버전> spigot 이라고 치면 모든 포션을 찾을 수 있습니다
 
+### HotBar
+
+    get hotbar  //플레이어의 핫바 슬롯을 출력합니다
+    set hotbar  /플레이어의 핫바 슬롯을 설정합니다
+
 ### Sneaking
 `aliases: [ sneaking, sneak ]`
 
@@ -498,9 +507,13 @@ on move {
     async delay ( 20 ) print hello  
     //몇틱 후에 다음 구문을 비동기로 실행 후 실행 코드를 출력합니다
 
+### TaskId
+
+    taskId  //실행되는 코드가 Delay 명령으로 실행되었다면, 실행 코드를 출력합니다
+
 ### CancelTask
 
-    cancel ( 실행코드 )  //실행을 대기 중이던 구문을 취소시킵니다
+    cancel ( 실행 코드 )  //실행을 대기 중이던 구문을 취소시킵니다
 
 ### Execute
 
