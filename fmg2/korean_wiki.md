@@ -142,12 +142,19 @@ on move {
 | inventorySlotType | 데이타 | 슬롯의 종류 |
 | inventorySlot | 데이타 | 슬롯 위치 2 |
 
-### Inventory interact
-플레이어가 인벤토리를 상호작용할 때
+### Inventory drag
+플레이어가 인벤토리를 드래그할 때
 
 | 이름 | 종류 | 설명 |
 |--------------|--------------|--------------|
-| inventoryInteracted | 인벤토리 | 상호작용한 인벤토리 |
+| inventoryDrag | 인벤토리 | 드래그한 인벤토리 |
+| inventorySlots | 리스트 | 드래그한 슬롯들 |
+| inventoryRawSlots | 리스트 | 드래그한 슬롯들 2 |
+| inventoryDragItems | 리스트 | 넣어진 아이템 슬롯들 |
+| inventoryDragItem_<slot> | 아이템 | 특정 슬롯의 넣어진 아이템 |
+| inventoryCursor | 아이템 | 커서 아이템 |
+| inventoryOldCursor | 아이템 | 이전 커서 아이템 |
+| inventoryDragType | 데이타 | 드래그 종류 |
 
 
 ### Inventory close 
@@ -272,6 +279,7 @@ on move {
     <game 또는 all 또는 player> contains list ( play | Hello )  //리스트에 매세지가 있는지 여부를 출력한다
     <game 또는 all 또는 player> remove list ( play | Hello )  //리스트에 매세지를 삭제한다
     <game 또는 all 또는 player> shuffle list ( play )  //리스트를 섞는다
+    <game 또는 all 또는 player> clone list ( play )  //리스트를 복제한다
 
 ### Location
 
@@ -293,6 +301,7 @@ on move {
 ### Block
 
     <game 또는 player> set block ( blockName | <game 또는 all 또는 player> spawnPoint )  //블럭 위치를 저장합니다
+    <game 또는 player> remove block ( blockName )  //블럭을 삭제합니다
     <game 또는 player> get location block ( blockName | <game 또는 all 또는 player> player spawnPoint  //블럭 위치를 저장합니다
     <game 또는 player> set block ( blockName | code 5 | 1 )  //블럭 코드를 5:1(가문비나무 판자) 로 설정합니다
     <game 또는 player> code block ( blockName )  /블럭 코드를 출력합니다
@@ -435,6 +444,11 @@ on move {
 `aliases: [ sneaking, sneak ]`
 
     sneaking  //플레이어가 웅크리고 있는지 여부를 출력합니다
+
+### Velocity
+
+    set velocity ( 0 | 10 | 0 )  // Y 좌표 10 만큼 추진력을 설정합니다
+    add velocity ( 0 | 10 | 0 )  // Y 좌표 10 만큼 추진력을 더합니다 
 
 ### Uuid
 

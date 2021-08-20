@@ -63,8 +63,16 @@ Run the `/fmg run <command>` command.
 ### Join
 When a player enters the server  
 
+| name | Category | Description |
+|--------------|--------------|--------------|
+| joinMessage | data | Entry message |
+
 ### Left
 When a player leaves the server  
+
+| name | Category | Description |
+|--------------|--------------|--------------|
+| leftMessage | data | exit message |
 
 ### Pre-game join
 Before the player enters the game  
@@ -131,6 +139,20 @@ When the player clicks on the inventory
 | inventoryRawSlot | data | slot location |
 | inventorySlotType | data | Types of slots |
 | inventorySlot | data | slot position 2 |
+
+### Inventory drag
+When the player drags the inventory
+
+| name | Category | Description |
+|--------------|--------------|--------------|
+| inventoryDrag | inventory | dragged inventory |
+| inventorySlots | list | dragged slots |
+| inventoryRawSlots | list | dragged slots 2 |
+| inventoryDragItems | list | Stuck Item Slots |
+| inventoryDragItem_<slot> | item | Items placed in a specific slot |
+| inventoryCursor | item | Cursor Item |
+| inventoryOldCursor | item | Previous Cursor Item |
+| inventoryDragType | data | drag type |
 
 ### Inventory close
 When a player closes their inventory  
@@ -206,6 +228,12 @@ When the player places blocks
 |--------------|--------------|--------------|
 | blockPlace | block | installed blocks |
 
+### Player respawn
+when the player respawns
+
+| name | Category | Description |
+|--------------|--------------|--------------|
+| respawnLocation | Location | Respawn Location |
 
 ---
 
@@ -280,6 +308,10 @@ When the player places blocks
     lore set <game or all or player> item ( itemName | 0 | "item description" ) //set the lore on the item
     name set <game or all or player> item ( itemName | "item name" ) // set the display name of the item
     exists <game or all or player> item ( itemName ) // Prints whether the item exists
+    code <game or all or player> item ( itemName ) //print the item code
+    equals <game or all or player> item ( itemName | <game or all or player> targetItem ) //print whether the items are equal
+    size <game or all or player> item ( itemName ) // Print the number of items
+    size set <game or all or player> item ( itemName ) // set the number of items
 
 ### Inventory
 
@@ -305,6 +337,9 @@ When the player places blocks
     all target ( <game or all or player> play ) {
         add food -1
     } //find players by a list of player names or player UUIDs and run the following command once for all
+    get list target ( <game or all or player> player testList | game eachMessage ) {
+        print game data ( eachMessage )
+    } // Execute the following command once every message in the list
 
 ### Send message
 `aliases: [ send, sendmessage, message, msg, print, say, sendmsg ]`
@@ -338,7 +373,7 @@ When the player places blocks
     // Available colors: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
     // Possible styles: SOLID, 6, 10, 12, 20 or not
 
-###
+### Food 
 
     food //print the player's hunger level
     set food 20 //set the player's hunger
@@ -388,12 +423,17 @@ When the player places blocks
     // Google Particle <server version> spigot to find all particle effects
 
 
-### Do
+### Potion
 
     add potion ( GLOWING | 55555 | 0 ) // Gives level 1 potion effect for the duration (Potion level 1 is 0)
     remove potion ( GLOWING ) // Remove the potion effect
     clear potion // Removes all potion effects
     // Type PottionEffectType <server version> spigot on Google to find all potions
+
+### HotBar
+
+     get hotbar //Print the player's hotbar slot
+     set hotbar /sets the player's hotbar slot
 
 ### Sneaking
 `aliases: [ sneaking, sneak ]`
@@ -443,7 +483,7 @@ When the player places blocks
 
     left //Exit the player from the game the player is playing
 
-###
+### Do
 
     do start //start Executes the command bundle
 
@@ -470,6 +510,10 @@ When the player places blocks
 
     async delay ( 20 ) print hello
     //After a few ticks, the following statement is executed asynchronously and the execution code is output.
+
+### TaskId
+
+     taskId //If the code to be executed has been executed with the Delay command, output the executable code
 
 ### CancelTask
 
