@@ -297,9 +297,11 @@ when the player respawns
 ### Block
 
     <game or player> set block ( blockName | <game or all or player> spawnPoint ) // Save the block location
+    <game or player> remove block ( blockName ) //Delete the block
     <game or player> get location block ( blockName | <game or all or player> spawnPoint // Save block location
     <game or player> set block ( blockName | code 5 | 1 )
     <game or player> code block ( blockName ) /prints the block code
+    <game or all or player> clone list ( play ) // Clone the list
 
 ### Item
 
@@ -439,6 +441,11 @@ when the player respawns
 `aliases: [ sneaking, sneak ]`
 
     sneaking //prints whether the player is crouching
+
+### Velocity
+
+     set velocity ( 0 | 10 | 0 ) // Set the momentum by 10 Y coordinates
+     add velocity ( 0 | 10 | 0 ) // add momentum by 10 Y coordinates
 
 ### Uuid
 
