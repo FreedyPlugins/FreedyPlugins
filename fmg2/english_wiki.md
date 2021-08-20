@@ -244,7 +244,7 @@ when the player respawns
     // This is a modifier to express where data is stored.  
     //all is per file and stored permanently  
     //game is a game unit and is destroyed when the game is deactivated  
-    //player is the player and game unit and is destroyed when the game is deactivated or the player leaves the game  
+    //player is per player and is destroyed when the player leaves
     //Most of them have this meaning, but the modifier all of the target has the meaning of checking all  
 
 
