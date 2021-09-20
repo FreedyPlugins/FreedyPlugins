@@ -1,7 +1,7 @@
 # Hello, this is Jongwon.
 
 I am a programmer who learned minecraft plugins wildly.  
-I live in Gyeonggi-do and I am a high school senior in 2021.  
+I live in Gyeonggi-do South Korea and I am a high school senior in 2021.  
 I used various plugins to make minigames,  
 It was too difficult to use, so I just made a minigame maker.  
 
