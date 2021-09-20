@@ -280,7 +280,7 @@ on move {
 ### Location
 
     create location(spawn, world, 0, 0, 0)          //world 월드에 x좌표 0, y좌표 0, z좌표 0 위치를 저장합니다
-    create location(spawn, world, 0, 0, 0, 90, 0 )  //world 월드에 x좌표 0, y좌표 0, z좌표 0, yaw 90, pitch 0 위치를 저장합니다
+    create location(spawn, world, 0, 0, 0, 90, 0)   //world 월드에 x좌표 0, y좌표 0, z좌표 0, yaw 90, pitch 0 위치를 저장합니다
     set posX location(spawn, 10)                    //위치의 X좌표를 설정합니다
     set posY location(spawn, 10)                    //위치의 Y좌표를 설정합니다
     set posZ location(spawn, 10)                    //위치의 Z좌표를 설정합니다
@@ -292,7 +292,7 @@ on move {
     exists location(spawn)                          //위치가 존재하는지 여부를 출력합니다
     equals location(spawn, player)                  //두 위치가 서로 같은지 여부를 출력합니다
     contains location(spawn, pos_A, pos_B)          //위치가 두 위치의 직사각형 안에 있는지 출력합니다
-    get block(spawn, player blockName)              //위치에 있는 블럭을 저장합니다
+    get block(spawn, blockName)                     //위치에 있는 블럭을 저장합니다
 
 ### Block
 
@@ -304,13 +304,13 @@ on move {
 
 ### Item 
 
-    set item(itemName, code 35:5 )           //코드 35:5(연두색 양털) 아이템을 저장합니다
+    set item(itemName, code 35:5)            //코드 35:5(연두색 양털) 아이템을 저장합니다
     lore add item(itemName, "아이템 설명")     //아이템에 로어를 추가합니다
     lore set item(itemName, 0, "아이템 설명")  //아이템에 로어를 설정합니다
-    name set item(itemName, "아이템 이름" )    //아이템의 표시이름을 설정합니다
+    name set item(itemName, "아이템 이름")     //아이템의 표시이름을 설정합니다
     exists item(itemName)                    //아이템이 존재하는지 여부를 출력합니다
     code item(itemName)                      //아이템 코드를 출력합니다
-    equals item(itemName, targetItem )       //아이템이 같은지 요부를 출력합니다
+    equals item(itemName, targetItem)        //아이템이 같은지 요부를 출력합니다
     size item(itemName)                      //아이템의 갯수를 출력합니다
     size set item(itemName)                  //아이템의 갯수를 설정합니다
 
@@ -319,7 +319,7 @@ on move {
     create inventory(menu_1, 54, "메뉴 타이틀")      //몇칸짜리 인벤토리를 생성합니다
     create inventory(menu_1, HOPPER, "메뉴 타이틀")  //타입의 인벤토리를 생성합니다
     set inventory(menu_1, 0, itemName)             //인벤토리에 몇번째칸에 아이템을 설정합니다
-    add inventory(menu_1, player itemname )        //인벤토리에 아이템을 추가합니다
+    add inventory(menu_1, itemname )               //인벤토리에 아이템을 추가합니다
     open inventory(menu_1)                         //플레이어에게 인벤토리를 띄웁니다
     size inventory(menu_1)                         //인벤토리의 칸수를 출력합니다
     equals inventory(menu_1, player)               //두 인벤토리가 서로 같은지 여부를 출력합니다
@@ -335,10 +335,10 @@ on move {
 
     name target(Notch) set helath 20  //어떤 이름으로 된 플레이어로 다음 명령을 실행합니다
     target(player uuid) set food 20   //UUID로 된 플레이어로 다음 명령을 실행합니다
-    all target(player play) {         //플레이어 이름 또는 플레이어 UUID로 이루어진 리스트로 플레이어를 찾고 한번씩 모두 다 다음 명령을 실행합니다
+    all target(play) {         //플레이어 이름 또는 플레이어 UUID로 이루어진 리스트로 플레이어를 찾고 한번씩 모두 다 다음 명령을 실행합니다
         add food -1
     }                                 
-    get list target(player testList, eachMessage) {
+    get list target(testList, eachMessage) {
         print game data(eachMessage)  //리스트에 매세지를 한번씩 모두 다 다음 명령을 실행합니다
     }                                 
 

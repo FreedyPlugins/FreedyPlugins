@@ -279,7 +279,7 @@ when the player respawns
 ### Location
 
     create location(spawn, world, 0, 0, 0) //save the x-coordinate 0, y-coordinate 0, z-coordinate 0 location in the world world
-    create location(spawn, world, 0, 0, 0, 90, 0 ) //save the x-coordinate 0, y-coordinate 0, z-coordinate 0, yaw 90, pitch 0 location in the world world
+    create location(spawn, world, 0, 0, 0, 90, 0) //save the x-coordinate 0, y-coordinate 0, z-coordinate 0, yaw 90, pitch 0 location in the world world
     set posX location(spawn, 10) //set the X coordinate of the location
     set posY location(spawn, 10) // Set the Y coordinate of the location
     set posZ location(spawn, 10) // Set the Z coordinate of the location
@@ -303,13 +303,13 @@ when the player respawns
 
 ### Item
 
-    set item(itemName, code 35:5 ) //Save the code 35:5 (light green wool) item
+    set item(itemName, code 35:5) //Save the code 35:5 (light green wool) item
     lore add item(itemName, "item description") //add a lore to the item
     lore set item(itemName, 0, "item description") //set the lore on the item
-    name set item(itemName, "item name" ) // set the item's display name
+    name set item(itemName, "item name") // set the item's display name
     exists item(itemName) // Prints whether the item exists
     code item(itemName) //Print the item code
-    equals item(itemName, targetItem )
+    equals item(itemName, targetItem)
     size item(itemName) // print the number of items
     size set item(itemName) //set the number of items
 
