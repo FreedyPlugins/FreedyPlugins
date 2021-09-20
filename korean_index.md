@@ -7,7 +7,7 @@
 
 ---
 
-## [다운로드](https://github.com/FreedyPlugins/FreedyMinigameMaker2/raw/master/jar/FreedyMinigameMaker2.jar) / [위키페이지](fmg2/korean_wiki.md) / [디스코드](https://discord.gg/BDbY2SZcKK) / [스피갓](https://www.spigotmc.org/resources/freedyminigamemaker2.86962/) / [소스코드](https://github.com/FreedyPlugins/FreedyMinigameMaker2)  
+## [다운로드](https://github.com/FreedyPlugins/FreedyMinigameMaker2/raw/master/jar/FreedyMinigameMaker2.jar) / [위키페이지](fmg2/korean_wiki.md) / [디스코드](https://discord.gg/BDbY2SZcKK) / [스피갓](https://www.spigotmc.org/resources/freedyminigamemaker2.86962/) / [소스코드](https://github.com/FreedyPlugins/FreedyMinigameMaker2) / [예시코드](https://gist.github.com/Bruce0203/98d8fb94c923b21b4578a5bda9e0518d)  
 
 ![](assets/images/FreedyPlugins.png)
 
