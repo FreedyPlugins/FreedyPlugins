@@ -10,7 +10,7 @@ on move
 
 ```
 on move {
-    print ( "당신은 움직였습니다!" )
+    print("당신은 움직였습니다!")
 }
 ```
 위 아래에 있는 소스코드 모두 잘 됩니다.  
@@ -25,10 +25,6 @@ on move {
 `print` 는 플레이어에게 다음 매세지를 보내겠다는 `명령`입니다.  
 `{ }` `( )` 소괄호와 중괄호는 구문이 어디까지 써있는지 표시해주는 것입니다.  
 `""` `''` 따옴표는 명령이 아닌 매세지 문자를 구분하기 위해 표시해주는 겁니다.
-
-중괄호와 소괄호는 앞뒤에 공백 띄어쓰기가 있어야 합니다.  
-`print("안녕")`(X) `print ( "안녕" )`(O)  
-`{print "안녕"}`(X) `{ print "안녕" }`(O)
 
 ---
 
@@ -256,100 +252,100 @@ on move {
     cos 5  //각도의 삼각함수 코사인 값을 출력합니다
     sin 5  //각도의 삼각함수 사인 값을 출력합니다
     tan 5  //각도의 삼각함수 탄젠트 값을 출력합니다
-    ( 1 + 1 )  //두 값을 덧셈한 값을 출력합니다
-    ( 1 - 1 )  //두 값을 뺄셈한 값을 출력합니다
-    ( 1 * 1 )  //두 값을 곱셉한 값을 출력합니다
-    ( 1 / 1 )  //두 값을 나눗셈한 값을 출력합니다
-    ( 1 % 1 )  /두 값을 나눈 나머지 값을 출력합니다
-    //2수를 초과해서 계산하려면 ( ( 1 + 1 ) + 1 ) 와 같이 해야 합니다 
+    (1+1)  //두 값을 덧셈한 값을 출력합니다
+    (1-1)  //두 값을 뺄셈한 값을 출력합니다
+    (1*1)  //두 값을 곱셉한 값을 출력합니다
+    (1/1)  //두 값을 나눗셈한 값을 출력합니다
+    (1%1)  //두 값을 나눈 나머지 값을 출력합니다
+    //2수를 초과해서 계산하려면 ((1+1)+1) 와 같이 해야 합니다 
 
 
 ### Data 
 `aliases: [ data, var ]`
 
-    <game 또는 all 또는 player> data ( some )  //어떤 데이타를 출력한다
-    <game 또는 all 또는 player> set data ( some | Hello ) //어떤 데이타를 설정한다
+    data(some)  //어떤 데이타를 출력한다
+    set data(some, Hello) //어떤 데이타를 설정한다
 
 ### List  
 
-    <game 또는 all 또는 player> add list ( play | Hello )  //리스트에 매세지를 추가한다
-    <game 또는 all 또는 player> set list ( play | 0 | Hello )  //어떤 리스트에 0번 매세지를 설정한다
-    <game 또는 all 또는 player> clear list ( play )  //리스트를 없앤다
-    <game 또는 all 또는 player> size list ( play )  //리스트의 매세지 갯수를 출력한다
-    <game 또는 all 또는 player> contains list ( play | Hello )  //리스트에 매세지가 있는지 여부를 출력한다
-    <game 또는 all 또는 player> remove list ( play | Hello )  //리스트에 매세지를 삭제한다
-    <game 또는 all 또는 player> shuffle list ( play )  //리스트를 섞는다
-    <game 또는 all 또는 player> clone list ( play )  //리스트를 복제한다
+    add list(play, Hello)  //리스트에 매세지를 추가한다
+    set list(play, 0, Hello)  //어떤 리스트에 0번 매세지를 설정한다
+    clear list(play)  //리스트를 없앤다
+    size list(play)  //리스트의 매세지 갯수를 출력한다
+    contains list(play, Hello)  //리스트에 매세지가 있는지 여부를 출력한다
+    remove list(play, Hello)  //리스트에 매세지를 삭제한다
+    shuffle list(play)  //리스트를 섞는다
+    clone list(play)  //리스트를 복제한다
 
 ### Location
 
-    <game 또는 all 또는 player> create location ( spawn | world | 0 | 0 | 0 )  //world 월드에 x좌표 0, y좌표 0, z좌표 0 위치를 저장합니다
-    <game 또는 all 또는 player> create location ( spawn | world | 0 | 0 | 0 | 90 | 0 )  //world 월드에 x좌표 0, y좌표 0, z좌표 0, yaw 90, pitch 0 위치를 저장합니다
-    <game 또는 all 또는 player> set posX location ( spawn | 10 )  //위치의 X좌표를 설정합니다
-    <game 또는 all 또는 player> set posY location ( spawn | 10 )  //위치의 Y좌표를 설정합니다
-    <game 또는 all 또는 player> set posZ location ( spawn | 10 )  //위치의 Z좌표를 설정합니다
-    <game 또는 all 또는 player> set posYaw location ( spawn | 10 )  //위치의 yaw를 설정합니다
-    <game 또는 all 또는 player> set posPitch location ( spawn | 10 )  //위치의 pitch를 설정합니다
-    <game 또는 all 또는 player> clone location ( player | spawn )  //위치를 다른 위치에 복제합니다
-    <game 또는 all 또는 player> add location ( spawn | 0 | 10 | 0 )  //위치에 x좌표 0, y좌표 10, z좌표 0만큼 더합니다
-    <game 또는 all 또는 player> remove location ( spawn )  //위치를 삭제합니다
-    <game 또는 all 또는 player> exists location ( spawn )  //위치가 존재하는지 여부를 출력합니다
-    <game 또는 all 또는 player> equals location ( spawn | player )  //두 위치가 서로 같은지 여부를 출력합니다
-    <game 또는 all 또는 player> contains location ( spawn | <game 또는 all 또는 player> pos_A | <game 또는 all 또는 player> player pos_B ) //위치가 두 위치의 직사각형 안에 있는지 출력합니다
-    <game 또는 all 또는 player> get block ( spawn | <game 또는 player> player blockName )  //위치에 있는 블럭을 저장합니다
+    create location(spawn, world, 0, 0, 0)          //world 월드에 x좌표 0, y좌표 0, z좌표 0 위치를 저장합니다
+    create location(spawn, world, 0, 0, 0, 90, 0 )  //world 월드에 x좌표 0, y좌표 0, z좌표 0, yaw 90, pitch 0 위치를 저장합니다
+    set posX location(spawn, 10)                    //위치의 X좌표를 설정합니다
+    set posY location(spawn, 10)                    //위치의 Y좌표를 설정합니다
+    set posZ location(spawn, 10)                    //위치의 Z좌표를 설정합니다
+    set posYaw location(spawn, 10)                  //위치의 yaw를 설정합니다
+    set posPitch location(spawn, 10)                //위치의 pitch를 설정합니다
+    clone location(player, spawn)                   //위치를 다른 위치에 복제합니다
+    add location(spawn, 0, 10, 0)                   //위치에 x좌표 0, y좌표 10, z좌표 0만큼 더합니다
+    remove location(spawn)                          //위치를 삭제합니다
+    exists location(spawn)                          //위치가 존재하는지 여부를 출력합니다
+    equals location(spawn, player)                  //두 위치가 서로 같은지 여부를 출력합니다
+    contains location(spawn, pos_A, pos_B)          //위치가 두 위치의 직사각형 안에 있는지 출력합니다
+    get block(spawn, player blockName)              //위치에 있는 블럭을 저장합니다
 
 ### Block
 
-    <game 또는 player> set block ( blockName | <game 또는 all 또는 player> spawnPoint )  //블럭 위치를 저장합니다
-    <game 또는 player> remove block ( blockName )  //블럭을 삭제합니다
-    <game 또는 player> get location block ( blockName | <game 또는 all 또는 player> player spawnPoint  //블럭 위치를 저장합니다
-    <game 또는 player> set block ( blockName | code 5 | 1 )  //블럭 코드를 5:1(가문비나무 판자) 로 설정합니다
-    <game 또는 player> code block ( blockName )  /블럭 코드를 출력합니다
+    set block(blockName, spawnPoint)           //블럭 위치를 저장합니다
+    remove block(blockName)                    //블럭을 삭제합니다
+    get location block(blockName, spawnPoint)  //블럭 위치를 저장합니다
+    set block(blockName, code 5, 1)            //블럭 코드를 5:1(가문비나무 판자) 로 설정합니다
+    code block(blockName)                      //블럭 코드를 출력합니다
 
 ### Item 
 
-    set <game 또는 all 또는 player> item ( itemName | code 35:5 )  //코드 35:5(연두색 양털) 아이템을 저장합니다
-    lore add <game 또는 all 또는 player> item ( itemName | "아이템 설명" )  //아이템에 로어를 추가합니다
-    lore set <game 또는 all 또는 player> item ( itemName | 0 | "아이템 설명" )  //아이템에 로어를 설정합니다
-    name set <game 또는 all 또는 player> item ( itemName | "아이템 이름" )  //아이템의 표시이름을 설정합니다
-    exists <game 또는 all 또는 player> item ( itemName )  //아이템이 존재하는지 여부를 출력합니다
-    code <game 또는 all 또는 player> item ( itemName )  //아이템 코드를 출력합니다
-    equals <game 또는 all 또는 player> item ( itemName | <game 또는 all 또는 player> targetItem )  //아이템이 같은지 요부를 출력합니다
-    size <game 또는 all 또는 player> item ( itemName )  //아이템의 갯수를 출력합니다
-    size set <game 또는 all 또는 player> item ( itemName )  //아이템의 갯수를 설정합니다
+    set item(itemName, code 35:5 )           //코드 35:5(연두색 양털) 아이템을 저장합니다
+    lore add item(itemName, "아이템 설명")     //아이템에 로어를 추가합니다
+    lore set item(itemName, 0, "아이템 설명")  //아이템에 로어를 설정합니다
+    name set item(itemName, "아이템 이름" )    //아이템의 표시이름을 설정합니다
+    exists item(itemName)                    //아이템이 존재하는지 여부를 출력합니다
+    code item(itemName)                      //아이템 코드를 출력합니다
+    equals item(itemName, targetItem )       //아이템이 같은지 요부를 출력합니다
+    size item(itemName)                      //아이템의 갯수를 출력합니다
+    size set item(itemName)                  //아이템의 갯수를 설정합니다
 
 ### Inventory
 
-    <game 또는 all 또는 player> create inventory ( menu_1 | 54 | "메뉴 타이틀" )  //몇칸짜리 인벤토리를 생성합니다
-    <game 또는 all 또는 player> create inventory ( menu_1 | HOPPER | "메뉴 타이틀" )  //타입의 인벤토리를 생성합니다
-    <game 또는 all 또는 player> set inventory ( menu_1 | 0 | <game 또는 all 또는 player> player itemName )  //인벤토리에 몇번째칸에 아이템을 설정합니다
-    <game 또는 all 또는 player> add inventory ( menu_1 | <game 또는 all 또는 player> player itemname )  //인벤토리에 아이템을 추가합니다
-    <game 또는 all 또는 player> open inventory ( menu_1 )  //플레이어에게 인벤토리를 띄웁니다
-    <game 또는 all 또는 player> size inventory ( menu_1 )  //인벤토리의 칸수를 출력합니다
-    <game 또는 all 또는 player> equals inventory ( menu_1 | player )  //두 인벤토리가 서로 같은지 여부를 출력합니다
-    <game 또는 all 또는 player> exists inventory ( menu_1 )  //인벤토리가 존재하는지 여부를 출력합니다
-    <game 또는 all 또는 player> clear inventory ( menu_1 )  //인벤토리에 아이템을 모두 삭제합니다
-    <game 또는 all 또는 player> clone inventory ( menu_1 | player )  //인벤토리를 다른 인벤토리에 복제합니다
-    <game 또는 all 또는 player> remove inventory ( menu_1 )  //인벤토리를 삭제합니다
-    <game 또는 all 또는 player> close inventory  //플레이어의 인벤토리를 닫습니다  
-    <game 또는 all 또는 player> get item inventory ( player | hotbar | <game 또는 all 또는 player> player testItem )  //플레이어가 들고 있는 아이템의 슬롯을 아이템에 저장합니다 
+    create inventory(menu_1, 54, "메뉴 타이틀")      //몇칸짜리 인벤토리를 생성합니다
+    create inventory(menu_1, HOPPER, "메뉴 타이틀")  //타입의 인벤토리를 생성합니다
+    set inventory(menu_1, 0, itemName)             //인벤토리에 몇번째칸에 아이템을 설정합니다
+    add inventory(menu_1, player itemname )        //인벤토리에 아이템을 추가합니다
+    open inventory(menu_1)                         //플레이어에게 인벤토리를 띄웁니다
+    size inventory(menu_1)                         //인벤토리의 칸수를 출력합니다
+    equals inventory(menu_1, player)               //두 인벤토리가 서로 같은지 여부를 출력합니다
+    exists inventory(menu_1)                       //인벤토리가 존재하는지 여부를 출력합니다
+    clear inventory(menu_1)                        //인벤토리에 아이템을 모두 삭제합니다
+    clone inventory(menu_1, player)                //인벤토리를 다른 인벤토리에 복제합니다
+    remove inventory(menu_1)                       //인벤토리를 삭제합니다
+    close inventory                                //플레이어의 인벤토리를 닫습니다  
+    get item inventory(player, hotbar, testItem)   //플레이어가 들고 있는 아이템의 슬롯을 아이템에 저장합니다 
     //구글에 InventoryType <서버버전> spigot 이라고 치면 모든 인벤토리 종류를 찾을 수 있습니다
 
 ### Target
 
-    name target ( Notch ) set helath 20  //어떤 이름으로 된 플레이어로 다음 명령을 실행합니다
-    target ( player uuid ) set food 20  //UUID로 된 플레이어로 다음 명령을 실행합니다
-    all target ( <game 또는 all 또는 player> player play ) {
+    name target(Notch) set helath 20  //어떤 이름으로 된 플레이어로 다음 명령을 실행합니다
+    target(player uuid) set food 20   //UUID로 된 플레이어로 다음 명령을 실행합니다
+    all target(player play) {         //플레이어 이름 또는 플레이어 UUID로 이루어진 리스트로 플레이어를 찾고 한번씩 모두 다 다음 명령을 실행합니다
         add food -1
-    }  //플레이어 이름 또는 플레이어 UUID로 이루어진 리스트로 플레이어를 찾고 한번씩 모두 다 다음 명령을 실행합니다
-    get list target ( <game 또는 all 또는 player> player testList | game eachMessage ) {
-        print game data ( eachMessage )
-    }  //리스트에 매세지를 한번씩 모두 다 다음 명령을 실행합니다
+    }                                 
+    get list target(player testList, eachMessage) {
+        print game data(eachMessage)  //리스트에 매세지를 한번씩 모두 다 다음 명령을 실행합니다
+    }                                 
 
 ### Send message
 `aliases: [ send, sendmessage, message, msg, print, say, sendmsg ]`
 
-    print Hello  //플레이어에게 매세지를 보낸다
+    print Hello      //플레이어에게 매세지를 보낸다
     game print Hello //게임에 참여해 있는 모든 플레이어에게 매세지를 보낸다
     all print Hello  //서버에 참여해 있는 모든 플레이어에게 매세지를 보낸다
 
@@ -361,84 +357,84 @@ on move {
 ### ActionBar
 `aliases: sendactionbar, actionbar`
 
-    actionbar Hello  //플레이어에게 액션바 매세지를 보낸다
+    actionbar Hello      //플레이어에게 액션바 매세지를 보낸다
     game actionbar Hello //게임에 참여해 있는 모든 플레이어에게 액션바 매세지를 보낸다
     all actionbar Hello  //서버에 참여해 있는 모든 플레이어에게 액션바 매세지를 보낸다
 
 ### BossBar
 
-    <game 또는 player> create bossbar ( testBossBar | WHITE )  //어떤 색깔에 보스바를 생성합니다
-    <game 또는 player> open bossbar ( testBossBar )  //플레이어에게 보스바를 엽니다
-    <game 또는 player> close bossbar ( testBossBar )  //플레이어의 보스바를 닫습니다
-    <game 또는 player> remove bossbar ( testBossBar )  //보스바를 삭제합니다
-    <game 또는 player> set size bossbar ( testBossBar | 1 )  //보스바의 프로세스바를 0부터 1안에 숫자로 설정합니다
-    <game 또는 player> set type bossbar ( testBossBar | SOLID )  //보스바에 스타일을 설정합니다
-    <game 또는 player> set color bossbar ( testBossBar | WHITE )  //보스바에 색깔을 설정합니다
-    <game 또는 player> exists bossbar ( testBossBar )  //보스바가 존재하는지 여부를 출력합니다
+    create bossbar(testBossBar, WHITE)     //어떤 색깔에 보스바를 생성합니다
+    open bossbar(testBossBar)              //플레이어에게 보스바를 엽니다
+    close bossbar(testBossBar)             //플레이어의 보스바를 닫습니다
+    remove bossbar(testBossBar)            //보스바를 삭제합니다
+    set size bossbar(testBossBar, 1)       //보스바의 프로세스바를 0부터 1안에 숫자로 설정합니다
+    set type bossbar(testBossBar, SOLID)   //보스바에 스타일을 설정합니다
+    set color bossbar(testBossBar, WHITE)  //보스바에 색깔을 설정합니다
+    exists bossbar (testBossBar)           //보스바가 존재하는지 여부를 출력합니다
     //가능한 색깔: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
     //가능한 스타일: SOLID, 6, 10, 12, 20 또는 쓰지 않기
 
 ### Food
 
-    food  //플레이어의 배고픔 수치를 출력한다
+    food         //플레이어의 배고픔 수치를 출력한다
     set food 20  //플레이어의 배고픔을 설정한다
-    add food 1  //플레이어의 배고픔을 증감시킨다
+    add food 1   //플레이어의 배고픔을 증감시킨다
 
 ### Health
 
-    health  //플레이어의 체력 수치를 출력한다
+    health         //플레이어의 체력 수치를 출력한다
     set health 20  //플레이어의 체력을 설정한다
     add health 20  //플레이어의 체력을 증감시킨다
 
 ### GameMode
 
-    gamemode  //플레이어의 게임 모드를 출력한다
-    set gamemode  /플레이어의 게임모드를 설정한다 
+    gamemode      //플레이어의 게임 모드를 출력한다
+    set gamemode  //플레이어의 게임모드를 설정한다 
 
 ### Name
 
-    player name  //플레이어의 이름을 출력한다
+    player name               //플레이어의 이름을 출력한다
     set player name testName  //플레이어의 표시이름을 설정한다
-    set name tesetName  //플레이어의 탭 목룍 표시이름을 설정한다
-    game name  //게임의 이름을 출력한다
+    set name tesetName        //플레이어의 탭 목룍 표시이름을 설정한다
+    game name                 //게임의 이름을 출력한다
 
 ### Permission
 
-    permission ( op )  //플레이어가 오피가 있는지 여부를 출력한다
-    permission ( freedyminigamemaker.admin )  
-    /플레이어가 노드 권한을 갖고 있는지 여부를 출력한다
+    permission(op)  //플레이어가 오피가 있는지 여부를 출력한다
+    permission(freedyminigamemaker.admin)  
+    //플레이어가 노드 권한을 갖고 있는지 여부를 출력한다
 
 ### Title
 
-    <game 또는 all 또는 player> title ( 0 | 50 | 0 | "제목" | "부제목" )  
+    title(0, 50, 0, "제목", "부제목")  
     //플레이어에게 페이드인 0 에, 지속시간 50, 페이드아웃 0으로 제목과 부제목을 보낸다  
 
 ### Sound
 
-    <game 또는 all 또는 player> sound ( "minecraft:block.note.snare" | 1 | 1 )
+    sound("minecraft:block.note.snare", 1, 1)
     //플레이어에게 볼륨 1에 음높이 1로 소리를 재생합니다
 
-    <game 또는 all 또는 player> sound ( "minecraft:block.note.snare" | -1 | 1 )
+    sound("minecraft:block.note.snare", -1, 1)
     //플레이어에게 위치에 따른 소리의 변화를 없애고 음높이 1로 소리를 재생합니다
 
 ### Particle 
 
-    particle ( player | FLAME | 10 | true )  //위치에 파티클 효과 10개를 멈춰있는 상태로 소환합니다
-    particle ( player | FLAME | 10 )  //위치에 파티클 효과 10개를 소환합니다
+    particle(player, FLAME, 10, true)  //위치에 파티클 효과 10개를 멈춰있는 상태로 소환합니다
+    particle(player, FLAME, 10)        //위치에 파티클 효과 10개를 소환합니다
     //구글에 Particle <서버버전> spigot 이라고 치면 모든 파티클 효과를 찾을 수 있습니다
 
 
 ### Potion
 
-    add potion ( GLOWING | 55555 | 0 )  //레벨 1의 포션효과를 지속시간 동안 줍니다 (포션 1레벨은 0입니다)    
-    remove potion ( GLOWING )  //포션효과를 제거합니다
-    clear potion  //포션효과를 모두 제거합니다
+    add potion(GLOWING, 55555, 0)  //레벨 1의 포션효과를 지속시간 동안 줍니다 (포션 1레벨은 0입니다)    
+    remove potion(GLOWING)         //포션효과를 제거합니다
+    clear potion                   //포션효과를 모두 제거합니다
     //구글에 PottionEffectType <서버버전> spigot 이라고 치면 모든 포션을 찾을 수 있습니다
 
 ### HotBar
 
     get hotbar  //플레이어의 핫바 슬롯을 출력합니다
-    set hotbar  /플레이어의 핫바 슬롯을 설정합니다
+    set hotbar  //플레이어의 핫바 슬롯을 설정합니다
 
 ### Sneaking
 `aliases: [ sneaking, sneak ]`
@@ -447,12 +443,12 @@ on move {
 
 ### Velocity
 
-    set velocity ( 0 | 10 | 0 )  // Y 좌표 10 만큼 추진력을 설정합니다
-    add velocity ( 0 | 10 | 0 )  // Y 좌표 10 만큼 추진력을 더합니다 
+    set velocity(0, 10, 0)  // Y 좌표 10 만큼 추진력을 설정합니다
+    add velocity(0, 10, 0)  // Y 좌표 10 만큼 추진력을 더합니다 
 
 ### Uuid
 
-    player uuid  //플레이어의 고유한 UUID를 출력합니다
+    player uuid      //플레이어의 고유한 UUID를 출력합니다
     get random uuid  //무작위의 UUID를 출력합니다
 
 ### Timings
@@ -466,7 +462,7 @@ on move {
 
 ### Random
 
-    random ( 0 | 100 )  //0 부터 100까지의 소수점이 있는 난수를 출력합니다
+    random(0, 100)  //0 부터 100까지의 소수점이 있는 난수를 출력합니다
 
 ### Log
 
@@ -482,7 +478,7 @@ on move {
 
 ### Split
 
-    split ( "1,2,3" | "," | <game 또는 all 또는 player> player listName )
+    split("1,2,3", ",", listName)
     //첫번째 매세지를 두번째 매세지로 나눠서 리스트에 저장합니다
 
 ### Join
@@ -504,7 +500,7 @@ on move {
 
 ### Refs
 
-    refs ( testGame | bundleName )  
+    refs(testGame, bundleName)  
     //게임의 명령번들을 실행 중인 게임으로 실행합니다
 
 ### Async
@@ -516,9 +512,9 @@ on move {
 
 ### Delay
 
-    delay ( 20 ) print hello  //몇틱 후에 다음 구문을 실행 후 실행 코드를 출력합니다 (20틱은 1초)
+    delay(20) print hello  //몇틱 후에 다음 구문을 실행 후 실행 코드를 출력합니다 (20틱은 1초)
 
-    async delay ( 20 ) print hello  
+    async delay(20) print hello  
     //몇틱 후에 다음 구문을 비동기로 실행 후 실행 코드를 출력합니다
 
 ### TaskId
@@ -527,7 +523,7 @@ on move {
 
 ### CancelTask
 
-    cancel ( 실행 코드 )  //실행을 대기 중이던 구문을 취소시킵니다
+    cancel (실행 코드)  //실행을 대기 중이던 구문을 취소시킵니다
 
 ### Execute
 
@@ -537,12 +533,12 @@ on move {
 ## 조건문
 
 ```
-if ( "첫번째값" = "두번째값" ) 
+if ("첫번째값" = "두번째값") 
     print "참"
 ```
 조건문은 조건에 따라 `코드`가 실행되는 `구문`입니다.
 ```
-if ( 값1 = 값2 ) { 
+if (값1 = 값2) { 
     //참일 경우 실행된다.
 } else {
     //거짓일 경우 실행된다.
@@ -558,7 +554,7 @@ if ( 값1 = 값2 ) {
 `>=` 왼쪽 수가 오른쪽 수보다 크거나 같을 때 참.
 
 ```
-if ( 대한민국 /= 북한 ) { print "참." } else { print "거짓." }
+if (대한민국 /= 북한) {print "참."} else {print "거짓."}
 ```
 ```
 * 위코드 실행했을 때 출력 매세지
@@ -570,12 +566,12 @@ if ( 대한민국 /= 북한 ) { print "참." } else { print "거짓." }
 만약 두 값이 같다면 두 값이 다르지 않아서 "거짓."이 출력될 것입니다.
 
 ```
-if ( "첫번째값" = "두번째값" ) 
-    if ( "세번째값" = "네번째값" ) 
+if("첫번째값" = "두번째값") 
+    if("세번째값" = "네번째값") 
         print 첫번째, 두번째값이 서로 같고, 세번째, 네번째값이 서로 같습니다
 ```
 ```
-if ( "첫번째값" = "두번째값" & "세번째값" = "네번째값" )
+if("첫번째값" = "두번째값" & "세번째값" = "네번째값")
     print 첫번째, 두번째값이 서로 같고, 세번째, 네번째값이 서로 같습니다
 ```
 위 아래의 소스코드의 의미가 같습니다.  
@@ -587,21 +583,21 @@ if ( "첫번째값" = "두번째값" & "세번째값" = "네번째값" )
 ## 반복문
 
 ```
-while ( 조건구문 ) {
+while(조건구문) {
     //조건이 참일 동안 여기에 있는 코드는 계속 실행됩니다.
 }
 ```
 
 ```
-set data ( i | 0 )
-while ( data ( i ) < 10 ) {
-    print data ( i ) 번째 실행 중입니다
-    set data ( i | data ( i ) + 1 )
+set data(i, 0)
+while(data(i)<10) {
+    print data(i) 번째 실행 중입니다
+    set data(i, data(i)+1)
 }
 ```
 
 ```
-for ( 초기실행구문 | 조건구문 | 증감구문 ) {
+for (초기실행구문, 조건구문, 증감구문) {
     //실행 구문
 }
 
@@ -615,8 +611,8 @@ for ( 초기실행구문 | 조건구문 | 증감구문 ) {
 ```
 
 ```
-for ( set data ( i | 0 ) | data ( i ) < 10 | set data ( i | data ( i ) + 1 ) ) {
-    print data ( i ) 번째 실행 중입니다
+for (set data(i,0) | data(i)<10 | set data(i,data(i)+1)) {
+    print data(i) 번째 실행 중입니다
 } 
 ```
 

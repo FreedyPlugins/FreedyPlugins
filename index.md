@@ -1,14 +1,14 @@
-# 안녕하세요 종원입니다.
+# Hello, this is Jongwon.
 
-저는 마인크래프트 플러그인을 야매로 배운 프로그래머 입니다.  
-경기도에 살고 있고 2021년으로 고1입니다.  
-미니게임을 만들기 위해 다양한 플러그인을 사용했지만,   
-사용하기 너무 어려워서 그냥 미니게임 메이커를 만들었습니다.
+I am a programmer who learned minecraft plugins wildly.  
+I live in Gyeonggi-do and I am a high school senior in 2021.  
+I used various plugins to make minigames,  
+It was too difficult to use, so I just made a minigame maker.  
 
 ---
 
-## [다운로드](https://github.com/FreedyPlugins/FreedyMinigameMaker2/raw/master/jar/FreedyMinigameMaker2.jar) / [위키페이지](fmg2/korean_wiki.md) / [디스코드](https://discord.gg/BDbY2SZcKK) / [스피갓](https://www.spigotmc.org/resources/freedyminigamemaker2.86962/) / [소스코드](https://github.com/FreedyPlugins/FreedyMinigameMaker2)  
+## [Download](https://github.com/FreedyPlugins/FreedyMinigameMaker2/raw/master/jar/FreedyMinigameMaker2.jar) / [WikiPage](fmg2/english_wiki.md) / [Discord](https://discord.gg/BDbY2SZcKK) / [Spigot](https://www.spigotmc.org/resources/freedyminigamemaker2.86962/) / [SourceCode](https://github.com/FreedyPlugins/FreedyMinigameMaker2)
 
-![](assets/images/FreedyPlugins.png)
+![](assets/images/FreedyPlugins-English.png)
 
-## [English Mode](english_index.md)
+## [Korean Mode](korean_index.md)

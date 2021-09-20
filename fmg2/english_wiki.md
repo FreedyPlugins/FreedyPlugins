@@ -9,7 +9,7 @@ It works this way.
 
 ```
 on move {
-    print ( "You moved!" )
+    print("You moved!")
 }
 ```
 All source code above and below works fine.  
@@ -25,16 +25,12 @@ And these are collectively called 'source code', 'code', and 'syntax'.
 `{ }` `( )` The parentheses and curly braces mark the end of the sentence.  
 `""` `''` Quotation marks are used to separate non-command message characters.  
 
-Braces and parentheses must be preceded and followed by spaces.  
-`print("hello")`(X) `print ( "hello" )`(O)    
-`{print "hello"}`(X) `{ print "hello" }`(O)  
-
 ---
 
 ## Minigames and commands
 
-I'll call the 'mini-game' a 'game'.    
-There is a hub game, a game that automatically joins when you enter the server.    
+I'll call the 'mini-game' a 'game'.  
+There is a hub game, a game that automatically joins when you enter the server.  
 You cannot exit this game other than by exiting the server.  
 To join a non-hub game, you must not be in a non-hub game.  
 
@@ -65,7 +61,7 @@ When a player enters the server
 
 | name | Category | Description |
 |--------------|--------------|--------------|
-| joinMessage | data | Entry message |
+| joinMessage | data | Admissions message |
 
 ### Left
 When a player leaves the server  
@@ -73,6 +69,7 @@ When a player leaves the server
 | name | Category | Description |
 |--------------|--------------|--------------|
 | leftMessage | data | exit message |
+
 
 ### Pre-game join
 Before the player enters the game  
@@ -141,7 +138,7 @@ When the player clicks on the inventory
 | inventorySlot | data | slot position 2 |
 
 ### Inventory drag
-When the player drags the inventory
+When the player drags the inventory  
 
 | name | Category | Description |
 |--------------|--------------|--------------|
@@ -154,15 +151,16 @@ When the player drags the inventory
 | inventoryOldCursor | item | Previous Cursor Item |
 | inventoryDragType | data | drag type |
 
+
 ### Inventory close
-When a player closes their inventory  
+When a player closes their inventory
 
 | name | Category | Description |
 |--------------|--------------|--------------|
 | inventoryClosed | inventory | Closed Inventory |
 
 ### Attack
-When a player attacks an entity  
+When a player attacks an entity
 
 | name | Category | Description |
 |--------------|--------------|--------------|
@@ -172,7 +170,7 @@ When a player attacks an entity
 | entityUuid | data | Entity UUID |
 
 ### Damage
-When a player takes damage from an entity  
+When a player takes damage from an entity
 
 | name | Category | Description |
 |--------------|--------------|--------------|
@@ -183,7 +181,7 @@ When a player takes damage from an entity
 
 
 ### Player damage
-When a player takes damage  
+When a player takes damage
 
 | name | Category | Description |
 |--------------|--------------|--------------|
@@ -192,14 +190,14 @@ When a player takes damage
 | damageFinal | data | final calculated figure |
 
 ### Drop item
-When a player drops an item  
+When a player drops an item
 
 | name | Category | Description |
 |--------------|--------------|--------------|
 | dropItem | item | Dropped Items |
 
 ### Teleport
-when the player teleports  
+when the player teleports
 
 | name | Category | Description |
 |--------------|--------------|--------------|
@@ -207,7 +205,7 @@ when the player teleports
 | teleportTo | Location | Next location |
 
 ### Swap hand
-When the player switches right and left hands with the F key  
+When the player switches right and left hands with the F key
 
 | name | Category | Description |
 |--------------|--------------|--------------|
@@ -215,14 +213,14 @@ When the player switches right and left hands with the F key
 | offHandItem | item | left hand items |
 
 ### block break
-When a player breaks a block  
+When a player breaks a block
 
 | name | Category | Description |
 |--------------|--------------|--------------|
 | blockBreak | block | crushed blocks |
 
 ### Block place
-When the player places blocks  
+When the player places blocks
 
 | name | Category | Description |
 |--------------|--------------|--------------|
@@ -244,7 +242,7 @@ when the player respawns
     // This is a modifier to express where data is stored.  
     //all is per file and stored permanently  
     //game is a game unit and is destroyed when the game is deactivated  
-    //player is per player and is destroyed when the player leaves
+    //player is per player and is destroyed when the player leaves  
     //Most of them have this meaning, but the modifier all of the target has the meaning of checking all  
 
 
@@ -253,95 +251,95 @@ when the player respawns
     cos 5 //print the trigonometric cosine of the angle
     sin 5 //print the trigonometric sine of the angle
     tan 5 //print the trigonometric tangent of the angle
-    ( 1 + 1 ) // Outputs the sum of two values
-    ( 1 - 1 ) // Output the value obtained by subtracting two values
-    ( 1 * 1 ) // Output the product of two values
-    ( 1 / 1 ) // Output the value obtained by dividing two values
-    ( 1 % 1 ) /prints the remainder of dividing two values
-    //If you want to count more than 2, you have to do something like ( ( 1 + 1 ) + 1 )
+    (1+1) // Output the sum of two values
+    (1-1) // Output the value obtained by subtracting two values
+    (1*1) // Outputs the multiplied value of two values
+    (1/1) // Output the value obtained by dividing two values
+    (1%1) // Output the remainder of dividing two values
+    //If you want to count more than 2, you need to do something like ((1+1)+1)
 
 
 ### Data
 `aliases: [ data, var ]`
 
-    <game or all or player> data ( some ) // print some data
-    <game or all or player> set data ( some | Hello ) //set some data
+    data(some) //print some data
+    set data(some, Hello) //set some data
 
 ### List
 
-    <game or all or player> add list ( play | Hello ) // Add a message to the list
-    <game or all or player> set list ( play | 0 | Hello ) // set message 0 to a certain list
-    <game or all or player> clear list ( play ) // clear the list
-    <game or all or player> size list ( play ) // Print the number of messages in the list
-    <game or all or player> contains list ( play | Hello ) // Print whether there are any messages in the list
-    <game or all or player> remove list ( play | Hello ) // Remove the message from the list
-    <game or all or player> shuffle list ( play ) // Shuffle the list
+    add list(play, Hello) // add a message to the list
+    set list(play, 0, Hello) // set message 0 to a certain list
+    clear list(play) // clear the list
+    size list(play) // print the number of messages in the list
+    contains list(play, Hello) // Prints whether there is a message in the list
+    remove list(play, Hello) // Remove the message from the list
+    shuffle list(play) //shuffle the list
+    clone list(play) //Clone the list
 
 ### Location
 
-    <game or all or player> create location ( spawn | world | 0 | 0 | 0 ) //save x-coordinate 0, y-coordinate 0, z-coordinate 0 location in world world
-    <game or all or player> create location ( spawn | world | 0 | 0 | 0 | 90 | 0 ) //save the x-coordinate 0, y-coordinate 0, z-coordinate 0, yaw 90, pitch 0 location in the world world
-    <game or all or player> set posX location ( spawn | 10 ) // set the X coordinate of the location
-    <game or all or player> set posY location ( spawn | 10 ) // Set the Y coordinate of the location
-    <game or all or player> set posZ location ( spawn | 10 ) // Set the Z coordinate of the location
-    <game or all or player> set posYaw location ( spawn | 10 )
-    <game or all or player> set posPitch location ( spawn | 10 ) // set the pitch of the location
-    <game or all or player> clone location ( player | spawn ) // clone location to another location
-    <game or all or player> add location ( spawn | 0 | 10 | 0 ) //Add x-coordinate 0, y-coordinate 10, z-coordinate 0 to the location
-    <game or all or player> remove location ( spawn ) // remove location
-    <game or all or player> exists location ( spawn ) //prints whether location exists
-    <game or all or player> equals location ( spawn | player ) //prints whether the two locations are equal to each other
-    <game or all or player> contains location ( spawn | <game or all or player> pos_A | <game or all or player> pos_B ) // print if the location is inside the rectangle of both locations
-    <game or all or player> get block ( spawn | <game or player> blockName ) // Save the block at location
+    create location(spawn, world, 0, 0, 0) //save the x-coordinate 0, y-coordinate 0, z-coordinate 0 location in the world world
+    create location(spawn, world, 0, 0, 0, 90, 0 ) //save the x-coordinate 0, y-coordinate 0, z-coordinate 0, yaw 90, pitch 0 location in the world world
+    set posX location(spawn, 10) //set the X coordinate of the location
+    set posY location(spawn, 10) // Set the Y coordinate of the location
+    set posZ location(spawn, 10) // Set the Z coordinate of the location
+    set posYaw location(spawn, 10) //set the yaw of the location
+    set posPitch location(spawn, 10) //set the pitch of the location
+    clone location(player, spawn) // clone the location to another location
+    add location(spawn, 0, 10, 0) //Add x-coordinate 0, y-coordinate 10, z-coordinate 0 to the location
+    remove location(spawn) //remove location
+    exists location(spawn) // Prints whether the location exists
+    equals location(spawn, player) //prints whether two locations are equal to each other
+    contains location(spawn, pos_A, pos_B) // Prints if the location is within the rectangle of both locations
+    get block(spawn, player blockName) // Save the block at the location
 
 ### Block
 
-    <game or player> set block ( blockName | <game or all or player> spawnPoint ) // Save the block location
-    <game or player> remove block ( blockName ) //Delete the block
-    <game or player> get location block ( blockName | <game or all or player> spawnPoint // Save block location
-    <game or player> set block ( blockName | code 5 | 1 )
-    <game or player> code block ( blockName ) /prints the block code
-    <game or all or player> clone list ( play ) // Clone the list
+    set block(blockName, spawnPoint) // Save the block location
+    remove block(blockName) // delete the block
+    get location block(blockName, spawnPoint) // Save the block location
+    set block(blockName, code 5, 1) //set the block code to 5:1 (spruce plank)
+    code block(blockName) //print the block code
 
 ### Item
 
-    set <game or all or player> item ( itemName | code 35:5 )
-    lore add <game or all or player> item ( itemName | "item description" ) //add a lore to the item
-    lore set <game or all or player> item ( itemName | 0 | "item description" ) //set the lore on the item
-    name set <game or all or player> item ( itemName | "item name" ) // set the display name of the item
-    exists <game or all or player> item ( itemName ) // Prints whether the item exists
-    code <game or all or player> item ( itemName ) //print the item code
-    equals <game or all or player> item ( itemName | <game or all or player> targetItem ) //print whether the items are equal
-    size <game or all or player> item ( itemName ) // Print the number of items
-    size set <game or all or player> item ( itemName ) // set the number of items
+    set item(itemName, code 35:5 ) //Save the code 35:5 (light green wool) item
+    lore add item(itemName, "item description") //add a lore to the item
+    lore set item(itemName, 0, "item description") //set the lore on the item
+    name set item(itemName, "item name" ) // set the item's display name
+    exists item(itemName) // Prints whether the item exists
+    code item(itemName) //Print the item code
+    equals item(itemName, targetItem )
+    size item(itemName) // print the number of items
+    size set item(itemName) //set the number of items
 
 ### Inventory
 
-    <game or all or player> create inventory ( menu_1 | 54 | "menu title" )
-    <game or all or player> create inventory ( menu_1 | HOPPER | "menu title" ) //Create an inventory of type
-    <game or all or player> set inventory ( menu_1 | 0 | <game or all or player> itemName )
-    <game or all or player> add inventory ( menu_1 | <game or all or player> itemname ) // Add item to inventory
-    <game or all or player> open inventory ( menu_1 ) // Open the inventory to the player
-    <game or all or player> size inventory ( menu_1 ) // Print the number of inventory spaces
-    <game or all or player> equals inventory ( menu_1 | player ) // Prints whether the two inventories are equal to each other
-    <game or all or player> exists inventory ( menu_1 ) // Prints whether the inventory exists
-    <game or all or player> clear inventory ( menu_1 ) //Delete all items in the inventory
-    <game or all or player> clone inventory ( menu_1 | player ) // Clone the inventory to another inventory
-    <game or all or player> remove inventory ( menu_1 ) //Delete inventory
-    <game or all or player> close inventory // Close the player's inventory
-    <game or all or player> get item inventory ( player | hotbar | <game or all or player> testItem ) // Store the slot of the item the player is holding in the item
+    create inventory(menu_1, 54, "menu title")
+    create inventory(menu_1, HOPPER, "menu title") // Create an inventory of type
+    set inventory(menu_1, 0, itemName) // Set the item in the number of columns in the inventory
+    add inventory(menu_1, player itemname ) // Add an item to the inventory
+    open inventory(menu_1) // Open the inventory to the player
+    size inventory(menu_1) // Prints the number of items in the inventory
+    equals inventory(menu_1, player) // Prints whether the two inventories are equal to each other
+    exists inventory(menu_1) // Outputs whether the inventory exists
+    clear inventory(menu_1) //Delete all items in the inventory
+    clone inventory(menu_1, player) // Clone the inventory to another inventory
+    remove inventory(menu_1) //Delete inventory
+    close inventory // close the player's inventory
+    get item inventory(player, hotbar, testItem) // Store the slot of the item the player is holding in the item
     // Google InventoryType <server version> spigot to find all inventory types
 
 ### Target
 
-    name target ( Notch ) set helath 20 //run the following command with the player with any name
-    target ( player uuid ) set food 20 // Execute the following command as the player with UUID
-    all target ( <game or all or player> play ) {
+    name target(Notch) set helath 20 //run the following command with the player with any name
+    target(player uuid) set food 20 //run the following command with the player with UUID
+    all target(player play) { //Find players in a list of player names or player UUIDs and execute the following command once for all
         add food -1
-    } //find players by a list of player names or player UUIDs and run the following command once for all
-    get list target ( <game or all or player> player testList | game eachMessage ) {
-        print game data ( eachMessage )
-    } // Execute the following command once every message in the list
+    }
+    get list target(player testList, eachMessage) {
+        print game data(eachMessage) // Execute the following command once every message in the list
+    }
 
 ### Send message
 `aliases: [ send, sendmessage, message, msg, print, say, sendmsg ]`
@@ -364,18 +362,18 @@ when the player respawns
 
 ### BossBar
 
-    <game or player> create bossbar ( testBossBar | WHITE ) //Create a bossbar in any color
-    <game or player> open bossbar ( testBossBar ) //Open bossbar to the player
-    <game or player> close bossbar ( testBossBar ) //Closes the player's bossbar
-    <game or player> remove bossbar ( testBossBar ) //Remove bossbar
-    <game or player> set size bossbar ( testBossBar | 1 ) //Set the process bar of the boss bar to a number from 0 to 1
-    <game or player> set type bossbar ( testBossBar | SOLID )
-    <game or player> set color bossbar ( testBossBar | WHITE ) //Set the color of the bossbar
-    <game or player> exists bossbar ( testBossBar ) // Prints whether the boss bar exists
+    create bossbar(testBossBar, WHITE) //Create a bossbar in a certain color
+    open bossbar(testBossBar) //Opens the bossbar to the player
+    close bossbar(testBossBar) //Closes the player's bossbar
+    remove bossbar(testBossBar) //Remove bossbar
+    set size bossbar(testBossBar, 1) //Set the process bar of the boss bar to a number from 0 to 1
+    set type bossbar(testBossBar, SOLID) //Set the style for the bossbar
+    set color bossbar(testBossBar, WHITE) //Set the color of the bossbar
+    exists bossbar (testBossBar) // Prints whether the boss bar exists
     // Available colors: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
     // Possible styles: SOLID, 6, 10, 12, 20 or not
 
-### Food 
+###
 
     food //print the player's hunger level
     set food 20 //set the player's hunger
@@ -390,7 +388,7 @@ when the player respawns
 ### GameMode
 
     gamemode // output the player's game mode
-    set gamemode /sets the player's gamemode
+    set gamemode //set the player's gamemode
 
 ### Name
 
@@ -401,41 +399,41 @@ when the player respawns
 
 ### Permission
 
-    permission ( op ) // Print whether the player has op or not
-    permission ( freedyminigamemaker.admin )
-    /print whether the player has node privileges
+    permission(op) // print whether the player has ops
+    permission(freedyminigamemaker.admin)
+    // Print whether the player has node privileges
 
 ### Title
 
-    <game or all or player> title ( 0 | 50 | 0 | "title" | "subtitle" )
+    title(0, 50, 0, "title", "subtitle")
     //Send the title and subtitle to the player, fade in 0, duration 50, fade out 0
 
 ### Sound
 
-    <game or all or player> sound ( "minecraft:block.note.snare" | 1 | 1 )
+    sound("minecraft:block.note.snare", 1, 1)
     //Play a sound to the player at volume 1 and pitch 1
 
-    <game or all or player> sound ( "minecraft:block.note.snare" | -1 | 1 )
+    sound("minecraft:block.note.snare", -1, 1)
     // Tell the player to cancel the change of the sound according to the position and play the sound at pitch 1
 
 ### Particles
 
-    particle ( player | FLAME | 10 | true ) // Summon 10 particle effects at the location in a stopped state
-    particle ( player | FLAME | 10 ) // Summon 10 particle effects at the location
+    particle(player, FLAME, 10, true) //Summons 10 particle effects in a stationary state
+    particle(player, FLAME, 10) // Summon 10 particle effects at location
     // Google Particle <server version> spigot to find all particle effects
 
 
-### Potion
+###
 
-    add potion ( GLOWING | 55555 | 0 ) // Gives level 1 potion effect for the duration (Potion level 1 is 0)
-    remove potion ( GLOWING ) // Remove the potion effect
+    add potion(GLOWING, 55555, 0) //Add potion effect of level 1 for the duration (Potion level 1 is 0)
+    remove potion(GLOWING) //remove the potion effect
     clear potion // Removes all potion effects
     // Type PottionEffectType <server version> spigot on Google to find all potions
 
 ### HotBar
 
-     get hotbar //Print the player's hotbar slot
-     set hotbar /sets the player's hotbar slot
+    get hotbar //print the player's hotbar slot
+    set hotbar //set the player's hotbar slot
 
 ### Sneaking
 `aliases: [ sneaking, sneak ]`
@@ -444,8 +442,8 @@ when the player respawns
 
 ### Velocity
 
-     set velocity ( 0 | 10 | 0 ) // Set the momentum by 10 Y coordinates
-     add velocity ( 0 | 10 | 0 ) // add momentum by 10 Y coordinates
+    set velocity(0, 10, 0) // Set the momentum by 10 Y coordinates
+    add velocity(0, 10, 0) // add momentum by 10 Y coordinates
 
 ### Uuid
 
@@ -463,7 +461,7 @@ when the player respawns
 
 ### Random
 
-    random ( 0 | 100 ) // Print a random number with decimals from 0 to 100
+    random(0, 100) // Outputs a random number with decimals from 0 to 100
 
 ### Log
 
@@ -479,7 +477,7 @@ when the player respawns
 
 ### Split
 
-    split ( "1,2,3" | "," | <game or all or player> listName )
+    split("1,2,3", ",", listName)
     // Split the first message into the second message and store it in the list
 
 ### Join
@@ -488,9 +486,9 @@ when the player respawns
 
 ### Left
 
-    left //Exit the player from the game the player is playing
+    left // Removes the player from the game the player is playing
 
-### Do
+###
 
     do start //start Executes the command bundle
 
@@ -501,30 +499,30 @@ when the player respawns
 
 ### Refs
 
-    refs ( testGame | bundleName )
+    refs(testGame, bundleName)
     // Execute the game's command bundle as the running game
 
 ### Async
 
     async print hello // execute the command asynchronously
     //Async is executed outside the server's action flow, so if the command execution time is long, use async
-    // However, asynchronous execution does not flow with other normal executions, so
+    // But the asynchronous execution does not flow with other normal executions, so
     // It is recommended not to share data
 
 ### Delay
 
-    delay ( 20 ) print hello // After a few ticks, execute the following statement and print the execution code (20 ticks is 1 second)
+    delay(20) print hello // After a few ticks, execute the following statement and print the execution code (20 ticks is 1 second)
 
-    async delay ( 20 ) print hello
+    async delay(20) print hello
     //After a few ticks, the following statement is executed asynchronously and the execution code is output.
 
 ### TaskId
 
-     taskId //If the code to be executed has been executed with the Delay command, output the executable code
+    taskId //If the code to be executed has been executed with the Delay command, output the executable code
 
 ### CancelTask
 
-    cancel (execution code) //Cancel the statement that was waiting to be executed
+    cancel (execution code) // Cancel the statement waiting to be executed
 
 ### Execute
 
@@ -534,45 +532,45 @@ when the player respawns
 ## conditional
 
 ```
-if ( "first value" = "second value" )
+if ("first value" = "second value")
     print "true"
 ```
 A conditional statement is a 'statement' in which 'code' is executed according to a condition.  
 ```
-if ( value1 = value2 ) {
+if (value1 = value2) {
     // If true, it will be executed.
 } else {
     // If false, it will be executed.
 }
 ```
 
-The `=` equal sign is called a logical operator'.
-`== or =` True when both values are equal.  
-`!= or /=` True if the two values are different.  
+The `=` equal sign is called a `logical operator'.  
+`== or =` True when both values are equal.   
+`!= or /=` True if the two values are different.    
 `<` True if the number on the left is less than the number on the right.  
-`>` True if the left hand side is greater than the right hand side number.   
-`<=` True if the number on the left is less than or equal to the number on the right.    
+`>` True if the left hand side is greater than the right hand side number.  
+`<=` True if the number on the left is less than or equal to the number on the right.  
 `>=` True if the number on the left is greater than or equal to the number on the right.  
 
 ```
-if ( South Korea /= North Korea ) { print "true." } else { print "false." }
+if (Korea /= North Korea) {print "true."} else {print "false."}
 ```
 ```
-* Output message when the above code is executed
-Oh yeah.
+* Output message when the above code is executed  
+Oh yeah.  
 ```
 The `if` command executes the next command when the condition is true.  
 The `else` command executes the next command when the condition is false.  
-In the above syntax, `/=` is true when the two values ​​are different, so "true." is output.  
-If the two values are equal, "false." will be output because the two values are not different.  
+In the above syntax, `/=` is true when the two values are different, so "true." is output.  
+If the two values are equal, "False." will be output because the two values are not different.  
 
 ```
-if ( "first value" = "second value" )
-    if ( "third value" = "fourth value" )
+if("first value" = "second value")
+    if("third value" = "fourth value")
         print The first and second values are the same, the third and fourth values are the same
 ```
 ```
-if ( "first value" = "second value" & "third value" = "4th value" )
+if("First Value" = "Second Value" & "Third Value" = "Fourth Value")
     print The first and second values are the same, the third and fourth values are the same
 ```
 The meaning of the source code above and below is the same.  
@@ -584,36 +582,36 @@ Only true if the condition before or after `& or &&` is true.
 ## loop
 
 ```
-while ( conditional statement ) {
+while (conditional statement) {
     // Code here will continue to run as long as the condition is true.
 }
 ```
 
 ```
-set data ( i | 0 )
-while ( data ( i ) < 10 ) {
-    print data ( i ) is running
-    set data ( i | data ( i ) + 1 )
+set data(i, 0)
+while(data(i)<10) {
+    print data(i) is running
+    set data(i, data(i)+1)
 }
 ```
 
 ```
-for (Initial Execution Statement | Conditional Statement | Incremental Statement) {
+for (initial execution statement, conditional statement, increment statement) {
     //execution statement
 }
 
-//execution flow chart:
-//0. initial execution statement
-//1. If the conditional statement is true, 2 is executed; otherwise, 5 is executed.
-//2. Execution statement
-//3. increase/decrease syntax
-//4. go to 1
-//5. Terminate the command.
+//execution flow chart:  
+//0. initial execution statement  
+//One. If the conditional statement is true, 2 is executed; otherwise, 5 is executed.  
+//2. Execution statement  
+//3. increase/decrease syntax  
+//4. go to 1  
+//5. Terminate the command.  
 ```
 
 ```
-for ( set data ( i | 0 ) | data ( i ) < 10 | set data ( i | data ( i ) + 1 ) ) {
-    print data ( i ) is running
+for (set data(i,0) | data(i)<10 | set data(i,data(i)+1)) {
+    print data(i) is running
 }
 ```
 
