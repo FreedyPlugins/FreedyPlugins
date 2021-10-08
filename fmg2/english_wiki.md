@@ -177,7 +177,7 @@ When a player takes damage from an entity
 | damage | data | Damage figures |
 | damageCause | data | Damage Cause |
 | damageFinal | data | final calculated figure |
-| attackUuid | data | Player UUID |
+| attackerUuid | data | Player UUID |
 
 
 ### Player damage

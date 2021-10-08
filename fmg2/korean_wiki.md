@@ -178,7 +178,7 @@ on move {
 | damage | 데이타 | 데미지 수치 |
 | damageCause | 데이타 | 데미지 원인 |
 | damageFinal | 데이타 | 최종적으로 계산된 수치 |
-| attackUuid | 데이타 | 플레이어 UUID |
+| attackerUuid | 데이타 | 플레이어 UUID |
 
 
 ### Player damage
